@@ -22,10 +22,10 @@ const ContactAction = (props) => (
     <Box
       width={[ 1, 7/12 ]}
       mx='auto'
-		>
-			<MediumText color='text70'>
-				"VJ Ray made everything easier. We all know our block is looked after, and friendly neighbours are far more easier to live with"
-			</MediumText>
+    >
+      <MediumText color='text70'>
+        "VJ Ray made everything easier. We all know our block is looked after, and friendly neighbours are far more easier to live with"
+      </MediumText>
     </Box>
   </Root>
 )

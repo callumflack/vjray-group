@@ -52,19 +52,19 @@ const Root = (props) => (
     <HeroSydney />
 
     <Block>
-			<Container textCenter pb={4}>
-				<Display color='text'>
-					Our duty is your satisfaction.
-				</Display>
+      <Container textCenter pb={4}>
+        <Display color='text'>
+          Our duty is your satisfaction.
+        </Display>
 
-				<Box w={[ 1, 1, 8/12 ]} mx='auto'>
-					<MediumText color='brand'>
-						"I have known and been happy with VJ Ray for years. I cannot fault you. Thank you! I have known and been happy with VJ Ray for years. I cannot fault you. Thank you!" <LineBreakAll mx='auto'>
-							<AuthorText>— Mike Pollard, Owner</AuthorText>
-						</LineBreakAll>
-					</MediumText>
-				</Box>
-			</Container>
+        <Box w={[ 1, 1, 8/12 ]} mx='auto'>
+          <MediumText color='brand'>
+            "I have known and been happy with VJ Ray for years. I cannot fault you. Thank you! I have known and been happy with VJ Ray for years. I cannot fault you. Thank you!" <LineBreakAll mx='auto'>
+              <AuthorText>— Mike Pollard, Owner</AuthorText>
+            </LineBreakAll>
+          </MediumText>
+        </Box>
+      </Container>
 
       <Flex
         direction={[ 'column', 'column', 'row' ]}
@@ -87,21 +87,21 @@ const Root = (props) => (
           width={[ 1, 1, 2/3 ]}
         >
           <TextBlock>
-						<p>
-							Sit lorem veniam repellat ex itaque? Reprehenderit voluptatum delectus earum a vel? Iusto fugiat unde aut praesentium suscipit. Sunt commodi deleniti ipsam natus sunt Eum tempore saepe enim blanditiis sapiente quo Minus tempore neque quisquam cumque facilis beatae repudiandae! Corporis harum libero omnis quod hic Ut sit voluptatibus dolorem eius minus Vero veniam voluptas facilis animi debitis mollitia id. Aliquam velit eos laudantium illo soluta? Voluptatem ex cumque molestiae eveniet dignissimos quia. Obcaecati inventore fugiat quasi voluptas placeat. Eum aperiam nisi eum ipsa magnam distinctio aliquam explicabo reprehenderit repellat laudantium dolorem!
-						</p>
-						<p>
-							Sit lorem veniam repellat ex itaque? Reprehenderit voluptatum delectus earum a vel? Iusto fugiat unde aut praesentium suscipit. Sunt commodi deleniti ipsam natus sunt Eum tempore saepe enim blanditiis sapiente quo Minus tempore neque quisquam cumque facilis beatae repudiandae! Corporis harum libero omnis quod hic Ut sit voluptatibus dolorem eius minus Vero veniam voluptas facilis animi debitis mollitia id. Aliquam velit eos laudantium illo soluta? Voluptatem ex cumque molestiae eveniet dignissimos quia. Obcaecati inventore fugiat quasi voluptas placeat. Eum aperiam nisi eum ipsa magnam distinctio aliquam explicabo reprehenderit repellat laudantium dolorem!
-						</p>
-					</TextBlock>
+            <p>
+              Sit lorem veniam repellat ex itaque? Reprehenderit voluptatum delectus earum a vel? Iusto fugiat unde aut praesentium suscipit. Sunt commodi deleniti ipsam natus sunt Eum tempore saepe enim blanditiis sapiente quo Minus tempore neque quisquam cumque facilis beatae repudiandae! Corporis harum libero omnis quod hic Ut sit voluptatibus dolorem eius minus Vero veniam voluptas facilis animi debitis mollitia id. Aliquam velit eos laudantium illo soluta? Voluptatem ex cumque molestiae eveniet dignissimos quia. Obcaecati inventore fugiat quasi voluptas placeat. Eum aperiam nisi eum ipsa magnam distinctio aliquam explicabo reprehenderit repellat laudantium dolorem!
+            </p>
+            <p>
+              Sit lorem veniam repellat ex itaque? Reprehenderit voluptatum delectus earum a vel? Iusto fugiat unde aut praesentium suscipit. Sunt commodi deleniti ipsam natus sunt Eum tempore saepe enim blanditiis sapiente quo Minus tempore neque quisquam cumque facilis beatae repudiandae! Corporis harum libero omnis quod hic Ut sit voluptatibus dolorem eius minus Vero veniam voluptas facilis animi debitis mollitia id. Aliquam velit eos laudantium illo soluta? Voluptatem ex cumque molestiae eveniet dignissimos quia. Obcaecati inventore fugiat quasi voluptas placeat. Eum aperiam nisi eum ipsa magnam distinctio aliquam explicabo reprehenderit repellat laudantium dolorem!
+            </p>
+          </TextBlock>
         </TextBlockWrapper>
 
       </Flex>
     </Block>
 
-		<Block mw='sm' pb={[ 0, 0 ]}>
-			<ContactForms defaultForm={props.defaultForm} />
-		</Block>
+    <Block mw='sm' pb={[ 0, 0 ]}>
+      <ContactForms defaultForm={props.defaultForm} />
+    </Block>
 
     <Block>
       <ContactAction btnColor='brandAlt' withButton />

@@ -11,10 +11,10 @@ import Button from './Button'
 
 import Image from './Image'
 import {
-	HeroBox,
-	HeroContainer,
-	HeroFlex,
-	HeroTitleBox,
+  HeroBox,
+  HeroContainer,
+  HeroFlex,
+  HeroTitleBox,
 } from './Hero'
 
 
@@ -40,18 +40,18 @@ const HeroListening = () => (
       <HeroFlex>
         <HeroTitleBox width={[ 5/10, 5/12, 6/12 ]} mb={[ 3, 4 ]}>
           <Display mb={2}>
-						The Real Estate team experienced in helping people.
+            The Real Estate team experienced in helping people.
           </Display>
 
-					<Link href=''>
-						<a>
-							<Text font='textMedium' mt={3}>
-								<Button icon invert>
-									Watch Video
-								</Button>
-							</Text>
-						</a>
-					</Link>
+          <Link href=''>
+            <a>
+              <Text font='textMedium' mt={3}>
+                <Button icon invert>
+                  Watch Video
+                </Button>
+              </Text>
+            </a>
+          </Link>
         </HeroTitleBox>
       </HeroFlex>
     </HeroContainer>

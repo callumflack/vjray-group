@@ -140,8 +140,8 @@ const Footer = (props) => (
         </ResponsiveToggle>
 
         <Box>
-					<Nav>
-						<Flex direction={[ 'column', 'row' ]} justify='center'>
+          <Nav>
+            <Flex direction={[ 'column', 'row' ]} justify='center'>
               <Column>
                 <Link href='/who-we-are'><a><span>About Us</span></a></Link>
                 <Link href='/'><a>Home page</a></Link>
@@ -160,8 +160,8 @@ const Footer = (props) => (
                 <Link href='/contact?form=report#contact-forms'><a>Report an issue</a></Link>
                 <Link href='/emergency'><a>Emergencies</a></Link>
               </Column>
-						</Flex>
-					</Nav>
+            </Flex>
+          </Nav>
 
         </Box>
       </Flex>

@@ -5,10 +5,10 @@ import theme from '../theme'
 import { Box, Flex } from 'rebass'
 import { Text, SmallText } from './Text'
 import {
-	IconPhone,
-	IconEmail,
-	IconAddress,
-	IconOpen,
+  IconPhone,
+  IconEmail,
+  IconAddress,
+  IconOpen,
 } from './Icons'
 
 

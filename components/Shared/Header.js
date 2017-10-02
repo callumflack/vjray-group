@@ -23,13 +23,13 @@ const fade = {
 };
 
 const Root = styled(({
-	isHidden,
-	isWindowScrolled,
-	isModalVisible,
-	children,
-	...rest
+  isHidden,
+  isWindowScrolled,
+  isModalVisible,
+  children,
+  ...rest
 }) => (
-	<Flex {...rest}>{children}</Flex>
+  <Flex {...rest}>{children}</Flex>
 ))`
   --Header-background-color: rbga(255, 255, 255, 1);
   --Header-border-color: rgba(88, 88, 112, 0.15);
@@ -157,11 +157,11 @@ const Nav = styled(ResponsiveToggle)`
   display: flex;
   justify-content: center;
 
-	a {
+  a {
     cursor: pointer;
-	}
+  }
 
-	/* Following styles are applied to span as well to style dividers from Text.js */
+  /* Following styles are applied to span as well to style dividers from Text.js */
   a, span {
     line-height: ${theme.blockHeights.navBar};
   }
@@ -247,8 +247,8 @@ const LinkText = props =>
     font='textRegular'
     fontSize={[ 2, 3 ]}
     color='inherit'
-		isActive={props.isActive}
-		children={props.children}
+    isActive={props.isActive}
+    children={props.children}
   />
 
 const StyledDivider = styled(Divider)`
@@ -257,11 +257,11 @@ const StyledDivider = styled(Divider)`
 
 const MobileLinkText = props =>
   <Display
-		align='left'
-		color='text'
-		isActive={props.isActive}
-		children={props.children}
-	/>
+    align='left'
+    color='text'
+    isActive={props.isActive}
+    children={props.children}
+  />
 
 
 
@@ -372,11 +372,11 @@ class Header extends React.Component {
                     <a><LinkText isActive={this.props.pathname === '/contact'}>Contact Us</LinkText></a>
                   </Link>
 
-									<StyledDivider />
+                  <StyledDivider />
 
-									<Link href={'tel:' + contactDetails.phone}>
-										<a><LinkText>{contactDetails.phone}</LinkText></a>
-									</Link>
+                  <Link href={'tel:' + contactDetails.phone}>
+                    <a><LinkText>{contactDetails.phone}</LinkText></a>
+                  </Link>
                 </Nav>
               </DesktopNav>
 
@@ -394,7 +394,7 @@ class Header extends React.Component {
                 <Link href='vjraystrata.com.au'>
                   <a><LinkText>
                     <StyledButton invert>
-											Visit VJ Ray Strata
+                      Visit VJ Ray Strata
                     </StyledButton>
                   </LinkText></a>
                 </Link>

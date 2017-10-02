@@ -11,21 +11,21 @@ import FormIssue from './FormIssue'
 
 
 const Root = props => (
-	<div>
-		<Container textCenter>
-			<Subheadline color='brandAlt' children='Get in touch' />
-			<Display color='brand' mb={1} children='How can we help you?' />
-			<SmallText pt={3} color='text70'>For emergencies, call 1300 073 123 any time.</SmallText>
-		</Container>
+  <div>
+    <Container textCenter>
+      <Subheadline color='brandAlt' children='Get in touch' />
+      <Display color='brand' mb={1} children='How can we help you?' />
+      <SmallText pt={3} color='text70'>For emergencies, call 1300 073 123 any time.</SmallText>
+    </Container>
 
-		<Box mt={[ 3, 3, 3, 4]}>
-			<Tabs selected={props.defaultForm === 'report' ? 1 : 0}>
-				{props.tabs.map(tab =>
-					<Pane label={tab.name} key={tab._id}>{tab.content}</Pane>)
-				}
-			</Tabs>
-		</Box>
-	</div>
+    <Box mt={[ 3, 3, 3, 4]}>
+      <Tabs selected={props.defaultForm === 'report' ? 1 : 0}>
+        {props.tabs.map(tab =>
+          <Pane label={tab.name} key={tab._id}>{tab.content}</Pane>)
+        }
+      </Tabs>
+    </Box>
+  </div>
 )
 
 class ContactForms extends React.Component {
@@ -47,11 +47,11 @@ class ContactForms extends React.Component {
 }
 
 ContactForms.propTypes = {
-	defaultForm: PropTypes.number
+  defaultForm: PropTypes.number
 }
 
 ContactForms.defaultProps = {
-	defaultForm: 0,
+  defaultForm: 0,
 }
 
 export default ContactForms

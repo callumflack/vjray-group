@@ -22,8 +22,6 @@ const Root = styled(Box)`
   `}
 `;
 
-// `
-
 class FormContainer extends React.Component {
   constructor(props) {
     super(props);

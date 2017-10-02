@@ -2,9 +2,9 @@ const styled = require('styled-components').default
 const css = require('styled-components').css
 const { fontSize } = require('styled-system')
 const {
-	width,
-	space,
-	color,
+  width,
+  space,
+  color,
 } = require('styled-system')
 const theme = require ('../theme').default
 
