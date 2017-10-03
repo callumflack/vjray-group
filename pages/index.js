@@ -1,27 +1,34 @@
 import React from 'react'
 import Link from 'next/link';
 
-import { Flex, Box } from 'rebass'
 import styled from 'styled-components'
-import hoc from '../components/Shared/hoc'
-import theme from '../components/theme'
+import { 
+  Flex, 
+  Box
+} from 'rebass'
 
+// NEW
 import Layout from '../components/Shared/Layout'
+import { Heading } from '../components/Shared/Headings'
+
+// OLD
+import theme from '../components/theme'
+import hoc from '../components/Shared/hoc'
 import Container from '../components/Shared/Container'
 import Button from '../components/Shared/Button'
 import { Text, LargeText, MediumText, SmallText, AuthorText, LineBreak, LineBreakMax, LineBreakAll, TextBlock } from '../components/Shared/Text'
 import { Display, Headline, Subheadline, HeadlineMeta } from '../components/Shared/Headline'
-
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
 import ContactAction from '../components/ContactAction'
 import Contacts from '../components/Shared/Contacts'
 import HeroListening from '../components/Shared/HeroListening'
-
 import FeatureList from '../components/Shared/FeatureList'
 import HeroSydney from '../components/Shared/HeroSydney'
 import ContactForms from '../components/Shared/ContactForms.js'
+
+
 
 
 const TextBlockWrapper = styled(Flex)`
@@ -46,9 +53,17 @@ const Root = (props) => (
       button
     />
 
-    <Block mw='rg' textCenter>
+    <Block align='center'>
       <Box mx='auto' width={[ 1, 1, 5/6 ]}>
-        <Headline font='displayMedium' color='text' mt={[ 0, 4, 4 ]} mb={2}>With our end-to-end services range, <LineBreak /> we've got you covered</Headline> <LargeText color='text70'>
+
+        <Heading center family='displayMedium' weight={4}>
+          With our end-to-end services range, we've got you covered.
+        </Heading>
+      
+        <Headline center font='displayMedium' color='text' mt={[ 0, 4, 4 ]}>
+          With our end-to-end services range, <LineBreak>we've got you covered.</LineBreak>
+        </Headline>
+        <LargeText color='text70'>
           "VJ Ray made everything easier. We all know our block is looked after, and friendly neighbours are far more easier to live with"<LineBreak m='auto'><AuthorText>— Jessica, Campsie</AuthorText></LineBreak>
         </LargeText>
       </Box>

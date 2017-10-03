@@ -20,6 +20,19 @@ export default {
     success: '#42db41',
     error: '#D91E1F',
   },
-  font: 'GT-Eesti-Pro-Text',
-  weights: [100, 200, 300, 400, 500, 700]
+  font: 'GT-Eesti-Pro-Text-Light',
+  weights: [100, 200, 300, 400, 500, 700],
+  families: {
+    displayThin: 'GT-Eesti-Pro-Display-Thin', 
+    displayLight: 'GT-Eesti-Pro-Display-Light', 
+    displayRegular: 'GT-Eesti-Pro-Display-Regular', 
+    displayMedium: 'GT-Eesti-Pro-Display-Medium'
+  },
+  lineHeights: {
+    display: '1.05',
+    headline: '1.15',
+    subheadline: '1.3',
+    text: '1.375',
+    feedback: '2.5'
+  }
 }
