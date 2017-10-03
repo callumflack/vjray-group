@@ -12,7 +12,7 @@ export default {
     text20: '#dbdbdd',
     text10: '#ededee',
     text7: '#f2f2f3',
-    brand: '#c90b50',
+    brand: '#1296de',
     brandAlt: '#404070',
     brandAlt70: '#797A9A',
     beige: '#F7F2EC',
