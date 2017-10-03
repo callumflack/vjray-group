@@ -1,0 +1,3 @@
+[submodule "components/Shared"]
+	path = components/Shared
+	url = https://github.com/BarryPH/vjray-shared-components
