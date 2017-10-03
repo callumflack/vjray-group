@@ -21,7 +21,8 @@
     "react-dom": "15.6.1",
     "react-ga": "2.2.0",
     "rebass": "1.0.4",
-    "styled-components": "2.1.2"
+    "styled-components": "2.1.2",
+    "styled-system": "^1.0.5"
   },
   "now": {
     "alias": [
@@ -31,5 +32,11 @@
       "NODE_ENV": "production",
       "SERVER_URI": "@vjr_server_uri"
     }
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.4.0"
   }
 }
