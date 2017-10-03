@@ -25,8 +25,7 @@
   },
   "now": {
     "alias": [
-      "vjray.com.au",
-      "www.vjray.com.au"
+      "vjray-group.now.sh"
     ],
     "env": {
       "NODE_ENV": "production",
