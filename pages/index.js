@@ -15,7 +15,7 @@ import { Display, Headline, Subheadline, HeadlineMeta } from '../components/Shar
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
-import ContactAction from '../components/Shared/ContactAction'
+import ContactAction from '../components/ContactAction'
 import Contacts from '../components/Shared/Contacts'
 import HeroListening from '../components/Shared/HeroListening'
 
@@ -35,9 +35,16 @@ const TextBlockWrapper = styled(Flex)`
 
 const Root = (props) => (
   <Layout>
-    <Header pathname={props.pathname} clear />
+    <Header
+      pathname={props.pathname}
+      clear
+      linkToStrata
+    />
 
-    <HeroListening />
+    <HeroListening
+      headline='The Real Estate team experienced in helping people.'
+      button
+    />
 
     <Block mw='rg' textCenter>
       <Box mx='auto' width={[ 1, 1, 5/6 ]}>
@@ -49,7 +56,10 @@ const Root = (props) => (
       <FeatureList />
     </Block>
 
-    <HeroSydney />
+    <HeroSydney
+      headline="We believe in better <LineBreak bp='1' m='auto'>Strata management for Sydney.</LineBreak>"
+      subheadline="We know that our job is much more that just looking after buildings. Its the people that matter. We know that our job is much more that just looking after buildings. Its the people that matter."
+    />
 
     <Block>
       <Container textCenter pb={4}>
