@@ -28,6 +28,7 @@ export default {
     rg: '960px',
     lg: '1140px',
   },
+  font: 'GT-Eesti-Pro-Text',
   fonts: {
     displayThin: 'GT-Eesti-Pro-Display-Thin',
     displayLight: 'GT-Eesti-Pro-Display-Light',
@@ -39,8 +40,6 @@ export default {
     textMedium: 'GT-Eesti-Pro-Text-Medium',
     textBold: 'GT-Eesti-Pro-Text-Bold',
   },
-  font: 'GT-Eesti-Pro-Text',
-  headlineFont: 'GT-Eesti-Pro-Display',
   fontSizes: [11, 13, 16, 18, 21, 27, 36, 48],
   letterSpacing: {
     body: '0.03em',

@@ -9,7 +9,8 @@ export default {
     text20: '#dbdbdd',
     text10: '#ededee',
     text7: '#f2f2f3',
-    brand: '#c90b50',
+    brand: '#1296de',
+    brandStrata: '#c90b50',
     brandAlt: '#404070',
     brandAlt70: '#797A9A',
     beige: '#F7F2EC',
@@ -21,18 +22,31 @@ export default {
     error: '#D91E1F',
   },
   font: 'GT-Eesti-Pro-Text-Light',
-  weights: [100, 200, 300, 400, 500, 700],
   families: {
     displayThin: 'GT-Eesti-Pro-Display-Thin', 
     displayLight: 'GT-Eesti-Pro-Display-Light', 
     displayRegular: 'GT-Eesti-Pro-Display-Regular', 
-    displayMedium: 'GT-Eesti-Pro-Display-Medium'
+    displayMedium: 'GT-Eesti-Pro-Display-Medium',
+    textLight: 'GT-Eesti-Pro-Text-Light',
+    textBook: 'GT-Eesti-Pro-Text-Book',
+    textRegular: 'GT-Eesti-Pro-Text-Regular',
+    textMedium: 'GT-Eesti-Pro-Text-Medium',
+    textBold: 'GT-Eesti-Pro-Text-Bold'
   },
+  weights: [100, 200, 300, 400, 500, 700],
   lineHeights: {
     display: '1.05',
     headline: '1.15',
     subheadline: '1.3',
     text: '1.375',
     feedback: '2.5'
+  },
+  letterSpacings: {
+    body: '0.03em',
+    text: '0.02em',
+    tight: '-0.02em',
+    button: '0.025em',
+    touch: '0.075em',
+    meta: '0.15em',
   }
 }
