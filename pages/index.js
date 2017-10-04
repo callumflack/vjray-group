@@ -1,30 +1,28 @@
 import React from 'react'
 import Link from 'next/link';
 import styled from 'styled-components'
-import { 
-  Flex, 
-  Box
-} from 'rebass'
+import { Flex, Box } from 'rebass'
 
 // NEW
 import Layout from '../components/Shared/Layout'
+import Container from '../components/Shared/Container2'
 import { Display, Heading } from '../components/Shared/Headings'
 import { Text, LargeText, MediumText, SmallText, AuthorText, TextBlock } from '../components/Shared/Texts'
+import { Subheading } from '../components/Shared/Headings'
 import LineBreak from '../components/Shared/LineBreak'
-import HeroStrata from '../components/Shared/HeroStrata'
+import theme from '../components/theme-new'
+
+import ContactAction from '../components/Shared/ContactAction'
+import HeroHome from '../components/HeroHome'
+import HeroStrata from '../components/HeroStrata'
 
 // OLD
-import theme from '../components/theme'
 import hoc from '../components/Shared/hoc'
-import Container from '../components/Shared/Container'
 import Button from '../components/Shared/Button'
-import { Subheadline, HeadlineMeta } from '../components/Shared/Headline'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
-import ContactAction from '../components/ContactAction'
 import Contacts from '../components/Shared/Contacts'
-import HeroListening from '../components/Shared/HeroListening'
 import FeatureList from '../components/Shared/FeatureList'
 import ContactForms from '../components/Shared/ContactForms.js'
 
@@ -35,7 +33,7 @@ const TextBlockWrapper = styled(Flex)`
   margin-top: 0;
   margin-bottom: ${theme.space[4]}px;
 
-  @media (min-width: ${theme.containers.sm}) {
+  @media (min-width: ${theme.breakpoints[0]}) {
     margin: 0;
   }
 `
@@ -44,7 +42,7 @@ const Root = props => (
   <Layout>
     <Header pathname={props.pathname} clear linkToStrata />
 
-    <HeroListening
+    <HeroHome
       headline="The Real Estate team experienced in helping people."
       button
     />
@@ -72,29 +70,33 @@ const Root = props => (
       lede="This paragraph is about how 50% of Sydney’s population will live in Strata management by 2020, about VJ Ray's history in Sydney, how they love Sydney and want to see it progress upwards and stave off housing uncertainty and more pain points that hit customers."
     />
 
-    <Block>
+    <Block bg="text7">
       <Container pb={4}>
         <Display center color="text" family="displayMedium">
           Our duty is your satisfaction.
         </Display>
 
         <Box w={[1, 1, 8 / 12]} mx="auto">
-          <MediumText center color="brand">
+          <LargeText center color="brand">
             “I’ve been working for VJ Ray for over three decades and in that
             time, I’ve seen many things in Real Estate change. But at heart of
             great business is great customer service. That’s what we pride
-            ourselves on here at VJ Ray” <LineBreak><AuthorText>— Mike Pollard, Owner</AuthorText></LineBreak>
-          </MediumText>
+            ourselves on here at VJ Ray”{" "}
+            <LineBreak>
+              <AuthorText>— Mike Pollard, Managing Director</AuthorText>
+            </LineBreak>
+          </LargeText>
         </Box>
       </Container>
 
       <Flex direction={["column", "column", "row"]} mx={[-2, -2, -2, -3]}>
-        <Flex column width={[1, 1, 1 / 3]} px={[4, 2, 2, 3, 3]}>
+        <Flex column width={[1, 1, 1 / 3]} px={[4, 2, null, 3]}>
           <Box mt="6px">
             <img src="static/img/mike-pollard.jpg" />
           </Box>
-          <Text color="text70" mt={2} children="Mike Pollard" />
+          <Text color="text70" mt={3} children="Mike Pollard" />
           <Text color="text70" children="Managing Director" />
+          <Text color="text70" children="35 years with VJ Ray" />
         </Flex>
         <TextBlockWrapper
           order={["-1", "-1", "initial"]}
@@ -103,42 +105,33 @@ const Root = props => (
         >
           <TextBlock>
             <p>
-              Sit lorem veniam repellat ex itaque? Reprehenderit voluptatum
-              delectus earum a vel? Iusto fugiat unde aut praesentium suscipit.
-              Sunt commodi deleniti ipsam natus sunt Eum tempore saepe enim
-              blanditiis sapiente quo Minus tempore neque quisquam cumque
-              facilis beatae repudiandae! Corporis harum libero omnis quod hic
-              Ut sit voluptatibus dolorem eius minus Vero veniam voluptas
-              facilis animi debitis mollitia id. Aliquam velit eos laudantium
-              illo soluta? Voluptatem ex cumque molestiae eveniet dignissimos
-              quia. Obcaecati inventore fugiat quasi voluptas placeat. Eum
-              aperiam nisi eum ipsa magnam distinctio aliquam explicabo
-              reprehenderit repellat laudantium dolorem!
-            </p>
-            <p>
-              Sit lorem veniam repellat ex itaque? Reprehenderit voluptatum
-              delectus earum a vel? Iusto fugiat unde aut praesentium suscipit.
-              Sunt commodi deleniti ipsam natus sunt Eum tempore saepe enim
-              blanditiis sapiente quo Minus tempore neque quisquam cumque
-              facilis beatae repudiandae! Corporis harum libero omnis quod hic
-              Ut sit voluptatibus dolorem eius minus Vero veniam voluptas
-              facilis animi debitis mollitia id. Aliquam velit eos laudantium
-              illo soluta? Voluptatem ex cumque molestiae eveniet dignissimos
-              quia. Obcaecati inventore fugiat quasi voluptas placeat. Eum
-              aperiam nisi eum ipsa magnam distinctio aliquam explicabo
-              reprehenderit repellat laudantium dolorem!
+              Way back in 1962, in a one-room office in Campsie, VJ Ray started
+              its journey in the Sydney real estate scene. Today, over 55 years
+              later, our Strata Team has 27 staff, all with just one goal, to
+              help people. VJ Ray is a family company that was started by Leon
+              Pollard and is currently owned and operated by his son Mike
+              Pollard. The guiding principal behind the VJ Ray culture has been
+              to maintain the original family company atmosphere that is so
+              often lost as companies grow into corporate giants. At VJ Ray we
+              know that our job is much more that just looking after buildings,
+              its about caring for and helping the people that own or live in
+              those buildings. It's the people that matter. That's why our
+              mission statement is so simple. We Help People.
             </p>
           </TextBlock>
         </TextBlockWrapper>
       </Flex>
     </Block>
 
-    <Block mw="sm" pb={[0, 0]}>
+    <Block textCenter maxWidth="672px" pb={[0, 0]}>
+      <Subheading center color="brandAlt" children="Contact us" />
+      <Display center color="brand" mb={1} children="How can we help you?" />
+      <Text center color="text70" pt={3} children="For emergencies, call 1300 073 123 any time." />
       <ContactForms defaultForm={props.defaultForm} />
     </Block>
 
-    <Block>
-      <ContactAction btnColor="brandAlt" withButton />
+    <Block textCenter>
+      <ContactAction headline="Primary message here" />
       <Contacts />
     </Block>
 

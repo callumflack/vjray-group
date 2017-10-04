@@ -11,7 +11,7 @@ export default {
     text7: '#f2f2f3',
     brand: '#1296de',
     brandStrata: '#c90b50',
-    brandAlt: '#404070',
+    brandAlt: "#1296de",
     brandAlt70: '#797A9A',
     beige: '#F7F2EC',
     offBlue: '#e8f6fb',
