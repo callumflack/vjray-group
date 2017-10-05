@@ -3,22 +3,17 @@ import Link from 'next/link';
 import styled from 'styled-components'
 import { Flex, Box } from 'rebass'
 
-// NEW
+import theme from '../components/theme-new'
 import Layout from '../components/Shared/Layout'
 import Container from '../components/Shared/Container2'
 import { Display, Heading } from '../components/Shared/Headings'
 import { Text, LargeText, MediumText, SmallText, AuthorText, TextBlock } from '../components/Shared/Texts'
 import { Subheading } from '../components/Shared/Headings'
 import LineBreak from '../components/Shared/LineBreak'
-import theme from '../components/theme-new'
-
 import ContactAction from '../components/Shared/ContactAction'
 import HeroHome from '../components/Shared/HeroGroupHome'
 import HeroStrata from '../components/Shared/HeroGroupStrata'
 import ContactForms from '../components/Shared/ContactForms.js'
-
-// OLD
-import hoc from '../components/Shared/hoc'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'

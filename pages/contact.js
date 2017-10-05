@@ -11,7 +11,7 @@ import Layout from '../components/Shared/Layout'
 import Container from '../components/Shared/Container2'
 import CoverImage from '../components/Shared/CoverImage'
 import { Display, Headline, Subheadline, MobileSubheadline, HeadlineMeta } from '../components/Shared/Headline'
-import { Text, SmallText, MediumText, LargeText } from '../components/Shared/Texts'
+import { Text, SmallText, MediumText, LargeText, PrimaryButtonText } from '../components/Shared/Texts'
 import LineBreak from "../components/Shared/LineBreak";
 import { Button } from '../components/Shared/Buttons'
 import Contacts from '../components/Shared/Contacts'
@@ -19,14 +19,14 @@ import ContactForms from "../components/Shared/ContactForms.js";
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
-import HeroContact from '../components/Shared/HeroContact'
+import HeroContact from '../components/Shared/HeroGroupContact'
 import ContactAction from '../components/Shared/ContactAction'
 
 
 
 const Root = props => (
   <Layout>
-    <Header pathname={props.pathname} clear color="brandAlt" />
+    <Header pathname={props.pathname} clear linkToStrata />
     <HeroContact />
 
     <Block textCenter pb={[0, 0]}>
@@ -57,11 +57,15 @@ const Root = props => (
 
     <Block textCenter>
       <Display color="brand" mb={1} children="Is it a Strata emergency?" />
-      <LargeText color="text70" mb={3} children="For all types of after-hours repairs." />
+      <LargeText
+        color="text70"
+        mb={3}
+        children="For all types of after-hours repairs."
+      />
       <Link href="/emergency">
-        <MediumText>
+        <PrimaryButtonText>
           <Button icon bg="brand" children="Emergencies" />
-        </MediumText>
+        </PrimaryButtonText>
       </Link>
     </Block>
 
