@@ -15,16 +15,15 @@ import theme from '../components/theme-new'
 import ContactAction from '../components/Shared/ContactAction'
 import HeroHome from '../components/Shared/HeroGroupHome'
 import HeroStrata from '../components/Shared/HeroGroupStrata'
+import ContactForms from '../components/Shared/ContactForms.js'
 
 // OLD
 import hoc from '../components/Shared/hoc'
-import Button from '../components/Shared/Button'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
 import Contacts from '../components/Shared/Contacts'
 import FeatureList from '../components/Shared/FeatureList'
-import ContactForms from '../components/Shared/ContactForms.js'
 
 
 
@@ -112,7 +111,7 @@ const Root = props => (
       </Flex>
     </Block>
 
-    <Block textCenter maxWidth="672px" pb={[0, 0]}>
+    <Block textCenter maxWidth="48em" pb={[0, 0]}>
       <Subheading center children="Contact us" />
       <Display center color="brand" mb={1} children="How can we help you?" />
       <Text
