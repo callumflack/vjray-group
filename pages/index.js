@@ -211,7 +211,7 @@ const Root = props => (
       title="Primary CTA message"
       titleColor="brandAlt"
     >
-      <Contacts />
+      <Contacts pathname={props.pathname} />
     </BlockCrown>
 
     <Footer />

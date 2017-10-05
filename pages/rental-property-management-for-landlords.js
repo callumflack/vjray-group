@@ -69,7 +69,7 @@ const Root = props => (
 
     <Block textCenter>
       <ContactAction headlineColor="brand" headline="Primary CTA message" />
-      <Contacts />
+      <Contacts pathname={props.pathname} />
     </Block>
 
     <Footer />
