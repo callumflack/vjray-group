@@ -39,15 +39,6 @@ const contactLocationsForPathnames = {
   }
 }
 
-const contactLocationPathFilters = {
-  'Campsie Head Office': {
-    paths: ['/', '/rental-property-management-for-landlords'],
-  },
-  'Caringbah Office': {
-    paths: ['/'],
-  }
-}
-
 const contactDetails = {
   phone: '1300 073 405',
   emergencyAfterHours: '0418 245 545',
