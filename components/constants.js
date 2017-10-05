@@ -9,15 +9,27 @@ const navItems = [
     href: '/',
   },
   {
+    label: 'Strata Management',
+    href: '/strata-management',
+  },
+  {
+    label: 'Property Management',
+    href: "/rental-property-management-for-landlords",
+  },
+  {
+    label: 'Valuations',
+    href: "/",
+  },
+  {
     label: 'Contact',
     href: '/contact',
   },
 ]
 
 const contactDetails = {
-    phone: '1300 073 405',
-    emergencyAfterHours: '0418 245 545',
-    emergencyBusinessHours: '9784 7900'
+  phone: '1300 073 405',
+  emergencyAfterHours: '0418 245 545',
+  emergencyBusinessHours: '9784 7900'
 }
 
 const emergencyList = [{
@@ -78,4 +90,34 @@ const servicesList = [{
   link: false
 }]
 
-export { site, navItems, contactDetails, servicesIntro, servicesList }
+const landlordIntro =
+  "FOR LANDLORDS We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. But we believe it shouldn’t stop there. Here’s how we go further:";
+
+const landlordList = [{
+  icon: 'emergency',
+  headline: 'Reason One',
+  text: 'We know that emergencies don’t just happen during office hours. And rather than just leave you with the phone number for a message service we have our most senior staff on call to help you with emergency repairs, whenever they occur.',
+  link: false,
+  buttonUrl: '/emergency',
+  buttonLabel: 'Emergencies'
+}, {
+  icon: 'contents',
+  headline: 'Reason Two',
+  text: 'Many owners and residents aren’t aware that damage to their furniture and possessions is not covered by the buildings insurance. That’s why we help with arranging contents insurance too. And depending on which company the building is insured with, there can be considerable savings by reducing insurances excess amounts.',
+  link: false
+}, {
+  icon: 'bylaw',
+  headline: 'Reason Three',
+  text: 'With the introduction of the Strata Schemes Management Act 2015, the need for By-laws to be adopted and amended increased greatly. For example, did you know you often need to create a By-law BEFORE you renovate your bathroom?',
+  link: false
+}]
+
+export { 
+  site, 
+  navItems,
+  contactDetails, 
+  servicesIntro, 
+  servicesList,
+  landlordIntro, 
+  landlordList 
+}
