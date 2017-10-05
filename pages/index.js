@@ -13,8 +13,8 @@ import LineBreak from '../components/Shared/LineBreak'
 import theme from '../components/theme-new'
 
 import ContactAction from '../components/Shared/ContactAction'
-import HeroHome from '../components/HeroHome'
-import HeroStrata from '../components/HeroStrata'
+import HeroHome from '../components/Shared/HeroGroupHome'
+import HeroStrata from '../components/Shared/HeroGroupStrata'
 
 // OLD
 import hoc from '../components/Shared/hoc'
@@ -70,24 +70,13 @@ const Root = props => (
       lede="This paragraph is about how 50% of Sydney’s population will live in Strata management by 2020, about VJ Ray's history in Sydney, how they love Sydney and want to see it progress upwards and stave off housing uncertainty and more pain points that hit customers."
     />
 
-    <Block bg="text7">
-      <Container pb={4}>
-        <Display center color="text" family="displayMedium">
-          Our duty is your satisfaction.
-        </Display>
-
-        <Box w={[1, 1, 8 / 12]} mx="auto">
-          <LargeText center color="brand">
-            “I’ve been working for VJ Ray for over three decades and in that
-            time, I’ve seen many things in Real Estate change. But at heart of
-            great business is great customer service. That’s what we pride
-            ourselves on here at VJ Ray”{" "}
-            <LineBreak>
-              <AuthorText>— Mike Pollard, Managing Director</AuthorText>
-            </LineBreak>
-          </LargeText>
-        </Box>
-      </Container>
+    <Block bg="text7" maxWidth="48em">
+      <Box w={[1, 1, 10 / 12]} mx="auto" mb={[ 64, 64 ]}>
+        <Display center color="text" family="displayMedium" children="Our duty is your satisfaction." />
+        <LargeText center color="brand">
+          “I’ve been working for VJ Ray for over three decades and in that time, I’ve seen many things in Real Estate change. But at heart of great business is great customer service. That’s what we pride ourselves on here at VJ Ray” <LineBreak><AuthorText>— Mike Pollard, Managing Director</AuthorText></LineBreak>
+        </LargeText>
+      </Box>
 
       <Flex direction={["column", "column", "row"]} mx={[-2, -2, -2, -3]}>
         <Flex column width={[1, 1, 1 / 3]} px={[4, 2, null, 3]}>
@@ -124,14 +113,19 @@ const Root = props => (
     </Block>
 
     <Block textCenter maxWidth="672px" pb={[0, 0]}>
-      <Subheading center color="brandAlt" children="Contact us" />
+      <Subheading center children="Contact us" />
       <Display center color="brand" mb={1} children="How can we help you?" />
-      <Text center color="text70" pt={3} children="For emergencies, call 1300 073 123 any time." />
+      <Text
+        center
+        color="text70"
+        pt={3}
+        children="For emergencies, call 1300 073 123 any time."
+      />
       <ContactForms defaultForm={props.defaultForm} />
     </Block>
 
     <Block textCenter>
-      <ContactAction headline="Primary message here" />
+      <ContactAction headlineColor="brandAlt" headline="Primary CTA message" />
       <Contacts />
     </Block>
 
