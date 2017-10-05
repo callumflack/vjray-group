@@ -1,3 +1,5 @@
+const site = 'group'
+
 const contactDetails = {
     phone: '1300 073 405',
     emergencyAfterHours: '0418 245 545',
@@ -62,4 +64,4 @@ const servicesList = [{
   link: false
 }]
 
-export { contactDetails, servicesIntro, servicesList }
+export { site, contactDetails, servicesIntro, servicesList }
