@@ -1,5 +1,19 @@
 const site = 'group'
 
+// Nav items with the label 'Home' will not be shown
+// in the desktop nav
+
+const navItems = [
+  {
+    label: 'Home',
+    href: '/',
+  },
+  {
+    label: 'Contact',
+    href: '/contact',
+  },
+]
+
 const contactDetails = {
     phone: '1300 073 405',
     emergencyAfterHours: '0418 245 545',
@@ -64,4 +78,4 @@ const servicesList = [{
   link: false
 }]
 
-export { site, contactDetails, servicesIntro, servicesList }
+export { site, navItems, contactDetails, servicesIntro, servicesList }
