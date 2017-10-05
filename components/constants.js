@@ -18,7 +18,7 @@ const navItems = [
   },
   {
     label: 'Valuations',
-    href: "/",
+    href: "/property-valuations",
   },
   {
     label: 'Contact',

@@ -48,5 +48,10 @@ export default {
     button: '0.025em',
     touch: '0.075em',
     meta: '0.15em',
+  },
+  blockHeights: {
+    navBar: '91px',
+    hero: '50vh',
+    superHero: '70vh'
   }
 }
