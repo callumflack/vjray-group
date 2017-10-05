@@ -7,12 +7,13 @@ export default class MyDocument extends Document {
   render () {
     const sheet = new ServerStyleSheet()
     const main = sheet.collectStyles(<Main />)
-    const styleTags = sheet.getStyleTags()
+    const styleTags = sheet.getStyleElement()
     return (
       <html>
         <Head>
           <title>My page</title>
-          <style dangerouslySetInnerHTML={{ __html: styleTags }} />
+          {styleTags}
+
           <script src='/static/js/google-calls.js'></script>
         </Head>
         <body>
