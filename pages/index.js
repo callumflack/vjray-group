@@ -23,8 +23,6 @@ import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
 import Contacts from '../components/Shared/Contacts'
 import FeatureList from '../components/Shared/FeatureList'
-
-import ContactAction from '../components/Shared/ContactAction'
 import BlockCrown from '../components/Shared/BlockCrown'
 
 
@@ -207,6 +205,7 @@ const Root = props => (
     </BlockCrown>
 
     <BlockCrown
+      maxWidth="38em"
       subhead="Visit us"
       title="Primary CTA message"
       titleColor="brandAlt"

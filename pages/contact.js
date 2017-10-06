@@ -20,7 +20,7 @@ import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
 import HeroContact from '../components/Shared/HeroGroupContact'
-import ContactAction from '../components/Shared/ContactAction'
+import BlockCrown from "../components/Shared/BlockCrown";
 
 
 
@@ -29,45 +29,41 @@ const Root = props => (
     <Header pathname={props.pathname} clear linkToStrata />
     <HeroContact />
 
-    <Block textCenter pb={[0, 0]}>
-      <Display color="brand" mb={1} children="Visit us anytime." />
-      <LargeText color="text70" children="No appointment necessary." />
-      <Box mt={0}>
-        <Contacts />
-        <SmallText color="text70" mt={[3, 4]}>
-          Looking for the Auburn office? They aren't affiliated with us.{" "}
-          <LineBreak mx="auto">
-            You can find them{" "}
-            <Link href="http://vjrayauburn.com.au/">here.</Link>
-          </LineBreak>
-        </SmallText>
-      </Box>
-    </Block>
+    <BlockCrown
+      maxWidth="38em"
+      title="Visit us anytime."
+      titleColor="brand"
+      text="No appointment necessary."
+      noBottomPadding>
+      <Contacts pathname={props.pathname} />
+      <SmallText center color="text70" mt={[3, 4]}>
+        Looking for the Auburn office? They aren't affiliated with us.{" "}
+        <LineBreak mx="auto">
+          You can find them <Link href="http://vjrayauburn.com.au/">here.</Link>
+        </LineBreak>
+      </SmallText>
+    </BlockCrown>
 
-    <Block id="contact-forms" maxWidth="48em" pb={[0, 0]}>
-      <Container textCenter>
-        <Display color="brand" mb={1} children="Write to us." />
-        <LargeText color="text70">We'll respond quick smart.</LargeText>
-      </Container>
+    <BlockCrown
+      id="contact-forms"
+      maxWidth="38em"
+      title="Write to us."
+      titleColor="brand"
+      text="We'll respond quick smart."
+      noBottomPadding>
+      <ContactForms defaultForm={props.defaultForm} />
+    </BlockCrown>
 
-      <Box mt={[3, 3, 3, 4]}>
-        <ContactForms defaultForm={props.defaultForm} />
-      </Box>
-    </Block>
-
-    <Block textCenter>
-      <Display color="brand" mb={1} children="Is it a Strata emergency?" />
-      <LargeText
-        color="text70"
-        mb={3}
-        children="For all types of after-hours repairs."
-      />
+    <BlockCrown
+      title="Is it a Strata emergency?"
+      titleColor="brand"
+      text="For all types of after-hours repairs.">
       <Link href="/emergency">
-        <PrimaryButtonText>
+        <PrimaryButtonText center>
           <Button icon bg="brand" children="Emergencies" />
         </PrimaryButtonText>
       </Link>
-    </Block>
+    </BlockCrown>
 
     <Footer />
   </Layout>

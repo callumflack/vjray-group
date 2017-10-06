@@ -14,7 +14,7 @@ const navItems = [
   },
   {
     label: 'Property Management',
-    href: "/rental-property-management-for-landlords",
+    href: "/rental-property-management",
   },
   {
     label: 'Valuations',
@@ -34,16 +34,26 @@ const contactLocationsForPathnames = {
   '/': {
     locations: ['Campsie Head Office', 'Caringbah Office'],
   },
-  '/rental-property-management-for-landlords': {
+  '/strata-management': {
+    locations: ['Campsie Head Office', 'Caringbah Office'],
+  },
+  '/rental-property-management': {
     locations: ['Campsie Head Office'],
+  },
+  '/contact': {
+    locations: ['Campsie Head Office', 'Caringbah Office'],
   }
 }
+
+// site contacts
 
 const contactDetails = {
   phone: '1300 073 405',
   emergencyAfterHours: '0418 245 545',
   emergencyBusinessHours: '9784 7900'
 }
+
+// "emergency" content object
 
 const emergencyList = [{
   headline: 'Is it due to a natural disaster?',
@@ -61,6 +71,8 @@ const emergencyList = [{
   headline: 'Is it really urgent?',
   text: 'For non-urgent repairs please use the form below and provide us as much detail as possible about your repair request.',
 }]
+
+// "services" content object
 
 const servicesIntro = 'We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. But we believe it shouldn’t stop there. Here’s how we go further:'
 
@@ -103,10 +115,36 @@ const servicesList = [{
   link: false
 }]
 
+// "Property management" content object
+
 const landlordIntro =
-  "FOR LANDLORDS We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. But we believe it shouldn’t stop there. Here’s how we go further:";
+  "Intro paragraph selling our Property Management services to both landlords and tenants going over two or three lines. This phrase takes us to three lines.";
 
 const landlordList = [{
+  icon: 'emergency',
+  headline: 'Reason One',
+  text: 'We know that emergencies don’t just happen during office hours. And rather than just leave you with the phone number for a message service we have our most senior staff on call to help you with emergency repairs, whenever they occur.',
+  link: false,
+  buttonUrl: '/emergency',
+  buttonLabel: 'Emergencies'
+}, {
+  icon: 'contents',
+  headline: 'Reason Two',
+  text: 'Many owners and residents aren’t aware that damage to their furniture and possessions is not covered by the buildings insurance. That’s why we help with arranging contents insurance too. And depending on which company the building is insured with, there can be considerable savings by reducing insurances excess amounts.',
+  link: false
+}, {
+  icon: 'bylaw',
+  headline: 'Reason Three',
+  text: 'With the introduction of the Strata Schemes Management Act 2015, the need for By-laws to be adopted and amended increased greatly. For example, did you know you often need to create a By-law BEFORE you renovate your bathroom?',
+  link: false
+}]
+
+// "Strata" content object
+
+const strataIntro =
+  "Intro paragraph selling our Strata Management services going over two or three lines.";
+
+const strataList = [{
   icon: 'emergency',
   headline: 'Reason One',
   text: 'We know that emergencies don’t just happen during office hours. And rather than just leave you with the phone number for a message service we have our most senior staff on call to help you with emergency repairs, whenever they occur.',
@@ -133,5 +171,7 @@ export {
   servicesIntro,
   servicesList,
   landlordIntro,
-  landlordList
+  landlordList,
+  strataIntro,
+  strataList
 }
