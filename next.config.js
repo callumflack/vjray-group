@@ -5,7 +5,8 @@ module.exports = {
   exportPathMap: function() {
     return {
       '/': { page: '/' },
-      '/rental-property-management-for-landlords': { page: '/rental-property-management-for-landlords' },
+      '/strata-management': { page: '/strata-management' },
+      '/rental-property-management': { page: '/rental-property-management' },
       '/contact': { page: '/contact' }
     }
   }
