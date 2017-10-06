@@ -39,6 +39,7 @@ export default {
     headline: '1.15',
     subheadline: '1.3',
     text: '1.375',
+    button: '1.75',
     feedback: '2.5'
   },
   letterSpacings: {
