@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "4.16.1",
+    "formsy-react": "0.19.5",
     "front-matter": "2.2.0",
     "grid-styled": "^2.0.0-11",
     "isomorphic-fetch": "2.2.1",
