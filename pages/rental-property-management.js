@@ -7,7 +7,7 @@ import theme from '../components/theme-new'
 import Layout from '../components/Shared/Layout'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
-import BlockCrown from "../components/Shared/BlockCrown";
+import Block from "../components/Shared/Block";
 import HeroLandlords from '../components/Shared/HeroGroupLandlords'
 import ContactForms from "../components/Shared/ContactForms";
 import Contacts from '../components/Shared/Contacts'
@@ -25,26 +25,26 @@ const Root = props => (
     <Header pathname={props.pathname} clear linkToStrata />
     <HeroLandlords />
 
-    <BlockCrown 
+    <Block 
       maxWidth="48em" 
       textLeft 
       noBottomPadding 
       text={landlordIntro} />
 
-    <BlockCrown maxWidth="48em" noBottomPadding>
+    <Block maxWidth="48em" noBottomPadding>
       {landlordList.map((item, i) => <IconListItem item={item} key={i} />)}
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
+    <Block
       id="appraisal-forms"
       maxWidth="38em"
       titleColor="brand"
       title="Get an appraisal."
       text="We'll respond quick smart.">
       <ContactForms defaultForm={props.defaultForm} />
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
+    <Block
       bg="text7"
       maxWidth="38em"
       subhead="useful info"
@@ -56,15 +56,15 @@ const Root = props => (
           <Button icon bg="brandAlt" children="Find forms and info" />
         </PrimaryButtonText>
       </Link>
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
+    <Block
       maxWidth="38em"
       subhead="get in touch"
       titleColor="brand"
       title="Primary CTA message.">
       <Contacts width={1/2} pathname={props.pathname} />
-    </BlockCrown>
+    </Block>
 
     <Footer />
   </Layout>

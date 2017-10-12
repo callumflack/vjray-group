@@ -5,7 +5,7 @@ import Layout from '../components/Shared/Layout'
 import { TextBlock } from '../components/Shared/Text'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
-import Block from '../components/Shared/Block'
+import BlockWrapper from '../components/Shared/BlockWrapper'
 
 
 const Root = props => (
@@ -13,9 +13,9 @@ const Root = props => (
     <Header clear />
 
     <Box style={{ marginTop: '45px' }}>
-      <Block mw='sm'>
+      <BlockWrapper maxWidth='42em'>
         <TextBlock dangerouslySetInnerHTML={{__html: props.terms.body.html}} />
-      </Block>
+      </BlockWrapper>
     </Box>
 
     <Footer />

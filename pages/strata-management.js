@@ -7,61 +7,68 @@ import theme from '../components/theme-new'
 import Layout from '../components/Shared/Layout'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
-import BlockCrown from "../components/Shared/BlockCrown";
-import HeroStrataManagement from '../components/Shared/HeroGroupStrataManagement'
-import ContactForms from "../components/Shared/ContactForms";
-import Contacts from '../components/Shared/Contacts'
+import Block from "../components/Shared/Block";
+import HeroBlock from "../components/Shared/HeroBlock";
+import HGroup from "../components/Shared/HGroup";
+// import HeroStrataManagement from '../components/Shared/HeroGroupStrataManagement'
+// import Contacts from '../components/Shared/Contacts'
 
 import icons from "../components/Shared/iconConstants";
 import { strataIntro, strataList } from "../components/constants";
 import IconListItem from "../components/Shared/IconListItem";
-import { PrimaryButtonText } from "../components/Shared/Texts";
+import LineBreak from "../components/Shared/LineBreak";
+import { Display, Subheading } from "../components/Shared/Headings";
+import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
 import { Button } from "../components/Shared/Buttons";
 
 
 
+{/* <HeroStrataManagement /> */}
+
 const Root = props => (
   <Layout>
     <Header pathname={props.pathname} clear linkToStrata />
-    <HeroStrataManagement />
+    
+    <HeroBlock 
+      bg="beige"
+      img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1507788260/hero-home-171012_epyqlz.jpg"
+    >
+      <HGroup 
+        subhead="We make it easy"
+        subheadColor="brand"
+        title="Skip the hassle of Strata Management headline."
+        titleColor="brand"
+        text="At VJ Ray Strata, we understand how valuable your peace of mind is."
+        largeTextColor="text"
+      />
+    </HeroBlock>
 
-    <BlockCrown 
-      maxWidth="48em" 
-      textLeft 
-      noBottomPadding 
-      text={strataIntro} />
+    <Block
+      maxWidth="48em"
+      noBottomPadding
+      title="It all adds up to a better deal."
+      titleFamily="displayMedium"
+      text={<span>"You guys are very quick to respond and handle things efficiently, no complaints here!"&nbsp;<LineBreak><AuthorText>— Terry & Linda, Caringbah</AuthorText></LineBreak></span>}
+      textIsLast
+    />
 
-    <BlockCrown maxWidth="48em">
+    <Block maxWidth="48em" noBottomPadding>
       {strataList.map((item, i) => <IconListItem item={item} key={i} />)}
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
-      bg="text7"
-      maxWidth="38em"
-      subhead="Make strata easy"
-      titleColor="brand"
-      title="Visit our Strata site."
-      text="Reason to click thru.">
+    <Block maxWidth="38em" subhead="Find out more">
       <Link href="/emergency">
         <PrimaryButtonText center>
-          <Button icon bg="brandAlt" children="Visit VJ Ray Strata" />
+          <Button icon bg="brand" children="Visit VJ Ray Strata" />
         </PrimaryButtonText>
       </Link>
-    </BlockCrown>
-
-    <BlockCrown
-      maxWidth="38em"
-      subhead="get in touch"
-      titleColor="brand"
-      title="Primary CTA message.">
-      <Contacts pathname={props.pathname} />
-    </BlockCrown>
+    </Block>
 
     <Footer />
   </Layout>
 );
 
-class ContactPage extends React.Component {
+class StrataPage extends React.Component {
   static async getInitialProps({ pathname, query }) {
     return {
       pathname,
@@ -74,4 +81,4 @@ class ContactPage extends React.Component {
   }
 }
 
-export default ContactPage
+export default StrataPage

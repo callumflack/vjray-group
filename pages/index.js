@@ -1,9 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
-
-// import gql from "graphql-tag";
-// import apollo from "../lib/apollo";
-// import fetchMarkdown from "../lib/fetchMarkdown.js"
+import fetchMarkdown from "../lib/fetch-markdown.js";
 
 import styled from 'styled-components'
 import { Flex, Box } from 'rebass'
@@ -20,12 +17,9 @@ import HeroStrata from '../components/Shared/HeroGroupStrata'
 import ContactForms from '../components/Shared/ContactForms.js'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
-import Block from '../components/Shared/Block'
 import Contacts from '../components/Shared/Contacts'
 import FeatureList from '../components/Shared/FeatureList'
-import BlockCrown from '../components/Shared/BlockCrown'
-
-
+import Block from '../components/Shared/Block'
 
 
 const TextBlockWrapper = styled(Flex)`
@@ -41,37 +35,48 @@ const Root = props => (
   <Layout>
     <Header pathname={props.pathname} clear linkToStrata />
 
-    <HeroHome
-      headline="The Real Estate team experienced in helping people."
-      button
-    />
+    <HeroHome />
 
-    <BlockCrown
+    <Block
       crownWidth="42em"
       heading="With our end-to-end services range, we've got you covered."
       headingFamily="displayMedium"
-      text="{<span>You guys are very quick to respond and handle things efficiently, no complaints here! <LineBreak><AuthorText>— Terry & Linda, Caringbah</AuthorText></LineBreak></span>}"
+      text={
+        <span>
+          "You guys are very quick to respond and handle things efficiently, no
+          complaints here!"&nbsp;
+          <LineBreak>
+            <AuthorText>— Terry & Linda, Caringbah</AuthorText>
+          </LineBreak>
+        </span>
+      }
     >
-      <FeatureList border />
-    </BlockCrown>
+      <FeatureList />
+    </Block>
 
     <HeroStrata
       subhead="Dependable and effective"
       title="We believe in better <LineBreak>Strata Management </LineBreak><LineBreak>for Sydney.</LineBreak>"
-      text="This paragraph is about how 50% of Sydney’s population will live in Strata management by 2020, about VJ Ray's history in Sydney, how they love Sydney. All pain points that hit customers and call their action."
+      text="This paragraph is about how 50% of Sydney’s population will live in Strata management by 2020, and about VJ Ray's history in and love for Sydney."
     />
 
-    <BlockCrown
+    <Block
       bg="text7"
       maxWidth="48em"
       title="Our duty is your satisfaction."
       titleFamily="displayMedium"
       titleColor="text"
       largeTextColor="brand"
-      text="“I’ve been working for VJ Ray for over three decades and in that time,
+      text={
+        <span>
+          “I’ve been working for VJ Ray for over three decades and in that time,
           I’ve seen many things in Real Estate change. But at heart of great
           business is great customer service. That’s what we pride ourselves on
-          here at VJ Ray”<AuthorText>— Mike Pollard, Managing Director</AuthorText>"
+          here at VJ Ray”<AuthorText>
+            — Mike Pollard, Managing Director
+          </AuthorText>
+        </span>
+      }
     >
       <Flex
         direction={["column", "column", "row"]}
@@ -91,27 +96,25 @@ const Root = props => (
           px={[2, 2, 2, 3]}
           width={[1, 1, 2 / 3]}
         >
-          <TextBlock>
-            <p>
-              Way back in 1962, in a one-room office in Campsie, VJ Ray started
-              its journey in the Sydney real estate scene. Today, over 55 years
-              later, our Strata Team has 27 staff, all with just one goal, to
-              help people. VJ Ray is a family company that was started by Leon
-              Pollard and is currently owned and operated by his son Mike
-              Pollard. The guiding principal behind the VJ Ray culture has been
-              to maintain the original family company atmosphere that is so
-              often lost as companies grow into corporate giants. At VJ Ray we
-              know that our job is much more that just looking after buildings,
-              its about caring for and helping the people that own or live in
-              those buildings. It's the people that matter. That's why our
-              mission statement is so simple. We Help People.
-            </p>
-          </TextBlock>
+          <TextBlock
+            dangerouslySetInnerHTML={{ __html: props.mikesLetter.body.html }}
+          />
         </TextBlockWrapper>
       </Flex>
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
+    <Block
+      subhead="Real estate rentals"
+      title="Check our current listings"
+      titleColor="brand"
+    >
+      <Text center>
+        Mike, with no sales anymore, do you still have rentals listings? If so,
+        this will be a picture link block. If not, I'll remove this block.
+      </Text>
+    </Block>
+
+    <Block
       maxWidth="38em"
       noBottomPadding
       subhead="Contact us"
@@ -119,16 +122,16 @@ const Root = props => (
       titleColor="brandAlt"
     >
       <ContactForms defaultForm={props.defaultForm} />
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
+    <Block
       maxWidth="38em"
       subhead="Visit us"
-      title="Primary CTA message"
+      title="No appointment necessary."
       titleColor="brandAlt"
     >
       <Contacts pathname={props.pathname} />
-    </BlockCrown>
+    </Block>
 
     <Footer />
   </Layout>
@@ -137,8 +140,15 @@ const Root = props => (
 
 
 class Index extends React.Component {
-  static async getInitialProps({ pathname, query }) {
+  constructor(props) {
+    super(props);
+  }
+
+  static async getInitialProps({ req, pathname, query }) {
+    const mikesLetter = await fetchMarkdown(req, 'mikes-letter');
+    
     return {
+      mikesLetter,
       pathname,
       defaultForm: query.form
     };

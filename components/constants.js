@@ -53,6 +53,34 @@ const contactDetails = {
   emergencyBusinessHours: '9784 7900'
 }
 
+// "Home pg features" content object
+
+const featuresList = [{
+  icon: 'experience',
+  border: true,
+  headline: 'Strata Management',
+  lede: 'We\'ve pretty much seen it all, so we know how to solve it.',
+  link: '/strata-management'
+}, {
+  icon: 'lockin',
+  border: true,
+  headline: 'Property management',
+  lede: 'Stay because you\'re happy, not because you\'re stuck with us.',
+  link: '/property-management'
+}, {
+  icon: 'emergency',
+  border: true,
+  headline: 'Real estate valuations',
+  lede: 'Valuations lede here.',
+  link: '/real-estate-valuations'
+}, {
+  icon: 'emergency',
+  border: true,
+  headline: 'last feature here',
+  lede: 'Last feature lede here.',
+  link: '/contact'
+}]
+
 // "emergency" content object
 
 const emergencyList = [{
@@ -168,6 +196,7 @@ export {
   navItems,
   contactLocationsForPathnames,
   contactDetails,
+  featuresList,
   servicesIntro,
   servicesList,
   landlordIntro,

@@ -20,7 +20,7 @@ import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
 import HeroContact from '../components/Shared/HeroGroupContact'
-import BlockCrown from "../components/Shared/BlockCrown";
+import Block from "../components/Shared/Block";
 
 
 
@@ -29,7 +29,7 @@ const Root = props => (
     <Header pathname={props.pathname} clear linkToStrata />
     <HeroContact />
 
-    <BlockCrown
+    <Block
       maxWidth="38em"
       title="Visit us anytime."
       titleColor="brand"
@@ -42,9 +42,9 @@ const Root = props => (
           You can find them <Link href="http://vjrayauburn.com.au/">here.</Link>
         </LineBreak>
       </SmallText>
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
+    <Block
       id="contact-forms"
       maxWidth="38em"
       title="Write to us."
@@ -52,9 +52,9 @@ const Root = props => (
       text="We'll respond quick smart."
       noBottomPadding>
       <ContactForms defaultForm={props.defaultForm} />
-    </BlockCrown>
+    </Block>
 
-    <BlockCrown
+    <Block
       title="Is it a Strata emergency?"
       titleColor="brand"
       text="For all types of after-hours repairs.">
@@ -63,7 +63,7 @@ const Root = props => (
           <Button icon bg="brand" children="Emergencies" />
         </PrimaryButtonText>
       </Link>
-    </BlockCrown>
+    </Block>
 
     <Footer />
   </Layout>
