@@ -9,32 +9,39 @@ import theme from '../components/theme-new'
 
 import Layout from '../components/Shared/Layout'
 import Container from '../components/Shared/Container2'
-import CoverImage from '../components/Shared/CoverImage'
-import { Display, Headline, Subheadline, MobileSubheadline, HeadlineMeta } from '../components/Shared/Headline'
-import { Text, SmallText, MediumText, LargeText, PrimaryButtonText } from '../components/Shared/Texts'
-import LineBreak from "../components/Shared/LineBreak";
-import { Button } from '../components/Shared/Buttons'
-import Contacts from '../components/Shared/Contacts'
-import ContactForms from "../components/Shared/ContactForms.js";
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
-import HeroContact from '../components/Shared/HeroGroupContact'
-import Block from "../components/Shared/Block";
+import HeroBlock from '../components/Shared/HeroBlock'
+import HGroup from '../components/Shared/HGroup'
+import Contacts from "../components/Shared/Contacts.js";
+import ContactForms from "../components/Shared/ContactForms.js";
 
+import { SmallText, PrimaryButtonText } from '../components/Shared/Texts'
+import LineBreak from "../components/Shared/LineBreak";
+import { Button } from '../components/Shared/Buttons'
 
 
 const Root = props => (
   <Layout>
     <Header pathname={props.pathname} clear linkToStrata />
-    <HeroContact />
+
+    <HeroBlock beigeGradientBg img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1507852665/ashley_h9r9nh.png">
+      <HGroup
+        title="We'll help make your Real Estate Management easier."
+        titleColor="brand"
+        text="Visit, call or write to us."
+        largeTextColor="text"
+      />
+    </HeroBlock>
 
     <Block
       maxWidth="38em"
       title="Visit us anytime."
       titleColor="brand"
       text="No appointment necessary."
-      noBottomPadding>
+      noBottomPadding
+    >
       <Contacts pathname={props.pathname} />
       <SmallText center color="text70" mt={[3, 4]}>
         Looking for the Auburn office? They aren't affiliated with us.{" "}
@@ -48,21 +55,23 @@ const Root = props => (
       id="contact-forms"
       maxWidth="38em"
       title="Write to us."
-      titleColor="brand"
+      titleColor="brandAlt"
       text="We'll respond quick smart."
-      noBottomPadding>
+      noBottomPadding
+    >
       <ContactForms defaultForm={props.defaultForm} />
     </Block>
 
     <Block
       title="Is it a Strata emergency?"
       titleColor="brand"
-      text="For all types of after-hours repairs.">
-      <Link href="/emergency">
+      text="Go to our after-hours Strata repairs."
+    >
+      <a href="https://vjraystrata.com.au/">
         <PrimaryButtonText center>
           <Button icon bg="brand" children="Emergencies" />
         </PrimaryButtonText>
-      </Link>
+      </a>
     </Block>
 
     <Footer />

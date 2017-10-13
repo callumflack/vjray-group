@@ -10,20 +10,14 @@ import Footer from '../components/Shared/Footer'
 import Block from "../components/Shared/Block";
 import HeroBlock from "../components/Shared/HeroBlock";
 import HGroup from "../components/Shared/HGroup";
-// import HeroStrataManagement from '../components/Shared/HeroGroupStrataManagement'
-// import Contacts from '../components/Shared/Contacts'
 
 import icons from "../components/Shared/iconConstants";
 import { strataIntro, strataList } from "../components/constants";
 import IconListItem from "../components/Shared/IconListItem";
+import { AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
 import LineBreak from "../components/Shared/LineBreak";
-import { Display, Subheading } from "../components/Shared/Headings";
-import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
 import { Button } from "../components/Shared/Buttons";
 
-
-
-{/* <HeroStrataManagement /> */}
 
 const Root = props => (
   <Layout>
@@ -36,7 +30,7 @@ const Root = props => (
       <HGroup 
         subhead="We make it easy"
         subheadColor="brand"
-        title="Skip the hassle of Strata Management headline."
+        title="Skip the hassle of Strata Management."
         titleColor="brand"
         text="At VJ Ray Strata, we understand how valuable your peace of mind is."
         largeTextColor="text"

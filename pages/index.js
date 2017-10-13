@@ -7,19 +7,19 @@ import { Flex, Box } from 'rebass'
 
 import theme from '../components/theme-new'
 import Layout from '../components/Shared/Layout'
-import Container from '../components/Shared/Container2'
-import { Display, Heading } from '../components/Shared/Headings'
-import { Text, LargeText, MediumText, SmallText, AuthorText, TextBlock } from '../components/Shared/Texts'
-import { Subheading } from '../components/Shared/Headings'
-import LineBreak from '../components/Shared/LineBreak'
-import HeroHome from '../components/Shared/HeroGroupHome'
-import HeroStrata from '../components/Shared/HeroGroupStrata'
-import ContactForms from '../components/Shared/ContactForms.js'
 import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
-import Contacts from '../components/Shared/Contacts'
-import FeatureList from '../components/Shared/FeatureList'
 import Block from '../components/Shared/Block'
+import HeroGroupHome from '../components/Shared/HeroGroupHome'
+import HeroStrata from '../components/Shared/HeroGroupStrata'
+import FeatureList from '../components/Shared/FeatureList'
+import Contacts from '../components/Shared/Contacts'
+import ContactForms from '../components/Shared/ContactForms.js'
+
+import { Display, Heading } from "../components/Shared/Headings";
+import { Text, AuthorText, TextBlock } from "../components/Shared/Texts";
+import { Subheading } from "../components/Shared/Headings";
+import LineBreak from "../components/Shared/LineBreak";
 
 
 const TextBlockWrapper = styled(Flex)`
@@ -35,7 +35,7 @@ const Root = props => (
   <Layout>
     <Header pathname={props.pathname} clear linkToStrata />
 
-    <HeroHome />
+    <HeroGroupHome />
 
     <Block
       crownWidth="42em"

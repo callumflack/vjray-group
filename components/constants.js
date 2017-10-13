@@ -64,13 +64,13 @@ const featuresList = [{
 }, {
   icon: 'lockin',
   border: true,
-  headline: 'Property management',
+  headline: 'Property Management',
   lede: 'Stay because you\'re happy, not because you\'re stuck with us.',
   link: '/property-management'
 }, {
   icon: 'emergency',
   border: true,
-  headline: 'Real estate valuations',
+  headline: 'Real Estate Valuations',
   lede: 'Valuations lede here.',
   link: '/real-estate-valuations'
 }, {
@@ -176,14 +176,14 @@ const strataList = [{
   icon: 'emergency',
   headline: 'Reason One',
   text: 'We know that emergencies don’t just happen during office hours. And rather than just leave you with the phone number for a message service we have our most senior staff on call to help you with emergency repairs, whenever they occur.',
-  link: false,
-  buttonUrl: '/emergency',
-  buttonLabel: 'Emergencies'
+  link: false
 }, {
   icon: 'contents',
   headline: 'Reason Two',
   text: 'Many owners and residents aren’t aware that damage to their furniture and possessions is not covered by the buildings insurance. That’s why we help with arranging contents insurance too. And depending on which company the building is insured with, there can be considerable savings by reducing insurances excess amounts.',
-  link: false
+  link: false,
+  buttonUrl: '/emergency',
+  buttonLabel: 'Emergencies'
 }, {
   icon: 'bylaw',
   headline: 'Reason Three',
