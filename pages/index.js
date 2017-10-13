@@ -11,7 +11,7 @@ import Header from '../components/Shared/Header'
 import Footer from '../components/Shared/Footer'
 import Block from '../components/Shared/Block'
 import HeroGroupHome from '../components/Shared/HeroGroupHome'
-import HeroStrata from '../components/Shared/HeroGroupStrata'
+import HeroGroupHomeStrata from '../components/Shared/HeroGroupStrata'
 import FeatureList from '../components/Shared/FeatureList'
 import Contacts from '../components/Shared/Contacts'
 import ContactForms from '../components/Shared/ContactForms.js'
@@ -54,7 +54,7 @@ const Root = props => (
       <FeatureList />
     </Block>
 
-    <HeroStrata
+    <HeroGroupHomeStrata
       subhead="Dependable and effective"
       title="We believe in better <LineBreak>Strata Management </LineBreak><LineBreak>for Sydney.</LineBreak>"
       text="This paragraph is about how 50% of Sydney’s population will live in Strata management by 2020, and about VJ Ray's history in and love for Sydney."
