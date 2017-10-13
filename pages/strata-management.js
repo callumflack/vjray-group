@@ -6,7 +6,7 @@ import theme from '../components/theme-new'
 
 import Layout from '../components/Shared/Layout'
 import Header from '../components/Shared/Header'
-import Footer from '../components/Shared/Footer'
+import Footer from '../components/Shared/FooterGroup'
 import Block from "../components/Shared/Block";
 import HeroBlock from "../components/Shared/HeroBlock";
 import HGroup from "../components/Shared/HGroup";

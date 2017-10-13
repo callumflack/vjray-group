@@ -66,7 +66,7 @@ const featuresList = [{
   border: true,
   headline: 'Property Management',
   lede: 'Stay because you\'re happy, not because you\'re stuck with us.',
-  link: '/property-management'
+  link: '/rental-property-management'
 }, {
   icon: 'emergency',
   border: true,

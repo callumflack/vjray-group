@@ -5,7 +5,7 @@ import { Box } from 'rebass'
 import Layout from '../components/Shared/Layout'
 import { TextBlock } from '../components/Shared/Text'
 import Header from '../components/Shared/Header'
-import Footer from '../components/Shared/Footer'
+import Footer from '../components/Shared/FooterGroup'
 import BlockWrapper from '../components/Shared/BlockWrapper'
 
 
