@@ -11,9 +11,11 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
+          <script src='/static/js/google-tag-manager.js'></script>
+          <script src='/static/js/google-calls.js'></script>
+
           <title>My page</title>
           <script dangerouslySetInnerHTML={{ __html: styleTags }} />
-          <script src='/static/js/google-calls.js'></script>
         </Head>
         <body>
           <Provider theme={theme} className='root'>
