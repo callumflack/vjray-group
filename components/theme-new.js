@@ -1,7 +1,7 @@
 export default {
   breakpoints: [32, 48, 64, 80, 96],
   space: [0, 4, 8, 16, 32, 64, 128, 160],
-  fontSizes: [11, 13, 16, 18, 21, 27, 36, 48],
+  fontSizes: [11, 13, 15, 18, 21, 27, 36, 48],
   colors: {
     text: '#4a4a55',
     text70: '#818188',
@@ -13,6 +13,7 @@ export default {
     brandStrata: '#c90b50',
     brandAlt: "#404070",
     brandAlt70: '#797A9A',
+    brandAlt7: "#f3f3f5",
     beige: '#F7F2EC',
     offBlue: '#e8f6fb',
     offWhite: '#f6f6f6',
@@ -49,7 +50,7 @@ export default {
     tight: '-0.02em',
     button: '0.025em',
     touch: '0.075em',
-    meta: '0.1em',
+    meta: '0.15em',
   },
   blockHeights: {
     navBar: '91px',

@@ -40,6 +40,9 @@ const contactLocationsForPathnames = {
   '/rental-property-management': {
     locations: ['Campsie Head Office'],
   },
+  '/forms-and-fact-sheets': {
+    locations: ['Campsie Head Office', 'Caringbah Office'],
+  },
   '/contact': {
     locations: ['Campsie Head Office', 'Caringbah Office'],
   }
@@ -191,6 +194,20 @@ const strataList = [{
   link: false
 }]
 
+// Facts and forms
+
+const forms = [{
+  headline: 'Form example headline',
+  subheadline: 'Form example subheadline',
+  link: '/static/forms/example.pdf'
+}]
+
+const factSheets = [{
+  headline: 'Fact Sheet example headline',
+  subheadline: 'Fact Sheet example subheadline',
+  link: '/static/fact-sheets/example.pdf'
+}]
+
 export {
   site,
   navItems,
@@ -202,5 +219,7 @@ export {
   landlordIntro,
   landlordList,
   strataIntro,
-  strataList
+  strataList,
+  forms,
+  factSheets
 }

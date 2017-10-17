@@ -29,7 +29,7 @@ const Root = props => (
     >
       <HGroup 
         subhead="We make it easy"
-        subheadColor="brand"
+        subheadColor="text"
         title="Skip the hassle of Strata Management."
         titleColor="brand"
         text="At VJ Ray Strata, we understand how valuable your peace of mind is."
@@ -42,8 +42,8 @@ const Root = props => (
       noBottomPadding
       title="It all adds up to a better deal."
       titleFamily="displayMedium"
-      text={<span>"You guys are very quick to respond and handle things efficiently, no complaints here!"&nbsp;<LineBreak><AuthorText>— Terry & Linda, Caringbah</AuthorText></LineBreak></span>}
       textIsLast
+      text={<span>"You guys are very quick to respond and handle things efficiently, no complaints here!"&nbsp;<LineBreak><AuthorText>— Terry & Linda, Caringbah</AuthorText></LineBreak></span>}
     />
 
     <Block maxWidth="48em" noBottomPadding>

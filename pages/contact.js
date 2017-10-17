@@ -28,7 +28,7 @@ const Root = props => (
 
     <HeroBlock beigeGradientBg img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1507852665/ashley_h9r9nh.png">
       <HGroup
-        title="We'll make your Real Estate Management easier."
+        title="Here to help make your Real Estate Management easier."
         titleColor="brand"
         text="Visit, call or write to us."
         largeTextColor="text"
@@ -38,7 +38,7 @@ const Root = props => (
     <Block
       maxWidth="38em"
       title="Visit us anytime."
-      titleColor="text"
+      titleColor="brandAlt"
       text="No appointment needed."
       noBottomPadding
     >

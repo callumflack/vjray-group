@@ -11,6 +11,8 @@ import Block from "../components/Shared/Block";
 import HeroBlock from "../components/Shared/HeroBlock";
 import HGroup from "../components/Shared/HGroup";
 import ContactForms from "../components/Shared/ContactForms";
+import { FormHeader } from "../components/Shared/Form";
+import FormContact from "../components/Shared/FormContact";
 import Contacts from '../components/Shared/Contacts'
 
 import icons from "../components/Shared/iconConstants";
@@ -25,58 +27,58 @@ import { Button } from "../components/Shared/Buttons";
 
 const Root = props => (
   <Layout>
-    <Header pathname={props.pathname} clear linkToStrata />
+    <Header pathname={props.pathname} clear color="brandAlt" />
 
     <HeroBlock
       blueGradientBg
       img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1507860456/wife_o6eith.png"
     >
       <HGroup
-        subhead="Subheader"
+        subhead="Experienced & Dependable"
         subheadColor="text"
-        title="Rental Property Management headline."
-        titleColor="brand"
-        text="Lede."
-        largeTextColor="text"
+        title="We'll sort it without fuss & with a smile."
+        titleColor="brandAlt"
+        text="This is a lead-in line to help people scroll down to the content."
+        largeTextColor="text70"
       />
     </HeroBlock>
 
-    <Block
-      crownWidth="42em"
-      text={
-        <span>
-          "You guys are very quick to respond and handle things efficiently, no
-          complaints here!"&nbsp;
-          <LineBreak>
-            <AuthorText>— Terry & Linda, Caringbah</AuthorText>
-          </LineBreak>
-        </span>
-      }
-      textIsLast
-      noBottomPadding
-    />
-
-    <Block maxWidth="64em" noBottomPadding>
-      <img src="static/img/landlords.jpg" alt="" />
+    <Block maxWidth="62em" noBottomPadding>
+      <img src="static/img/landlords-04.png" alt="" />
     </Block>
 
     <Block
       id="appraisal-forms"
       maxWidth="38em"
-      titleColor="brandAlt"
-      title="Get an appraisal."
-      text="We'll respond quick smart."
+      noTopPadding
     >
-      <ContactForms defaultForm={props.defaultForm} />
+      <FormHeader
+        bg="brand"
+        color="white"
+        mt={4}
+        children="Get a landlord appraisal"
+      />
+      <FormContact border defaultForm={props.defaultForm} />
+    </Block>
+
+    <Block 
+      maxWidth="62em"
+      bg="brandAlt7"
+    >
+      <img src="static/img/tenants-01.png" alt="" />
     </Block>
 
     <Block
-      bg="text7"
       maxWidth="38em"
       subhead="Facts & forms"
-      text="Need a form or a fact? Here's all our readily available PDF downloads to help make your real estate management easy."
+      text={
+        <span>
+          <em>Need a form or a fact?</em> Here's all our readily available PDF
+          downloads to help make your real estate management easy.
+        </span>
+      }
     >
-      <Link href="/emergency">
+      <Link href="/forms-and-fact-sheets">
         <PrimaryButtonText center>
           <Button icon bg="brandAlt" children="See the list" />
         </PrimaryButtonText>
@@ -85,11 +87,12 @@ const Root = props => (
 
     <Block
       maxWidth="38em"
+      border
       subhead="Talk in person"
       titleColor="brandAlt"
-      title="No appointment needed."
+      title="Visit our Campsie office."
     >
-      <Contacts width='27em' pathname={props.pathname} />
+      <Contacts width="21em" pathname={props.pathname} />
     </Block>
 
     <Footer />
@@ -105,7 +108,7 @@ class ContactPage extends React.Component {
   }
 
   render() {
-    return <Root {...this.props} />;
+    return <Root {...this.props} />
   }
 }
 

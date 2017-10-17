@@ -3,7 +3,7 @@ import Link from 'next/link';
 import fetchMarkdown from "../lib/fetch-markdown.js";
 
 import styled from 'styled-components'
-import { Flex, Box } from 'rebass'
+import { Flex, Box, Relative } from 'rebass'
 
 import theme from '../components/theme-new'
 import Layout from '../components/Shared/Layout'
@@ -17,9 +17,10 @@ import Contacts from '../components/Shared/Contacts'
 import ContactForms from '../components/Shared/ContactForms.js'
 
 import { Display, Heading } from "../components/Shared/Headings";
-import { Text, AuthorText, TextBlock } from "../components/Shared/Texts";
+import { Text, AuthorText, PrimaryButtonText, TextBlock } from "../components/Shared/Texts";
 import { Subheading } from "../components/Shared/Headings";
 import LineBreak from "../components/Shared/LineBreak";
+import { Button } from "../components/Shared/Buttons";
 
 
 const TextBlockWrapper = styled(Flex)`
@@ -30,6 +31,41 @@ const TextBlockWrapper = styled(Flex)`
     margin: 0;
   }
 `
+
+const ListingsBoxWrapper = styled(Box)`
+  position: relative;
+  height: 450px;
+`
+
+const ListingsBox = styled(Box)`
+  align-items: center;
+  background-image: url("/static/img/listings-alt-66.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: 0;
+  // border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+  &:before {
+    background-color: rgba(18, 150, 222, 0.25);
+    background-color: rgba(121, 122, 154, 0.5);
+    background-blend-mode: multiply;
+    bottom: 0;
+    // border-radius: 999px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+`;
+
 
 const Root = props => (
   <Layout>
@@ -104,19 +140,31 @@ const Root = props => (
     </Block>
 
     <Block
+      maxWidth="48em"
+      noBottomPadding
       subhead="Real estate rentals"
       title="Check our current listings"
-      titleColor="brand"
+      titleColor="brandAlt"
     >
-      <Text center>
-        Mike, with no sales anymore, do you still have rentals listings? If so,
-        this will be a picture link block. If not, I'll remove this block.
-      </Text>
+      <ListingsBoxWrapper mt={[2, 3, 4]}>
+        <ListingsBox>
+          <Relative>
+            <Link href="https://www.realestate.com.au/agency/vj-ray-pty-ltd-campsie-VJSCAM">
+              <a>
+                <PrimaryButtonText center>
+                  <Button bg="white" color="brandAlt" px={3} icon>
+                    Real Estate rentals
+                  </Button>
+                </PrimaryButtonText>
+              </a>
+            </Link>
+          </Relative>
+        </ListingsBox>
+      </ListingsBoxWrapper>
     </Block>
 
     <Block
       maxWidth="38em"
-      noBottomPadding
       subhead="Contact us"
       title="How can we help?"
       titleColor="brandAlt"
@@ -125,6 +173,7 @@ const Root = props => (
     </Block>
 
     <Block
+      border
       maxWidth="38em"
       subhead="Visit us"
       title="No appointment necessary."
