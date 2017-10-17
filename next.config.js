@@ -7,7 +7,9 @@ module.exports = {
       '/': { page: '/' },
       '/strata-management': { page: '/strata-management' },
       '/rental-property-management': { page: '/rental-property-management' },
-      '/contact': { page: '/contact' }
+      '/contact': { page: '/contact' },
+      '/privacy-policy': { page: '/privacy-policy' },
+      '/terms-of-use': { page: '/terms-of-use' }
     }
   }
 }

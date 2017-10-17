@@ -144,9 +144,9 @@ class Index extends React.Component {
     super(props);
   }
 
-  static async getInitialProps({ req, pathname, query }) {
-    const mikesLetter = await fetchMarkdown(req, 'mikes-letter');
-    
+  static async getInitialProps({ pathname, query }) {
+    const mikesLetter = await fetchMarkdown('mikes-letter');
+
     return {
       mikesLetter,
       pathname,

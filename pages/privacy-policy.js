@@ -28,8 +28,8 @@ class TermsPage extends React.Component {
     super(props);
   }
 
-  static async getInitialProps({ req, pathname }) {
-    const privacy = await fetchMarkdown(req, 'privacy');
+  static async getInitialProps({ pathname }) {
+    const privacy = await fetchMarkdown('privacy');
 
     return {
       privacy,

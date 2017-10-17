@@ -27,8 +27,8 @@ class TermsPage extends React.Component {
     super(props);
   }
 
-  static async getInitialProps({ req, pathname }) {
-    const terms = await fetchMarkdown(req, 'terms');
+  static async getInitialProps({ pathname }) {
+    const terms = await fetchMarkdown('terms');
 
     return {
       terms,

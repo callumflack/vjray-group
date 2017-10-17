@@ -19,3 +19,22 @@ If you have already cloned the repo but are missing the submodules run:
 ```sh
 git submodule update --init
 ```
+
+## Exporting to static build
+
+Only pages listed in the next.config.js exportPathMap will be exported
+
+In one terminal run:
+
+```sh
+npm run dev
+```
+
+In another run:
+
+```sh
+npm run build
+npm run export
+```
+
+The exported site will be saved in out/
