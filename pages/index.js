@@ -75,7 +75,7 @@ const Root = props => (
 
     <Block
       crownWidth="42em"
-      heading="With our end-to-end services range, we've got you covered."
+      heading="We specialise in Real Estate Management services."
       headingFamily="displayMedium"
       text={
         <span>
@@ -91,9 +91,9 @@ const Root = props => (
     </Block>
 
     <HeroGroupHomeStrata
-      subhead="Dependable and effective"
+      subhead="A focus on people"
       title="We believe in better <LineBreak>Strata Management </LineBreak><LineBreak>for Sydney.</LineBreak>"
-      text="This paragraph is about how 50% of Sydney’s population will live in Strata management by 2020, and about VJ Ray's history in and love for Sydney."
+      text="It's said that by 2020, over 50% of Sydney's population will be living or working in a Strata property. That's why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
     />
 
     <Block
@@ -106,7 +106,7 @@ const Root = props => (
       text={
         <span>
           “I’ve been working for VJ Ray for over three decades and in that time,
-          I’ve seen many things in Real Estate change. But at heart of great
+          I’ve seen many things in Real Estate change. But at the heart of great
           business is great customer service. That’s what we pride ourselves on
           here at VJ Ray”<AuthorText>
             — Mike Pollard, Managing Director

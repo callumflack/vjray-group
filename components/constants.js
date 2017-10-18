@@ -76,12 +76,6 @@ const featuresList = [{
   headline: 'Real Estate Valuations',
   lede: 'Valuations lede here.',
   link: '/real-estate-valuations'
-}, {
-  icon: 'emergency',
-  border: true,
-  headline: 'last feature here',
-  lede: 'Last feature lede here.',
-  link: '/contact'
 }]
 
 // "emergency" content object
