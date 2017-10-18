@@ -44,7 +44,7 @@ const Root = props => (
     </HeroBlock>
 
     <Block maxWidth="62em" noBottomPadding>
-      <img src="static/img/landlords-04.png" alt="" />
+      <img src="/static/img/landlords-04.png" alt="" />
     </Block>
 
     <Block
@@ -65,7 +65,7 @@ const Root = props => (
       maxWidth="62em"
       bg="brandAlt7"
     >
-      <img src="static/img/tenants-01.png" alt="" />
+      <img src="/static/img/tenants-01.png" alt="" />
     </Block>
 
     <Block

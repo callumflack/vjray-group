@@ -30,15 +30,6 @@
     "styled-components": "2.1.2",
     "styled-system": "^1.0.5"
   },
-  "now": {
-    "alias": [
-      "vjray-group.now.sh"
-    ],
-    "env": {
-      "NODE_ENV": "production",
-      "SERVER_URI": "@vjr_server_uri"
-    }
-  },
   "devDependencies": {
     "eslint-config-airbnb": "^15.1.0",
     "eslint-plugin-import": "^2.7.0",
