@@ -1,25 +1,18 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
+import Link from 'next/link';
 
-import { contactDetails } from '../components/constants'
+import Layout from '../components/Shared/Layout';
+import Header from '../components/Shared/Header';
+import Footer from '../components/Shared/FooterGroup';
+import Block from '../components/Shared/Block';
+import HeroBlock from '../components/Shared/HeroBlock';
+import HGroup from '../components/Shared/HGroup';
+import Contacts from '../components/Shared/Contacts';
+import ContactForms from '../components/Shared/ContactForms';
 
-import styled, { css } from 'styled-components'
-import { Flex, Box } from 'rebass'
-import theme from '../components/theme-new'
-
-import Layout from '../components/Shared/Layout'
-import Container from '../components/Shared/Container2'
-import Header from '../components/Shared/Header'
-import Footer from '../components/Shared/FooterGroup'
-import Block from '../components/Shared/Block'
-import HeroBlock from '../components/Shared/HeroBlock'
-import HGroup from '../components/Shared/HGroup'
-import Contacts from "../components/Shared/Contacts.js";
-import ContactForms from "../components/Shared/ContactForms.js";
-
-import { SmallText, PrimaryButtonText } from '../components/Shared/Texts'
-import LineBreak from "../components/Shared/LineBreak";
-import { Button } from '../components/Shared/Buttons'
+import { SmallText, PrimaryButtonText } from '../components/Shared/Texts';
+import LineBreak from '../components/Shared/LineBreak';
+import { Button } from '../components/Shared/Buttons';
 
 
 const Root = props => (
@@ -44,7 +37,7 @@ const Root = props => (
     >
       <Contacts pathname={props.pathname} />
       <SmallText center color="text70" mt={[3, 4]}>
-        Looking for the Auburn office? They aren't affiliated with us.{" "}
+        Looking for the Auburn office? They aren't affiliated with us.
         <LineBreak mx="auto">
           You can find them <Link href="http://vjrayauburn.com.au/">here.</Link>
         </LineBreak>

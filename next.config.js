@@ -2,7 +2,7 @@
 // https://github.com/zeit/next.js#static-html-export
 
 module.exports = {
-  exportPathMap: function() {
+  exportPathMap: () => {
     return {
       '/': { page: '/' },
       '/strata-management': { page: '/strata-management' },

@@ -1,20 +1,18 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
-import styled, { css } from 'styled-components'
-import { Box, Flex } from 'rebass'
-import Layout from '../components/Shared/Layout'
-import Header from '../components/Shared/Header'
+import styled from 'styled-components';
+import { Box, Flex } from 'rebass';
 
-import HeroBlock from '../components/Shared/HeroBlock'
-import HGroup from '../components/Shared/HGroup'
-import Block from '../components/Shared/Block'
-import { HeroBox, HeroContainer, HeroFlex, HeroTitleBox } from "../components/Shared/Hero";
-
-import Contacts from '../components/Shared/Contacts'
-import Footer from '../components/Shared/FooterGroup'
-import { LargeText, Text } from '../components/Shared/Texts'
-import { forms, factSheets } from '../components/constants'
-import theme from "../components/theme-new";
+import Layout from '../components/Shared/Layout';
+import Header from '../components/Shared/Header';
+import HGroup from '../components/Shared/HGroup';
+import Block from '../components/Shared/Block';
+import { HeroBox, HeroContainer, HeroFlex } from '../components/Shared/Hero';
+import Contacts from '../components/Shared/Contacts';
+import Footer from '../components/Shared/FooterGroup';
+import { LargeText, Text } from '../components/Shared/Texts';
+import { forms, factSheets } from '../components/constants';
+import theme from '../components/theme-new';
 
 
 const ListItemRoot = styled(Box)`
@@ -87,8 +85,8 @@ class FormsAndFactsPage extends React.Component {
   }
 
   render() {
-    return <Root {...this.props} />
+    return <Root {...this.props} />;
   }
 }
 
-export default FormsAndFactsPage
+export default FormsAndFactsPage;

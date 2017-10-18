@@ -1,26 +1,23 @@
-import React from 'react'
+import React from 'react';
 import Link from 'next/link';
-import fetchMarkdown from "../lib/fetch-markdown.js";
+import styled from 'styled-components';
+import { Flex, Box, Relative } from 'rebass';
 
-import styled from 'styled-components'
-import { Flex, Box, Relative } from 'rebass'
+import fetchMarkdown from '../lib/fetch-markdown';
 
-import theme from '../components/theme-new'
-import Layout from '../components/Shared/Layout'
-import Header from '../components/Shared/Header'
-import Footer from '../components/Shared/FooterGroup'
-import Block from '../components/Shared/Block'
-import HeroGroupHome from '../components/Shared/HeroGroupHome'
-import HeroGroupHomeStrata from '../components/Shared/HeroGroupHomeStrata'
-import FeatureList from '../components/Shared/FeatureList'
-import Contacts from '../components/Shared/Contacts'
-import ContactForms from '../components/Shared/ContactForms.js'
-
-import { Display, Heading } from "../components/Shared/Headings";
-import { Text, AuthorText, PrimaryButtonText, TextBlock } from "../components/Shared/Texts";
-import { Subheading } from "../components/Shared/Headings";
-import LineBreak from "../components/Shared/LineBreak";
-import { Button } from "../components/Shared/Buttons";
+import theme from '../components/theme-new';
+import Layout from '../components/Shared/Layout';
+import Header from '../components/Shared/Header';
+import Footer from '../components/Shared/FooterGroup';
+import Block from '../components/Shared/Block';
+import HeroGroupHome from '../components/Shared/HeroGroupHome';
+import HeroGroupHomeStrata from '../components/Shared/HeroGroupHomeStrata';
+import FeatureList from '../components/Shared/FeatureList';
+import Contacts from '../components/Shared/Contacts';
+import ContactForms from '../components/Shared/ContactForms';
+import { Text, AuthorText, PrimaryButtonText, TextBlock } from '../components/Shared/Texts';
+import LineBreak from '../components/Shared/LineBreak';
+import { Button } from '../components/Shared/Buttons';
 
 
 const TextBlockWrapper = styled(Flex)`
@@ -30,12 +27,12 @@ const TextBlockWrapper = styled(Flex)`
   @media (min-width: ${theme.breakpoints[0]}) {
     margin: 0;
   }
-`
+`;
 
 const ListingsBoxWrapper = styled(Box)`
   position: relative;
   height: 450px;
-`
+`;
 
 const ListingsBox = styled(Box)`
   align-items: center;
@@ -199,7 +196,7 @@ class Index extends React.Component {
     return {
       mikesLetter,
       pathname,
-      defaultForm: query.form
+      defaultForm: query.form,
     };
   }
   render() {
