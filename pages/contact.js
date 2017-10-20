@@ -60,7 +60,7 @@ const Root = props => (
       titleColor="brand"
       text="Go to our after-hours Strata repairs."
     >
-      <a href="https://vjraystrata.com.au/">
+      <a href='https://vjraystrata.com.au/emergency'>
         <PrimaryButtonText center>
           <Button icon bg="brand" children="Emergencies" />
         </PrimaryButtonText>
