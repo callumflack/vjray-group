@@ -1,25 +1,19 @@
-import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-import { ServerStyleSheet } from 'styled-components';
+import Document, { Head, Main, NextScript } from "next/document";
+import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
-  static getInitialProps({ renderPage }) {
-    const sheet = new ServerStyleSheet();
-    const page = renderPage(App => props =>
-      sheet.collectStyles(<App {...props} />)
-    );
-    const styleTags = sheet.getStyleElement();
-    return { ...page, styleTags };
-  }
-
   render() {
+    const sheet = new ServerStyleSheet();
+    const main = sheet.collectStyles(<Main />);
+    const styleTags = sheet.getStyleTags();
+
     return (
       <html>
         <Head>
           <script>dataLayer = [];</script>
           <script src="/static/js/google-tag-manager.js" />
           <title>My page</title>
-          {this.props.styleTags}
+          <style dangerouslySetInnerHTML={{ __html: styleTags }} />
         </Head>
         <body>
           <noscript
@@ -27,8 +21,10 @@ export default class MyDocument extends Document {
               __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNFDHLZ" height="0" width="0" style="display:none;visibility:hidden;"></iframe>`
             }}
           />
-          <Main />
+
+          <div className="root">{main}</div>
           <NextScript />
+          
         </body>
       </html>
     );
