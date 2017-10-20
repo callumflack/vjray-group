@@ -114,7 +114,7 @@ const Root = props => (
       <Flex
         direction={["column", "column", "row"]}
         mx={[-2, -2, -2, -3]}
-        mt={4}
+        mt={5}
       >
         <Flex column width={[1, 1, 1 / 3]} px={[4, 2, null, 3]}>
           <Box mt="6px">

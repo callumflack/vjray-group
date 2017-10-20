@@ -50,7 +50,7 @@ export default {
     tight: '-0.02em',
     button: '0.025em',
     touch: '0.075em',
-    meta: '0.15em',
+    meta: '0.1em',
   },
   blockHeights: {
     navBar: '91px',
