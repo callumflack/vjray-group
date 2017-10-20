@@ -1,8 +1,5 @@
-import React from 'react'
-import Link from 'next/link'
-import styled, { css } from 'styled-components'
-import { Flex, Box } from 'rebass'
-import theme from '../components/theme-new'
+import React from "react";
+import Link from "next/link";
 
 import Layout from "../components/Shared/Layout";
 import Header from "../components/Shared/Header";
@@ -10,20 +7,11 @@ import Footer from "../components/Shared/FooterGroup";
 import Block from "../components/Shared/Block";
 import HeroBlock from "../components/Shared/HeroBlock";
 import HGroup from "../components/Shared/HGroup";
-import ContactForms from "../components/Shared/ContactForms";
 import { FormHeader } from "../components/Shared/Form";
 import FormContact from "../components/Shared/FormContact";
-import Contacts from '../components/Shared/Contacts'
-
-import icons from "../components/Shared/iconConstants";
-import { landlordIntro, landlordList } from "../components/constants";
-import IconListItem from "../components/Shared/IconListItem";
-import { AuthorText } from "../components/Shared/Texts";
-import LineBreak from "../components/Shared/LineBreak";
+import Contacts from "../components/Shared/Contacts";
 import { PrimaryButtonText } from "../components/Shared/Texts";
 import { Button } from "../components/Shared/Buttons";
-
-
 
 const Root = props => (
   <Layout>
@@ -38,6 +26,7 @@ const Root = props => (
         subheadColor="text"
         title="We'll sort it without fuss & with a smile."
         titleColor="brandAlt"
+        titleIs="h1"
         text="This is a lead-in line to help people scroll down to the content."
         largeTextColor="text70"
       />
@@ -47,11 +36,7 @@ const Root = props => (
       <img src="/static/img/landlords-04.png" alt="" />
     </Block>
 
-    <Block
-      id="appraisal-forms"
-      maxWidth="38em"
-      noTopPadding
-    >
+    <Block id="appraisal-forms" maxWidth="38em" noTopPadding>
       <FormHeader
         bg="brand"
         color="white"
@@ -61,10 +46,7 @@ const Root = props => (
       <FormContact border defaultForm={props.defaultForm} />
     </Block>
 
-    <Block 
-      maxWidth="62em"
-      bg="brandAlt7"
-    >
+    <Block maxWidth="62em" bg="brandAlt7">
       <img src="/static/img/tenants-01.png" alt="" />
     </Block>
 
@@ -103,13 +85,13 @@ class ContactPage extends React.Component {
   static async getInitialProps({ pathname, query }) {
     return {
       pathname,
-      defaultForm: query.form,
-    }
+      defaultForm: query.form
+    };
   }
 
   render() {
-    return <Root {...this.props} />
+    return <Root {...this.props} />;
   }
 }
 
-export default ContactPage
+export default ContactPage;

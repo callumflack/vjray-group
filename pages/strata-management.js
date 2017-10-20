@@ -32,6 +32,7 @@ const Root = props => (
         subheadColor="text"
         title="Skip the hassle of Strata Management."
         titleColor="brand"
+        titleIs="h1"
         text="At VJ Ray Strata, we understand how valuable your peace of mind is."
         largeTextColor="text"
       />
@@ -41,12 +42,16 @@ const Root = props => (
       maxWidth="48em"
       noBottomPadding
       title="It all adds up to a better deal."
-      titleFamily="displayMedium"
+      titleFamily="displayRegular"
       textIsLast
-      text={<span>"You guys are very quick to respond and handle things efficiently, no complaints here!"&nbsp;<LineBreak><AuthorText>— Terry & Linda, Caringbah</AuthorText></LineBreak></span>}
+      textLeft
+      text="We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. But we believe it shouldn’t stop there. Here’s how we go further:"
     />
 
-    <Block maxWidth="48em" noBottomPadding>
+    <Block 
+      maxWidth="48em" 
+      noBottomPadding
+    >
       {strataList.map((item, i) => <IconListItem item={item} key={i} />)}
     </Block>
 
