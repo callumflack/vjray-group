@@ -137,30 +137,6 @@ const Root = props => (
     </Block>
 
     <Block
-      maxWidth="48em"
-      noBottomPadding
-      subhead="Real estate rentals"
-      title="Check our current listings"
-      titleColor="brandAlt"
-    >
-      <ListingsBoxWrapper mt={[2, 3, 4]}>
-        <ListingsBox>
-          <Relative>
-            <Link href="https://www.realestate.com.au/agency/vj-ray-pty-ltd-campsie-VJSCAM">
-              <a>
-                <PrimaryButtonText center>
-                  <Button bg="white" color="brandAlt" px={3} icon>
-                    Real Estate rentals
-                  </Button>
-                </PrimaryButtonText>
-              </a>
-            </Link>
-          </Relative>
-        </ListingsBox>
-      </ListingsBoxWrapper>
-    </Block>
-
-    <Block
       maxWidth="38em"
       subhead="Contact us"
       title="How can we help?"
