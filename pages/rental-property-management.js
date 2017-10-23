@@ -1,25 +1,27 @@
-import React from "react";
-import Link from "next/link";
+import React from "react"
+import Link from "next/link"
+import Layout from "../components/Shared/Layout"
+import Header from "../components/Shared/Header"
+import Footer from "../components/Shared/FooterGroup"
+import Block from "../components/Shared/Block"
+import HeroBlock from "../components/Shared/HeroBlock"
+import HGroup from "../components/Shared/HGroup"
+import { FormHeader } from "../components/Shared/Form"
+import FormContact from "../components/Shared/FormContact"
+import Contacts from "../components/Shared/Contacts"
+import { PrimaryButtonText } from "../components/Shared/Texts"
+import { Button } from "../components/Shared/Buttons"
 
-import Layout from "../components/Shared/Layout";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/FooterGroup";
-import Block from "../components/Shared/Block";
-import HeroBlock from "../components/Shared/HeroBlock";
-import HGroup from "../components/Shared/HGroup";
-import { FormHeader } from "../components/Shared/Form";
-import FormContact from "../components/Shared/FormContact";
-import Contacts from "../components/Shared/Contacts";
-import { PrimaryButtonText } from "../components/Shared/Texts";
-import { Button } from "../components/Shared/Buttons";
+// Ashley
+// http://res.cloudinary.com/pw-img-cdn/image/upload/v1507852665/ashley_h9r9nh.png
 
 const Root = props => (
   <Layout>
     <Header pathname={props.pathname} clear color="brandAlt" />
 
     <HeroBlock
-      blueGradientBg
-      img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1507860456/wife_o6eith.png"
+      bluegreyGradientBg
+      img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1508722827/hero-pm_h0ax9h.png"
     >
       <HGroup
         subhead="Experienced & Dependable"
@@ -79,19 +81,19 @@ const Root = props => (
 
     <Footer />
   </Layout>
-);
+)
 
 class ContactPage extends React.Component {
   static async getInitialProps({ pathname, query }) {
     return {
       pathname,
       defaultForm: query.form
-    };
+    }
   }
 
   render() {
-    return <Root {...this.props} />;
+    return <Root {...this.props} />
   }
 }
 
-export default ContactPage;
+export default ContactPage

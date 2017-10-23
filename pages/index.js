@@ -1,23 +1,23 @@
-import React from 'react';
-import Link from 'next/link';
-import styled from 'styled-components';
-import { Flex, Box, Relative } from 'rebass';
+import React from "react"
+import Link from "next/link"
+import styled from "styled-components"
+import { Flex, Box, Relative } from "rebass"
 
-import fetchMarkdown from '../lib/fetch-markdown';
+import fetchMarkdown from "../lib/fetch-markdown"
 
-import theme from '../components/theme-new';
-import Layout from '../components/Shared/Layout';
-import Header from '../components/Shared/Header';
-import Footer from '../components/Shared/FooterGroup';
-import Block from '../components/Shared/Block';
-import HeroGroupHome from '../components/Shared/HeroGroupHome';
-import HeroGroupHomeStrata from '../components/Shared/HeroGroupHomeStrata';
-import FeatureList from '../components/Shared/FeatureList';
-import Contacts from '../components/Shared/Contacts';
-import ContactForms from '../components/Shared/ContactForms';
-import { Text, AuthorText, PrimaryButtonText, TextBlock } from '../components/Shared/Texts';
-import LineBreak from '../components/Shared/LineBreak';
-import { Button } from '../components/Shared/Buttons';
+import theme from "../components/theme-new"
+import Layout from "../components/Shared/Layout"
+import Header from "../components/Shared/Header"
+import Footer from "../components/Shared/FooterGroup"
+import Block from "../components/Shared/Block"
+import HeroGroupHome from "../components/Shared/HeroGroupHome"
+import HeroGroupHomeStrata from "../components/Shared/HeroGroupHomeStrata"
+import FeatureList from "../components/Shared/FeatureList"
+import Contacts from "../components/Shared/Contacts"
+import ContactForms from "../components/Shared/ContactForms"
+import { Text, AuthorText, PrimaryButtonText, TextBlock } from "../components/Shared/Texts"
+import LineBreak from "../components/Shared/LineBreak"
+import { Button } from "../components/Shared/Buttons"
 
 
 const TextBlockWrapper = styled(Flex)`
@@ -90,7 +90,7 @@ const Root = props => (
     <HeroGroupHomeStrata
       subhead="A focus on people"
       title="We believe in better <LineBreak>Strata Management </LineBreak><LineBreak>for Sydney.</LineBreak>"
-      text="It's said that by 2020, over 50% of Sydney's population will be living or working in a Strata property. That's why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
+      text="It"s said that by 2020, over 50% of Sydney"s population will be living or working in a Strata property. That"s why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
     />
 
     <Block
@@ -191,7 +191,7 @@ class Index extends React.Component {
   }
 
   static async getInitialProps({ pathname, query }) {
-    const mikesLetter = await fetchMarkdown('mikes-letter');
+    const mikesLetter = await fetchMarkdown("mikes-letter");
 
     return {
       mikesLetter,
