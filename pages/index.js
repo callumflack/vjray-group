@@ -90,7 +90,7 @@ const Root = props => (
     <HeroGroupHomeStrata
       subhead="A focus on people"
       title="We believe in better <LineBreak>Strata Management </LineBreak><LineBreak>for Sydney.</LineBreak>"
-      text="It"s said that by 2020, over 50% of Sydney"s population will be living or working in a Strata property. That"s why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
+      text="It's said that by 2020, over 50% of Sydney's population will be living or working in a Strata property. That's why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
     />
 
     <Block
