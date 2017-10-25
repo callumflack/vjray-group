@@ -23,24 +23,24 @@ const Root = props => (
       img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1507860456/wife_o6eith.png"
     >
       <HGroup
-        subhead="Get in touch"
-        title="Here to help make your Real Estate Management easier."
-        titleColor="brand"
-        text="Visit, call or write to us."
-        largeTextColor="text70"
+        title="We're ready to help make your Real Estate Management easy."
+        titleColor="text"
+        titleFamily="displayMedium"
+        text="Visit, call or write to us 24/7."
+        textColor="text70"
       />
     </HeroBlock>
 
     <Block
       maxWidth="38em"
       title="Visit us anytime."
-      titleColor="brandAlt"
+      titleColor="brand"
       text="No appointment needed."
       noBottomPadding
     >
       <Contacts pathname={props.pathname} />
       <SmallText center color="text70" mt={[3, 4]}>
-        Looking for the Auburn office? They aren't affiliated with us.
+        Looking for the Auburn office? They aren&apos;t affiliated with us.
         <LineBreak mx="auto">
           You can find them <Link href="http://vjrayauburn.com.au/">here.</Link>
         </LineBreak>
@@ -51,7 +51,7 @@ const Root = props => (
       id="contact-forms"
       maxWidth="38em"
       title="Write to us."
-      titleColor="brandAlt"
+      titleColor="brand"
       text="We'll respond quick smart."
       noBottomPadding
     >
@@ -59,6 +59,7 @@ const Root = props => (
     </Block>
 
     <Block
+      id="emergencies"
       title="Is it a Strata emergency?"
       titleColor="brand"
       text="Go to our after-hours Strata repairs."

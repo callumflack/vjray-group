@@ -14,7 +14,7 @@ import HGroup from "../components/Shared/HGroup";
 import icons from "../components/Shared/iconConstants";
 import { strataIntro, strataList } from "../components/constants";
 import IconListItem from "../components/Shared/IconListItem";
-import { AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
+import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
 import LineBreak from "../components/Shared/LineBreak";
 import { Button } from "../components/Shared/Buttons";
 
@@ -22,43 +22,42 @@ import { Button } from "../components/Shared/Buttons";
 const Root = props => (
   <Layout>
     <Header pathname={props.pathname} clear linkToStrata />
-    
-    <HeroBlock 
+
+    <HeroBlock
       bg="beige"
       img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1507788260/hero-home-171012_epyqlz.jpg"
     >
-      <HGroup 
-        subhead="We make it easy"
-        subheadColor="text"
+      <HGroup
         title="Skip the hassle of Strata Management."
         titleColor="brand"
+        titleFamily="displayMedium"
         titleIs="h1"
         text="At VJ Ray Strata, we understand how valuable your peace of mind is."
-        largeTextColor="text"
+        textColor="text70"
       />
     </HeroBlock>
 
     <Block
-      maxWidth="48em"
-      noBottomPadding
-      title="It all adds up to a better deal."
-      titleFamily="displayRegular"
+      maxWidth="44em"
+      heading="It all adds up to a better deal."
+      headingFamily="displayMedium"
       textIsLast
       textLeft
-      text="We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. But we believe it shouldn’t stop there. Here’s how we go further:"
-    />
-
-    <Block 
-      maxWidth="48em" 
-      noBottomPadding
+      text="We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. And we believe it shouldn’t stop there. Here’s how we go further for your peace of mind:"
     >
-      {strataList.map((item, i) => <IconListItem item={item} key={i} />)}
-    </Block>
-
-    <Block maxWidth="38em" subhead="Find out more">
-      <Link href="/emergency">
-        <PrimaryButtonText center>
-          <Button icon bg="brand" children="Visit VJ Ray Strata" />
+      <Box my={5}>
+        {strataList.map((item, i) => (
+          <IconListItem smallSpace item={item} key={i} />
+        ))}
+      </Box>
+      <LargeText 
+        color="text70"
+        children="If you'd like a Strata Manager that focuses on you as
+        well as your property, visit our Strata website:"
+      />
+      <Link href="https://vjraystrata.com.au/">
+        <PrimaryButtonText center mt={5}>
+          <Button icon bg="brand" children="Our Strata website" />
         </PrimaryButtonText>
       </Link>
     </Block>

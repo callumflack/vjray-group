@@ -47,8 +47,9 @@ const Root = props => (
           <HGroup
             title="Forms and fact sheets."
             titleColor="brand"
+            titleFamily="displayMedium"
             text="Readily available PDF downloads to help your Real Estate Management."
-            largeTextColor="text70"
+            textColor="text70"
           />
         </HeroFlex>
       </HeroContainer>
@@ -62,17 +63,7 @@ const Root = props => (
       <div>{factSheets.map((item, i) => <ListItem item={item} key={i} />)}</div>
     </Block>
 
-    <Block
-      border
-      maxWidth="38em"
-      subhead="Get in touch"
-      title="No appointment necessary."
-      titleColor="brandAlt"
-    >
-      <Contacts pathname={props.pathname} />
-    </Block>
-
-    <Footer />
+    <Footer bg="brandAlt7" />
   </Layout>
 );
 

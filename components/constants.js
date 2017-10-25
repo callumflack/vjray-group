@@ -1,4 +1,6 @@
-const site = "group";
+// site type flag
+
+const site = "group"
 
 // Nav items with the label 'Home' will not be shown
 // in the desktop nav
@@ -24,7 +26,44 @@ const navItems = [
     label: "Contact",
     href: "/contact",
   },
-];
+]
+
+// Location lists
+
+const locationList = [
+  {
+    name: "Campsie Head Office",
+    subOne: "8 Anglo Road",
+    subTwo: "Campsie, NSW 2194",
+    openOne: "Monday-Thursday 9-5.30pm",
+    openTwo: "Friday 9-5pm",
+    openThree: "Saturday 9-4pm",
+    phoneNumber: "02 9784 7900",
+    faxNumber: "02 9787 2952",
+    email: "campsie@vjray.com.au",
+    poBox: "PO Box 369 Campsie, NSW 2194",
+    emergencyPhoneNumber: "1300 073 405",
+    googleMapsUrl:
+      "https://www.google.com.au/maps/place/V+J+Ray/@-33.9113278,151.1011612,17z",
+    imageName: "campsie.jpg",
+  },
+  {
+    name: "Caringbah Office",
+    subOne: "18 President Avenue",
+    subTwo: "Caringbah, NSW 2229",
+    openOne: "Monday-Thursday 9-5.30pm",
+    openTwo: "Friday 9-5pm",
+    openThree: "Saturday 9-2pm",
+    phoneNumber: "02 9541 3300",
+    faxNumber: "02 9643 2220",
+    email: "caringbah@vjray.com.au",
+    poBox: "PO Box 369 Campsie, NSW 2194",
+    emergencyPhoneNumber: "1300 073 405",
+    googleMapsUrl:
+      "https://www.google.com.au/maps/place/V.J.+Ray/@-34.0432583,151.1198929,17z",
+    imageName: "caringbah.jpg",
+  },
+]
 
 // Used in the contacts.js component
 // Each page will show the locations in listed in
@@ -46,7 +85,7 @@ const contactLocationsForPathnames = {
   "/contact": {
     locations: ["Campsie Head Office", "Caringbah Office"],
   },
-};
+}
 
 // site contacts
 
@@ -56,21 +95,21 @@ const contactDetails = {
   emergencyBusinessHours: "9784 7900",
 };
 
-// "Home pg features" content object
+// "Home pg features" content
 
 const featuresList = [
   {
     icon: "experience",
     border: true,
     headline: "Strata Management",
-    lede: "We've pretty much seen it all, so we know how to solve it.",
+    lede: "Skip the hassle of Strata Management and get back your peace of mind.",
     link: "/strata-management",
   },
   {
     icon: "lockin",
     border: true,
     headline: "Property Management",
-    lede: "Stay because you're happy, not because you're stuck with us.",
+    lede: "Get the best from your investment with the least amount of fuss.",
     link: "/rental-property-management",
   },
   {
@@ -82,7 +121,7 @@ const featuresList = [
   },
 ];
 
-// "emergency" content object
+// "emergency" content
 
 const emergencyList = [
   {
@@ -112,7 +151,7 @@ const emergencyList = [
   },
 ];
 
-// "services" content object
+// "services" content
 
 const servicesIntro =
   "We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. But we believe it shouldn’t stop there. Here’s how we go further:";
@@ -171,41 +210,66 @@ const servicesList = [
   },
 ];
 
-// "Property management" content object
+// "Property management" content
 
 const landlordIntro =
-  "Intro paragraph selling our Property Management services to both landlords and tenants going over two or three lines. This phrase takes us to three lines.";
+  "With over 55 years experience of managing rental properties for landlords we know what's needed to help you get the best from their investment with the least amount of fuss. Here's 3 of the many ways we'll sort it for you."
 
 const landlordList = [
   {
     icon: "emergency",
-    headline: "After-hours emergencies",
+    headline: "Prospective tenant database.",
     text:
-      "We know that emergencies don’t just happen during office hours. And rather than just leave you with the phone number for a message service we have our most senior staff on call to help you with emergency repairs, whenever they occur.",
+      "We maintain an extensive database of tenants that are looking for a property right now, so when your property becomes vacant we can offer it to them, rather than wait for them to come looking.",
     link: false,
-    buttonUrl: "/emergency",
-    buttonLabel: "Emergencies",
   },
   {
     icon: "contents",
-    headline: "Reason Two",
+    headline: "Regular property inspections.",
     text:
-      "Many owners and residents aren’t aware that damage to their furniture and possessions is not covered by the buildings insurance. That’s why we help with arranging contents insurance too. And depending on which company the building is insured with, there can be considerable savings by reducing insurances excess amounts.",
+      "More than just finding a new tenant, we need to make sure that they look after your investment property after they move in. So we regularly inspect each property and send you a comprehensive inspection report.",
     link: false,
   },
   {
     icon: "bylaw",
-    headline: "Reason Three",
+    headline: "Online portal.",
     text:
-      "With the introduction of the Strata Schemes Management Act 2015, the need for By-laws to be adopted and amended increased greatly. For example, did you know you often need to create a By-law BEFORE you renovate your bathroom?",
+      "We recognise that our landlords might not be available when we are open, so you can visit our online landlords portal  to get the latest information about your property.",
     link: false,
   },
-];
+]
 
-// "Strata" content object
+const tenantIntro =
+  "When you become a VJ Ray tenant, we're here to help you too. Here are just a couple of ways.";
+
+const tenantList = [
+  {
+    icon: "emergency",
+    headline: "Complete info and instructions pack.",
+    text:
+      "When you move in we will give you comprehensive instructions about the property and what is expected of you as the tenant, so its easy for you to move in and live in a hassle free property.",
+    link: false,
+  },
+  {
+    icon: "contents",
+    headline: "Quick and easy repairs.",
+    text:
+      "No matter how well a property is maintained, we know that little things need repair from time to time and that sometimes emergencies can occur. So just give us a call or lodge your repair request on line and we will immediately contact the landlord for their approval to get the repair underway.",
+    link: false,
+  },
+  {
+    icon: "bylaw",
+    headline: "Online tenant info.",
+    text:
+      "24 hours a day, 7 days a week you can access your details on line through our tenant portal. to check where your rent is paid to or update your contact details.",
+    link: false,
+  },
+]
+
+// "Strata" content
 
 const strataIntro =
-  "Intro paragraph selling our Strata Management services going over two or three lines.";
+  "Intro paragraph selling our Strata Management services going over two or three lines."
 
 const strataList = [
   {
@@ -214,8 +278,6 @@ const strataList = [
     text:
       "We know that emergencies don’t just happen during office hours. And rather than just leave you with the phone number for a message service we have our most senior staff on call to help you with emergency repairs, whenever they occur.",
     link: false,
-    buttonUrl: "/emergency",
-    buttonLabel: "Emergencies",
   },
   {
     icon: "contractor",
@@ -225,10 +287,10 @@ const strataList = [
     link: false,
   },
   {
-    icon: "voting",
-    headline: "Electronic voting",
+    icon: "service",
+    headline: "We're open Saturdays",
     text:
-      "With the introduction of the Strata Schemes Management Act 2015, there is now the opportunity for strata schemes to elect to make some of the less complex decisions at a meeting by voting electronically, rather than attending the meeting in person.",
+      "We know that not everyone has time during the week, so unlike most Stata management companies we also open on Saturdays, so you can pop in, call us or even have your meeting on a Saturday!",
     link: false,
   },
 ];
@@ -255,12 +317,15 @@ export {
   site,
   navItems,
   contactLocationsForPathnames,
+  locationList,
   contactDetails,
   featuresList,
   servicesIntro,
   servicesList,
   landlordIntro,
   landlordList,
+  tenantIntro,
+  tenantList,
   strataIntro,
   strataList,
   forms,

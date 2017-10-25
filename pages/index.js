@@ -71,13 +71,15 @@ const Root = props => (
     <HeroGroupHome />
 
     <Block
+      maxWidth="80em"
       crownWidth="42em"
-      heading="We specialise in Real Estate Management services."
-      headingFamily="displayMedium"
+      title="We specialise in Real Estate Management services."
+      titleFamily="displayMedium"
+      titleColor="brand"
       text={
         <span>
-          "You guys are very quick to respond and handle things efficiently, no
-          complaints here!"&nbsp;
+          &quot;You guys are very quick to respond and handle things
+          efficiently, no complaints here!&quot;&nbsp;
           <LineBreak>
             <AuthorText>— Terry & Linda, Caringbah</AuthorText>
           </LineBreak>
@@ -88,7 +90,7 @@ const Root = props => (
     </Block>
 
     <HeroGroupHomeStrata
-      subhead="A focus on people"
+      subhead="Strata Management"
       title="We believe in better <LineBreak>Strata Management </LineBreak><LineBreak>for Sydney.</LineBreak>"
       text="It's said that by 2020, over 50% of Sydney's population will be living or working in a Strata property. That's why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
     />
@@ -97,9 +99,8 @@ const Root = props => (
       bg="text7"
       maxWidth="48em"
       title="Our duty is your satisfaction."
-      titleFamily="displayMedium"
       titleColor="text"
-      largeTextColor="brand"
+      textColor="brand"
       text={
         <span>
           “I’ve been working for VJ Ray for over three decades and in that time,
@@ -118,7 +119,7 @@ const Root = props => (
       >
         <Flex column width={[1, 1, 1 / 3]} px={[4, 2, null, 3]}>
           <Box mt="6px">
-            <img src="static/img/mike-pollard.jpg" />
+            <img src="static/img/mike-pollard.jpg" alt="Mike Pollard" />
           </Box>
           <Text left color="text70" mt={3} children="Mike Pollard" />
           <Text left color="text70" children="Managing Director" />
@@ -139,45 +140,30 @@ const Root = props => (
     <Block
       maxWidth="38em"
       subhead="Contact us"
+      subheadColor="text70"
       title="How can we help?"
-      titleColor="brandAlt"
+      titleColor="brand"
     >
       <ContactForms defaultForm={props.defaultForm} />
-    </Block>
-
-    <Block
-      border
-      maxWidth="38em"
-      subhead="Visit us"
-      title="No appointment necessary."
-      titleColor="brandAlt"
-    >
-      <Contacts pathname={props.pathname} />
     </Block>
 
     <Footer />
   </Layout>
 );
 
-
-
 class Index extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   static async getInitialProps({ pathname, query }) {
-    const mikesLetter = await fetchMarkdown("mikes-letter");
+    const mikesLetter = await fetchMarkdown("mikes-letter")
 
     return {
       mikesLetter,
       pathname,
       defaultForm: query.form,
-    };
+    }
   }
   render() {
-    return <Root {...this.props} />;
+    return <Root {...this.props} />
   }
 }
 
-export default Index;
+export default Index
