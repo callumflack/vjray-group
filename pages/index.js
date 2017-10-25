@@ -3,8 +3,6 @@ import Link from "next/link"
 import styled from "styled-components"
 import { Flex, Box, Relative } from "rebass"
 
-import fetchMarkdown from "../lib/fetch-markdown"
-
 import theme from "../components/theme-new"
 import Layout from "../components/Shared/Layout"
 import Header from "../components/Shared/Header"
@@ -48,7 +46,7 @@ const ListingsBox = styled(Box)`
   position: absolute;
   right: 0;
   top: 0;
-  
+
   &:before {
     background-color: rgba(18, 150, 222, 0.25);
     background-color: rgba(121, 122, 154, 0.5);
@@ -131,7 +129,7 @@ const Root = props => (
           width={[1, 1, 2 / 3]}
         >
           <TextBlock
-            dangerouslySetInnerHTML={{ __html: props.mikesLetter.body.html }}
+            dangerouslySetInnerHTML={{ __html: props.mikesLetter.bodyHtml }}
           />
         </TextBlockWrapper>
       </Flex>
@@ -153,7 +151,7 @@ const Root = props => (
 
 class Index extends React.Component {
   static async getInitialProps({ pathname, query }) {
-    const mikesLetter = await fetchMarkdown("mikes-letter")
+    const mikesLetter = require('../content/mikes-letter.json')
 
     return {
       mikesLetter,

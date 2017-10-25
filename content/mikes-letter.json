@@ -1,0 +1,11 @@
+{
+  "title": "Mike's letter",
+  "bodyContent": "Way back in 1962, in a one-room office in Campsie, VJ Ray started its journey in the Sydney real estate scene.\n\nToday, over 55 years later, the VJ Ray Team has 34 staff, all with just one goal, to help people.\n\nVJ Ray is a family company that was started by Leon Pollard and is currently owned and operated by his son Mike Pollard.\n\nThe guiding principal behind the VJ Ray culture has been to maintain the original family company atmosphere that is so often lost as companies grow into corporate giants.\n\nAt VJ Ray we know that our job is much more that just looking after buildings, its about caring for and helping the people that own, work or live in those buildings. It's the people\nthat matter.\n\nThat's why our mission statement is so simple.\n\nWe Help People.",
+  "bodyHtml": "<p>Way back in 1962, in a one-room office in Campsie, VJ Ray started its journey in the Sydney real estate scene.</p>\n<p>Today, over 55 years later, the VJ Ray Team has 34 staff, all with just one goal, to help people.</p>\n<p>VJ Ray is a family company that was started by Leon Pollard and is currently owned and operated by his son Mike Pollard.</p>\n<p>The guiding principal behind the VJ Ray culture has been to maintain the original family company atmosphere that is so often lost as companies grow into corporate giants.</p>\n<p>At VJ Ray we know that our job is much more that just looking after buildings, its about caring for and helping the people that own, work or live in those buildings. It&#39;s the people\nthat matter.</p>\n<p>That&#39;s why our mission statement is so simple.</p>\n<p>We Help People.</p>\n",
+  "preview": "Way back in 1962, in a one-room office in Campsie, VJ Ray started its journey in the Sydney real estate",
+  "dir": "content",
+  "base": "mikes-letter.json",
+  "ext": ".json",
+  "sourceBase": "mikes-letter.md",
+  "sourceExt": ".md"
+}

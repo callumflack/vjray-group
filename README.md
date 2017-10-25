@@ -20,17 +20,22 @@ If you have already cloned the repo but are missing the submodules run:
 git submodule update --init
 ```
 
-## Exporting to static build
+## Compiling markdown files
 
-Only pages listed in the next.config.js exportPathMap will be exported
-
-In one terminal run:
+Markdown files must be re-compiled for changes to take effect.
 
 ```sh
-npm run dev
+# One off compile
+npm run build:content
+# Watch for changes and auto compile
+npm run build:content:watch
 ```
 
-In another run:
+## Exporting to static build
+
+Only pages listed in the next.config.js exportPathMap will be exported.
+
+Run in terminal:
 
 ```sh
 npm run build

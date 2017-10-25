@@ -1,5 +1,4 @@
 import React from 'react'
-import fetchMarkdown from '../lib/fetch-markdown.js'
 import theme from '../components/theme.js'
 import { Box } from 'rebass'
 import Layout from '../components/Shared/Layout'
@@ -15,7 +14,7 @@ const Root = props => (
 
     <Box style={{ marginTop: '45px' }}>
       <BlockWrapper maxWidth='42em'>
-        <TextBlock dangerouslySetInnerHTML={{__html: props.privacy.body.html}} />
+        <TextBlock dangerouslySetInnerHTML={{__html: props.privacy.bodyHtml}} />
       </BlockWrapper>
     </Box>
 
@@ -25,11 +24,11 @@ const Root = props => (
 
 class TermsPage extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
   }
 
   static async getInitialProps({ pathname }) {
-    const privacy = await fetchMarkdown('privacy');
+    const privacy = require('../content/privacy.json')
 
     return {
       privacy,

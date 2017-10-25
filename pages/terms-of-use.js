@@ -1,5 +1,4 @@
 import React from 'react'
-import fetchMarkdown from '../lib/fetch-markdown.js'
 import { Box } from 'rebass'
 import Layout from '../components/Shared/Layout'
 import { TextBlock } from '../components/Shared/Text'
@@ -14,7 +13,7 @@ const Root = props => (
 
     <Box style={{ marginTop: '45px' }}>
       <BlockWrapper maxWidth='42em'>
-        <TextBlock dangerouslySetInnerHTML={{__html: props.terms.body.html}} />
+        <TextBlock dangerouslySetInnerHTML={{__html: props.terms.bodyHtml}} />
       </BlockWrapper>
     </Box>
 
@@ -28,7 +27,7 @@ class TermsPage extends React.Component {
   }
 
   static async getInitialProps({ pathname }) {
-    const terms = await fetchMarkdown('terms');
+    const terms = require('../content/terms.json');
 
     return {
       terms,

@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js",
-    "build": "next build",
-    "start": "node server.js",
+    "dev": "next",
+    "build": "npm run build:content && next build",
+    "build:content": "processmd content/src/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json",
+    "build:content:watch": "processmd content/src/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json --watch",
+    "start": "next start",
     "export": "next export"
   },
   "keywords": [],
@@ -22,6 +24,7 @@
     "marked": "0.3.6",
     "next": "3.2.2",
     "polished": "1.1.3",
+    "processmd": "3.1.6",
     "prop-types": "15.5.10",
     "react": "15.6.1",
     "react-dom": "15.6.1",
