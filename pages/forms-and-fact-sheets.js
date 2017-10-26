@@ -15,11 +15,11 @@ import { forms, factSheets } from '../components/constants'
 import theme from '../components/theme-new'
 
 
-const ListItemRoot = styled(Box)`
+const ListItemRoot = styled(Box) `
   border-bottom: 1px solid ${theme.colors.text20};
 `;
 
-const StyledHeroBox = styled(HeroBox)`
+const StyledHeroBox = styled(HeroBox) `
   height: calc(var(--Header-height) + 33.333vh);
 `;
 
@@ -27,7 +27,7 @@ const StyledHeroBox = styled(HeroBox)`
 const ListItem = props => (
   <Link href={props.item.link}>
     <a>
-      <ListItemRoot py={[2,3]}>
+      <ListItemRoot py={[2, 3]}>
         <Flex align="baseline" wrap>
           <LargeText color="text" mr={3}>{props.item.headline}</LargeText>
           <Text color="text70">{props.item.subheadline}</Text>
@@ -63,7 +63,7 @@ const Root = props => (
       <div>{factSheets.map((item, i) => <ListItem item={item} key={i} />)}</div>
     </Block>
 
-    <Footer bg="brandAlt7" />
+    <Footer />
   </Layout>
 )
 

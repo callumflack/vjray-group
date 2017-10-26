@@ -1,36 +1,20 @@
 import React from "react"
 import Link from "next/link"
-import styled, { css } from "styled-components"
-import { Box, Flex, Relative, Absolute } from "rebass"
 import Layout from "../components/Shared/Layout"
 import Header from "../components/Shared/Header"
 import Footer from "../components/Shared/FooterGroup"
 import Block from "../components/Shared/Block"
 import HeroBlock from "../components/Shared/HeroBlock"
 import HGroup from "../components/Shared/HGroup"
-
 import TestimonialSlide from "../components/Shared/TestimonialSlide"
 import Container from "../components/Shared/Container2"
 import IconListItem from "../components/Shared/IconListItem"
 import { FormHeader } from "../components/Shared/Form"
 import FormContact from "../components/Shared/FormContact"
-import Contacts from "../components/Shared/Contacts"
-
-import { Subheading } from "../components/Shared/Headings"
-import { Text, LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts"
+import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts"
+import LineBreak from "../components/Shared/LineBreak"
 import { Button } from "../components/Shared/Buttons"
-
-import { 
-  landlordIntro, 
-  landlordList,
-  tenantIntro, 
-  tenantList,
-} from "../components/constants"
-
-
-const StyledFlex = styled(Flex)`
-  height: 100%;
-`
+import { landlordIntro, landlordList, tenantIntro, tenantList } from "../components/constants"
 
 const Root = props => (
   <Layout>
@@ -56,22 +40,21 @@ const Root = props => (
         subheading="For landlords"
         text={
           <span>
-            “I’ve found their Property Management unit to be fantastic! Thanks
-            VJ Ray” <AuthorText>— Jessica, Campsie</AuthorText>
+            “I’ve found their Property Management unit to be fantastic! Thanks VJ Ray”{" "}
+            <AuthorText>— Jessica, Campsie</AuthorText>
           </span>
         }
       />
       <Container maxWidth="40em" mt={[3, 4, 5]}>
-        <LargeText color="text70" pt={1} mb={[3, 4, 5]} children={landlordIntro} />
-        {landlordList.map((item, i) => (
-          <IconListItem smallSpace item={item} key={i} />
-        ))}
-        <FormHeader
-          bg="brand"
-          color="white"
-          mt={[3, 4, 5]}
-          children="Get a landlord appraisal"
-        />
+        <LargeText color="text70" pt={1} mb={[3, 4, 5]}>
+          {landlordIntro}
+        </LargeText>
+        {landlordList.map((item, i) =>
+          <IconListItem smallSpace item={item} key={i} />)
+        }
+        <FormHeader bg="brand" color="white" mt={[3, 4, 5]}>
+          Get a landlord appraisal
+        </FormHeader>
         <FormContact border defaultForm={props.defaultForm} />
       </Container>
     </Block>
@@ -83,30 +66,34 @@ const Root = props => (
         subheading="For tenants"
         text={
           <span>
-            “I’ve found their Property Management unit to be fantastic! Thanks
-            VJ Ray” <AuthorText>— Jessica, Campsie</AuthorText>
+            “I’ve found their Property Management unit to be fantastic! Thanks VJ Ray”{" "}
+            <AuthorText>— Jessica, Campsie</AuthorText>
           </span>
         }
       />
       <Container maxWidth="40em" mt={[3, 4, 5]}>
-        <LargeText color="text70" pt={1} mb={[3, 4, 5]} children={tenantIntro} />
-        {tenantList.map((item, i) => (
-          <IconListItem smallSpace item={item} key={i} />
-        ))}
+        <LargeText color="text70" pt={1} mb={[3, 4, 5]}>
+          {tenantIntro}
+        </LargeText>
+        {tenantList.map((item, i) =>
+          <IconListItem smallSpace item={item} key={i} />)
+        }
       </Container>
     </Block>
 
     <Block
       maxWidth="40em"
-      heading="Looking for a specific form?"
+      heading="Looking for a form?"
       headingColor="brand"
       headingFamily="displayMedium"
-      text="Here's all our PDF downloads to help make your Real Estate Management easy."
       textColor="text70"
+      text={
+        <span>Here&apos;s all our PDF downloads to help make <LineBreak>your Real Estate Management easy.</LineBreak></span>
+      }
     >
       <Link href="/forms-and-fact-sheets">
         <PrimaryButtonText center>
-          <Button icon bg="brand" children="See the list" />
+          <Button icon bg="brand">See the list</Button>
         </PrimaryButtonText>
       </Link>
     </Block>
