@@ -1,18 +1,18 @@
-import React from "react";
-import Link from "next/link";
+import React from "react"
+import Link from "next/link"
 
-import Layout from "../components/Shared/Layout";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/FooterGroup";
-import Block from "../components/Shared/Block";
-import HeroBlock from "../components/Shared/HeroBlock";
-import HGroup from "../components/Shared/HGroup";
-import Contacts from "../components/Shared/Contacts";
-import ContactForms from "../components/Shared/ContactForms";
+import Layout from "../components/Shared/Layout"
+import Header from "../components/Shared/Header"
+import Footer from "../components/Shared/FooterGroup"
+import Block from "../components/Shared/Block"
+import HeroBlock from "../components/Shared/HeroBlock"
+import HGroup from "../components/Shared/HGroup"
+import Contacts from "../components/Shared/Contacts"
+import ContactForms from "../components/Shared/ContactForms"
 
-import { SmallText, PrimaryButtonText } from "../components/Shared/Texts";
-import LineBreak from "../components/Shared/LineBreak";
-import { Button } from "../components/Shared/Buttons";
+import { SmallText, PrimaryButtonText } from "../components/Shared/Texts"
+import LineBreak from "../components/Shared/LineBreak"
+import { Button } from "../components/Shared/Buttons"
 
 const Root = props => (
   <Layout>
@@ -73,19 +73,19 @@ const Root = props => (
 
     <Footer />
   </Layout>
-);
+)
 
 class ContactPage extends React.Component {
   static async getInitialProps({ pathname, query }) {
     return {
       pathname,
       defaultForm: query.form,
-    };
+    }
   }
 
   render() {
-    return <Root {...this.props} />;
+    return <Root {...this.props} />
   }
 }
 
-export default ContactPage;
+export default ContactPage

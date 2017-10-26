@@ -1,9 +1,7 @@
 import React from "react"
-import Link from "next/link"
 import styled from "styled-components"
-import { Flex, Box, Relative } from "rebass"
+import { Flex, Box } from "rebass"
 
-import theme from "../components/theme-new"
 import Layout from "../components/Shared/Layout"
 import Header from "../components/Shared/Header"
 import Footer from "../components/Shared/FooterGroup"
@@ -13,9 +11,11 @@ import HeroGroupHomeStrata from "../components/Shared/HeroGroupHomeStrata"
 import FeatureList from "../components/Shared/FeatureList"
 import Contacts from "../components/Shared/Contacts"
 import ContactForms from "../components/Shared/ContactForms"
-import { Text, AuthorText, PrimaryButtonText, TextBlock } from "../components/Shared/Texts"
+import { Text, AuthorText, TextBlock } from "../components/Shared/Texts"
 import LineBreak from "../components/Shared/LineBreak"
-import { Button } from "../components/Shared/Buttons"
+
+import theme from "../components/theme-new"
+import fetchMarkdown from "../lib/fetch-markdown"
 
 
 const TextBlockWrapper = styled(Flex)`
@@ -25,42 +25,7 @@ const TextBlockWrapper = styled(Flex)`
   @media (min-width: ${theme.breakpoints[0]}) {
     margin: 0;
   }
-`;
-
-const ListingsBoxWrapper = styled(Box)`
-  position: relative;
-  height: 450px;
-`;
-
-const ListingsBox = styled(Box)`
-  align-items: center;
-  background-image: url("/static/img/listings-alt-66.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  bottom: 0;
-  // border-radius: 999px;
-  display: flex;
-  justify-content: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  &:before {
-    background-color: rgba(18, 150, 222, 0.25);
-    background-color: rgba(121, 122, 154, 0.5);
-    background-blend-mode: multiply;
-    bottom: 0;
-    // border-radius: 999px;
-    content: " ";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-`;
-
+`
 
 const Root = props => (
   <Layout>
@@ -79,7 +44,7 @@ const Root = props => (
           &quot;You guys are very quick to respond and handle things
           efficiently, no complaints here!&quot;&nbsp;
           <LineBreak>
-            <AuthorText>— Terry & Linda, Caringbah</AuthorText>
+            <AuthorText>— Terry &amp; Linda, Caringbah</AuthorText>
           </LineBreak>
         </span>
       }
@@ -147,7 +112,7 @@ const Root = props => (
 
     <Footer />
   </Layout>
-);
+)
 
 class Index extends React.Component {
   static async getInitialProps({ pathname, query }) {
