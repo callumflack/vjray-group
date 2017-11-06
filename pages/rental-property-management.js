@@ -40,7 +40,8 @@ const Root = props => (
         subheading="For landlords"
         text={
           <span>
-            “I’ve found their Property Management unit to be fantastic! Thanks VJ Ray”{" "}
+            “I’ve found their Property Management unit to be fantastic! Thanks
+            VJ Ray”
             <AuthorText>— Jessica, Campsie</AuthorText>
           </span>
         }
@@ -49,9 +50,9 @@ const Root = props => (
         <LargeText color="text70" pt={1} mb={[3, 4, 5]}>
           {landlordIntro}
         </LargeText>
-        {landlordList.map((item, i) =>
-          <IconListItem smallSpace item={item} key={i} />)
-        }
+        {landlordList.map((item, i) => (
+          <IconListItem smallSpace item={item} key={i} />
+        ))}
         <FormHeader bg="brand" color="white" mt={[3, 4, 5]}>
           Get a landlord appraisal
         </FormHeader>
@@ -66,7 +67,8 @@ const Root = props => (
         subheading="For tenants"
         text={
           <span>
-            “I’ve found their Property Management unit to be fantastic! Thanks VJ Ray”{" "}
+            “I’ve found their Property Management unit to be fantastic! Thanks
+            VJ Ray”
             <AuthorText>— Jessica, Campsie</AuthorText>
           </span>
         }
@@ -75,9 +77,9 @@ const Root = props => (
         <LargeText color="text70" pt={1} mb={[3, 4, 5]}>
           {tenantIntro}
         </LargeText>
-        {tenantList.map((item, i) =>
-          <IconListItem smallSpace item={item} key={i} />)
-        }
+        {tenantList.map((item, i) => (
+          <IconListItem smallSpace item={item} key={i} />
+        ))}
       </Container>
     </Block>
 
@@ -88,19 +90,24 @@ const Root = props => (
       headingFamily="displayMedium"
       textColor="text70"
       text={
-        <span>Here&apos;s all our PDF downloads to help make <LineBreak>your Real Estate Management easy.</LineBreak></span>
+        <span>
+          Here&apos;s all our PDF downloads to help make{" "}
+          <LineBreak>your Real Estate Management easy.</LineBreak>
+        </span>
       }
     >
       <Link href="/forms-and-fact-sheets">
         <PrimaryButtonText center>
-          <Button icon bg="brand">See the list</Button>
+          <Button icon bg="brand">
+            See the list
+          </Button>
         </PrimaryButtonText>
       </Link>
     </Block>
 
     <Footer />
   </Layout>
-)
+);
 
 class ContactPage extends React.Component {
   static async getInitialProps({ pathname, query }) {
