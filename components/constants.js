@@ -97,21 +97,21 @@ const contactLocationsForPathnames = {
 
 const featuresList = [
   {
-    icon: "experience",
+    icon: "strata",
     border: true,
     headline: "Strata Management",
     lede: "Skip the hassle of Strata Management and get back your peace of mind.",
     link: "/strata-management",
   },
   {
-    icon: "lockin",
+    icon: "contents",
     border: true,
     headline: "Property Management",
     lede: "Get the best from your investment with the least amount of fuss.",
     link: "/rental-property-management",
   },
   {
-    icon: "emergency",
+    icon: "valuations",
     border: true,
     headline: "Real Estate Valuations",
     lede: "Trust the price and act with confidence. Qualified building valuations done right.",
@@ -215,7 +215,7 @@ const landlordIntro =
 
 const landlordList = [
   {
-    icon: "emergency",
+    icon: "database",
     headline: "Prospective tenant database.",
     text:
     "We maintain an extensive database of tenants that are looking for a property right now, so when your property becomes vacant we can offer it to them, rather than wait for them to come looking.",
@@ -229,7 +229,7 @@ const landlordList = [
     link: false,
   },
   {
-    icon: "bylaw",
+    icon: "online",
     headline: "Online portal.",
     text:
     "We recognise that our landlords might not be available when we are open, so you can visit our online landlords portal  to get the latest information about your property.",
@@ -242,21 +242,21 @@ const tenantIntro =
 
 const tenantList = [
   {
-    icon: "emergency",
+    icon: "bylaw",
     headline: "Complete info and instructions pack.",
     text:
     "When you move in we will give you comprehensive instructions about the property and what is expected of you as the tenant, so its easy for you to move in and live in a hassle free property.",
     link: false,
   },
   {
-    icon: "contents",
+    icon: "contractor",
     headline: "Quick and easy repairs.",
     text:
     "No matter how well a property is maintained, we know that little things need repair from time to time and that sometimes emergencies can occur. So just give us a call or lodge your repair request on line and we will immediately contact the landlord for their approval to get the repair underway.",
     link: false,
   },
   {
-    icon: "bylaw",
+    icon: "online",
     headline: "Online tenant info.",
     text:
     "24 hours a day, 7 days a week you can access your details on line through our tenant portal. to check where your rent is paid to or update your contact details.",
