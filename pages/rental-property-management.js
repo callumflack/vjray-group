@@ -29,7 +29,7 @@ const Root = props => (
         titleColor="brand"
         titleFamily="displayMedium"
         titleIs="h1"
-        text="Whether you're a landlord or a tenant, our service puts you first."
+        text="Whether you're a landlord or a tenant, our service will put you first."
         textColor="text70"
       />
     </HeroBlock>
@@ -40,9 +40,11 @@ const Root = props => (
         subheading="For landlords"
         text={
           <span>
-            “I’ve found their Property Management unit to be fantastic! Thanks
+            “I&apos;ve found the Property Management unit to be absolutely fantastic! Thanks
             VJ Ray”
-            <AuthorText>— Jessica, Campsie</AuthorText>
+            <LineBreak>
+              <AuthorText>— Silvano, Campsie</AuthorText>
+            </LineBreak>
           </span>
         }
       />
@@ -67,9 +69,11 @@ const Root = props => (
         subheading="For tenants"
         text={
           <span>
-            “I’ve found their Property Management unit to be fantastic! Thanks
-            VJ Ray”
-            <AuthorText>— Jessica, Campsie</AuthorText>
+            “They respond immediately
+            <LineBreak>
+              and organise what is needed straight away”&nbsp;
+            </LineBreak>
+            <AuthorText>— Daniel &amp; Ruth, Carringbah</AuthorText>
           </span>
         }
       />

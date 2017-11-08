@@ -1,23 +1,23 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import { Flex, Box } from "rebass"
+import React from "react";
+import PropTypes from "prop-types";
+import styled from "styled-components";
+import { Flex, Box } from "rebass";
 
-import Layout from "../components/Shared/Layout"
-import Header from "../components/Shared/Header"
-import Footer from "../components/Shared/FooterGroup"
-import Block from "../components/Shared/Block"
-import BlockWrapper from "../components/Shared/BlockWrapper"
-import HGroup from "../components/Shared/HGroup"
+import Layout from "../components/Shared/Layout";
+import Header from "../components/Shared/Header";
+import Footer from "../components/Shared/FooterGroup";
+import Block from "../components/Shared/Block";
+import BlockWrapper from "../components/Shared/BlockWrapper";
+import HGroup from "../components/Shared/HGroup";
 
-import HeroGroupHome from "../components/Shared/HeroGroupHome"
-import HeroGroupHomeStrata from "../components/Shared/HeroGroupHomeStrata"
-import FeatureList from "../components/Shared/FeatureList"
-import ContactForms from "../components/Shared/ContactForms"
-import { Text, AuthorText, TextBlock } from "../components/Shared/Texts"
-import LineBreak from "../components/Shared/LineBreak"
+import HeroGroupHome from "../components/Shared/HeroGroupHome";
+import HeroGroupHomeStrata from "../components/Shared/HeroGroupHomeStrata";
+import FeatureList from "../components/Shared/FeatureList";
+import ContactForms from "../components/Shared/ContactForms";
+import { Text, AuthorText, TextBlock } from "../components/Shared/Texts";
+import LineBreak from "../components/Shared/LineBreak";
 
-import theme from "../components/theme-new"
+import theme from "../components/theme-new";
 
 const TextBlockWrapper = styled(Flex) `
   margin-top: 0;
@@ -26,7 +26,7 @@ const TextBlockWrapper = styled(Flex) `
   @media (min-width: ${theme.breakpoints[0]}) {
     margin: 0;
   }
-`
+`;
 
 const Root = props => (
   <Layout>
@@ -42,10 +42,10 @@ const Root = props => (
         titleColor="brand"
         text={
           <span>
-            &quot;You guys are very quick to respond and handle things efficiently, no complaints
-            here!&quot;&nbsp;
+            “We&apos;re extremely happy with the service that
             <LineBreak>
-              <AuthorText>— Terry &amp; Linda, Caringbah</AuthorText>
+              VJ Ray provides”&nbsp;
+              <AuthorText>— Neil Franke, Caringbah</AuthorText>
             </LineBreak>
           </span>
         }
@@ -107,20 +107,20 @@ const Root = props => (
 
     <Footer />
   </Layout>
-)
+);
 
 class Index extends React.Component {
   static async getInitialProps({ pathname, query }) {
-    const mikesLetter = require("../content/mikes-letter.json")
+    const mikesLetter = require("../content/mikes-letter.json");
 
     return {
       mikesLetter,
       pathname,
       defaultForm: query.form,
-    }
+    };
   }
   render() {
-    return <Root {...this.props} />
+    return <Root {...this.props} />;
   }
 }
 
@@ -128,10 +128,10 @@ class Index extends React.Component {
 Index.propTypes = {
   pathname: PropTypes.string,
   maxWidth: PropTypes.string,
-}
+};
 
 Index.defaultProps = {
   pathname: "/",
-}
+};
 
-export default Index
+export default Index;
