@@ -1,20 +1,20 @@
-import React from "react"
-import Link from "next/link"
-import Layout from "../components/Shared/Layout"
-import Header from "../components/Shared/Header"
-import Footer from "../components/Shared/FooterGroup"
-import Block from "../components/Shared/Block"
-import HeroBlock from "../components/Shared/HeroBlock"
-import HGroup from "../components/Shared/HGroup"
-import TestimonialSlide from "../components/Shared/TestimonialSlide"
-import Container from "../components/Shared/Container2"
-import IconListItem from "../components/Shared/IconListItem"
-import { FormHeader } from "../components/Shared/Form"
-import FormContact from "../components/Shared/FormContact"
-import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts"
-import LineBreak from "../components/Shared/LineBreak"
-import { Button } from "../components/Shared/Buttons"
-import { landlordIntro, landlordList, tenantIntro, tenantList } from "../components/constants"
+import React from "react";
+import Link from "next/link";
+import Layout from "../components/Shared/Layout";
+import Header from "../components/Shared/Header";
+import Footer from "../components/Shared/FooterGroup";
+import Block from "../components/Shared/Block";
+import HeroBlock from "../components/Shared/HeroBlock";
+import HGroup from "../components/Shared/HGroup";
+import TestimonialSlide from "../components/Shared/TestimonialSlide";
+import Container from "../components/Shared/Container2";
+import ListItem from "../components/Shared/ListItem";
+import { FormHeader } from "../components/Shared/Form";
+import FormContact from "../components/Shared/FormContact";
+import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
+import LineBreak from "../components/Shared/LineBreak";
+import { Button } from "../components/Shared/Buttons";
+import { landlordIntro, landlordList, tenantIntro, tenantList } from "../components/constants";
 
 const Root = props => (
   <Layout>
@@ -22,7 +22,7 @@ const Root = props => (
 
     <HeroBlock
       bluegreyGradientBg
-      img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1508729005/hero-pm-2_fi7p8b.png"
+      img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1510115064/smiler-hero_oj6ejl.png"
     >
       <HGroup
         title="Property Management sorted with a smile."
@@ -51,7 +51,7 @@ const Root = props => (
           {landlordIntro}
         </LargeText>
         {landlordList.map((item, i) => (
-          <IconListItem smallSpace item={item} key={i} />
+          <ListItem smallSpace item={item} key={i} />
         ))}
         <FormHeader bg="brand" color="white" mt={[3, 4, 5]}>
           Get a landlord appraisal
@@ -78,7 +78,7 @@ const Root = props => (
           {tenantIntro}
         </LargeText>
         {tenantList.map((item, i) => (
-          <IconListItem smallSpace item={item} key={i} />
+          <ListItem smallSpace item={item} key={i} />
         ))}
       </Container>
     </Block>
@@ -114,12 +114,12 @@ class ContactPage extends React.Component {
     return {
       pathname,
       defaultForm: query.form,
-    }
+    };
   }
 
   render() {
-    return <Root {...this.props} />
+    return <Root {...this.props} />;
   }
 }
 
-export default ContactPage
+export default ContactPage;

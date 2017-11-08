@@ -1,17 +1,17 @@
-import React from "react"
-import Link from "next/link"
-import { Box } from "rebass"
-import Layout from "../components/Shared/Layout"
-import Header from "../components/Shared/Header"
-import Footer from "../components/Shared/FooterGroup"
-import HeroBlock from "../components/Shared/HeroBlock"
-import BlockWrapper from "../components/Shared/BlockWrapper"
-import HGroup from "../components/Shared/HGroup"
-import { strataList } from "../components/constants"
-import IconListItem from "../components/Shared/IconListItem"
-import { LargeText, PrimaryButtonText } from "../components/Shared/Texts"
-import { Button, ButtonOutline } from "../components/Shared/Buttons"
-import LineBreak from "../components/Shared/LineBreak"
+import React from "react";
+import Link from "next/link";
+import { Box } from "rebass";
+import Layout from "../components/Shared/Layout";
+import Header from "../components/Shared/Header";
+import Footer from "../components/Shared/FooterGroup";
+import HeroBlock from "../components/Shared/HeroBlock";
+import BlockWrapper from "../components/Shared/BlockWrapper";
+import HGroup from "../components/Shared/HGroup";
+import { strataList } from "../components/constants";
+import ListItem from "../components/Shared/ListItem";
+import { LargeText, PrimaryButtonText } from "../components/Shared/Texts";
+import { Button, ButtonOutline } from "../components/Shared/Buttons";
+import LineBreak from "../components/Shared/LineBreak";
 
 const Root = props => (
   <Layout>
@@ -60,7 +60,7 @@ const Root = props => (
       >
         <Box my={5}>
           {strataList.map((item, i) => (
-            <IconListItem smallSpace item={item} key={i} />
+            <ListItem smallSpace item={item} key={i} />
           ))}
         </Box>
         <LargeText color="text70">
@@ -77,19 +77,19 @@ const Root = props => (
 
     <Footer />
   </Layout>
-)
+);
 
 class StrataPage extends React.Component {
   static async getInitialProps({ pathname, query }) {
     return {
       pathname,
       defaultForm: query.form,
-    }
+    };
   }
 
   render() {
-    return <Root {...this.props} />
+    return <Root {...this.props} />;
   }
 }
 
-export default StrataPage
+export default StrataPage;
