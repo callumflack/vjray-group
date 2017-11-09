@@ -211,7 +211,7 @@ const servicesList = [
 // "Property management" content
 
 const landlordIntro =
-  "With over 55 years experience of managing rental properties for landlords we know what's needed to help you get the best from their investment with the least amount of fuss. Here's 3 of the many ways we'll sort it for you.";
+  "With over 55 years experience of managing rental properties for landlords we know what's needed to help you get the best from your investment with the least amount of fuss. Here's just 3 of the many ways we'll sort it for you.";
 
 const landlordList = [
   {

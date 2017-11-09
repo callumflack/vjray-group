@@ -45,7 +45,7 @@ const Root = props => (
             “We&apos;re extremely happy with the service that
             <LineBreak>
               VJ Ray provides”&nbsp;
-              <AuthorText>— Neil Franke, Caringbah</AuthorText>
+              <AuthorText>— Neil, Caringbah</AuthorText>
             </LineBreak>
           </span>
         }
