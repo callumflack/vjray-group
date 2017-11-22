@@ -48,7 +48,7 @@ const Root = props => (
           </span>
         }
       />
-      <Container maxWidth="40em" mt={[3, 4, 5]}>
+      <Container maxWidth="40em" mt={[3, 4, 5]} px={[0, 2]}>
         <LargeText color="text70" pt={1} mb={[3, 4, 5]}>
           {landlordIntro}
         </LargeText>
@@ -77,7 +77,7 @@ const Root = props => (
           </span>
         }
       />
-      <Container maxWidth="40em" mt={[3, 4, 5]}>
+      <Container maxWidth="40em" mt={[3, 4, 5]} px={[0, 2]}>
         <LargeText color="text70" pt={1} mb={[3, 4, 5]}>
           {tenantIntro}
         </LargeText>
@@ -95,8 +95,8 @@ const Root = props => (
       textColor="text70"
       text={
         <span>
-          Here&apos;s all our PDF downloads to help make{" "}
-          <LineBreak>your Real Estate Management easy.</LineBreak>
+          Here&apos;s all our PDF downloads to help make
+          <LineBreak break={["inline", "inline", "block"]}>your Real Estate Management easy.</LineBreak>
         </span>
       }
     >
