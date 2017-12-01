@@ -40,8 +40,8 @@ const Root = props => (
     >
       <Contacts pathname={props.pathname} />
       <SmallText center color="text70" mt={[3, 4]}>
-        Looking for the Auburn office? They aren&apos;t affiliated with us.
-        <LineBreak mx="auto">
+        Looking for the Auburn office? They aren&apos;t affiliated with us.&nbsp;
+        <LineBreak break={["inline", "block"]} mx="auto">
           You can find them <Link href="http://vjrayauburn.com.au/">here.</Link>
         </LineBreak>
       </SmallText>

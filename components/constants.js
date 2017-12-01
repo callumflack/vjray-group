@@ -369,17 +369,17 @@ const forms = [
 const factSheets = [
   {
     headline: "New Tenant Checklist",
-    subheadline: "NSW Government fact sheet",
+    subheadline: "",
     link: "/static/fact-sheets/NSWFT_FS_New_tenant_checklist.pdf",
   },
   {
     headline: "Residential Tenancies Act",
-    subheadline: "NSW Government Law fact sheet",
+    subheadline: "",
     link: "/static/fact-sheets/Residential Tenancies Act 2010.pdf",
   },
   {
     headline: "Residential Tenancies Regulation",
-    subheadline: "NSW Government Law fact sheet",
+    subheadline: "",
     link: "/static/fact-sheets/Residential Tenancies Regulation 2010-664.pdf",
   },
   {

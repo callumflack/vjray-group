@@ -24,7 +24,7 @@ const Root = props => (
 
     <HeroBlock
       bluegreyGradientBg
-      img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1507852665/ashley_h9r9nh.png"
+      img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1512092045/ashley-hero_kirnow.png"
     >
       <HGroup
         title="Trust the price. Qualified valuations done right."

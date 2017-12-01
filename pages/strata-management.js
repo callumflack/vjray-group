@@ -42,7 +42,7 @@ const Root = props => (
                 brandBg
                 px={3}
               >
-                our Strata website
+                Strata site
               </ButtonOutline>
             </a>
           </Link>
@@ -69,7 +69,7 @@ const Root = props => (
         </LargeText>
         <Link href="https://vjraystrata.com.au/">
           <PrimaryButtonText center mt={5}>
-            <Button icon bg="brand" children="Our Strata website" />
+            <Button icon bg="brand" children="Our Strata site" />
           </PrimaryButtonText>
         </Link>
       </HGroup>

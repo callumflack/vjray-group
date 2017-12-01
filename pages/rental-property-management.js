@@ -10,7 +10,7 @@ import TestimonialSlide from "../components/Shared/TestimonialSlide";
 import Container from "../components/Shared/Container2";
 import ListItem from "../components/Shared/ListItem";
 import { FormHeader } from "../components/Shared/Form";
-import FormContact from "../components/Shared/FormContact";
+import FormLandlord from "../components/Shared/FormLandlord";
 import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
 import LineBreak from "../components/Shared/LineBreak";
 import { Button } from "../components/Shared/Buttons";
@@ -22,14 +22,14 @@ const Root = props => (
 
     <HeroBlock
       bluegreyGradientBg
-      img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1510115064/smiler-hero_oj6ejl.png"
+      img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1512091929/smiler-hero_yau1qn.png"
     >
       <HGroup
         title="Property Management sorted with a smile."
         titleColor="brand"
         titleFamily="displayMedium"
         titleIs="h1"
-        text="Whether you're a landlord or a tenant, our service will put you first."
+        text="Whether you're a landlord or a tenant, we put you first."
         textColor="text70"
       />
     </HeroBlock>
@@ -58,7 +58,7 @@ const Root = props => (
         <FormHeader bg="brand" color="white" mt={[3, 4, 5]}>
           Get a landlord appraisal
         </FormHeader>
-        <FormContact border defaultForm={props.defaultForm} />
+        <FormLandlord brandColor defaultForm={props.defaultForm} />
       </Container>
     </Block>
 

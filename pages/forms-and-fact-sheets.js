@@ -8,6 +8,8 @@ import Header from "../components/Shared/Header";
 import HGroup from "../components/Shared/HGroup";
 import Block from "../components/Shared/Block";
 import { HeroBox, HeroContainer, HeroFlex } from "../components/Shared/Hero";
+import Icon from "../components/Shared/Icon";
+import icons from "../components/Shared/iconConstants";
 import Contacts from "../components/Shared/Contacts";
 import Footer from "../components/Shared/FooterGroup";
 import { LargeText, Text } from "../components/Shared/Texts";
@@ -25,11 +27,12 @@ const StyledHeroBox = styled(HeroBox) `
 
 // wrap='nowrap'
 const ListItem = props => (
-  <Link href={props.item.link}>
+  <Link href={props.item.link} target="_blank">
     <a>
       <ListItemRoot py={[3, 4]}>
         <Flex align="baseline" wrap>
-          <LargeText color="text" mr={3}>{props.item.headline}</LargeText>
+          <Icon color="text" size="18" icon={icons.file} />
+          <LargeText color="text" mx={3}>{props.item.headline}</LargeText>
           <Text color="text70" mt={1}>{props.item.subheadline}</Text>
         </Flex>
       </ListItemRoot>
@@ -48,7 +51,7 @@ const Root = props => (
             title="Forms and fact sheets."
             titleColor="brand"
             titleFamily="displayMedium"
-            text="Readily available PDF downloads to help your Real Estate Management."
+            text="All our helpful PDFs in one place."
             textColor="text70"
           />
         </HeroFlex>

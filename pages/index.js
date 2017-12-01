@@ -42,8 +42,8 @@ const Root = props => (
         titleColor="brand"
         text={
           <span>
-            “We&apos;re extremely happy with the service that
-            <LineBreak>
+            “We&apos;re extremely happy with the service that&nbsp;
+            <LineBreak break={["inline", "block"]}>
               VJ Ray provides”&nbsp;
               <AuthorText>— Neil, Caringbah</AuthorText>
             </LineBreak>
@@ -71,7 +71,7 @@ const Root = props => (
         text={
           <span>
             “At the heart of great business is great customer service. That’s what we pride ourselves
-            on here at VJ Ray”&nbsp;
+            on at VJ Ray”&nbsp;
             <LineBreak>
               <AuthorText>— Mike Pollard, Managing Director</AuthorText>
             </LineBreak>
