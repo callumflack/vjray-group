@@ -27,17 +27,15 @@ const StyledHeroBox = styled(HeroBox) `
 
 // wrap='nowrap'
 const ListItem = props => (
-  <Link href={props.item.link} target="_blank">
-    <a>
-      <ListItemRoot py={[3, 4]}>
-        <Flex align="baseline" wrap>
-          <Icon color="text" size="18" icon={icons.file} />
-          <LargeText color="text" mx={3}>{props.item.headline}</LargeText>
-          <Text color="text70" mt={1}>{props.item.subheadline}</Text>
-        </Flex>
-      </ListItemRoot>
-    </a>
-  </Link>
+  <a href={props.item.link} target="_blank" onClick={event => { event.preventDefault(); window.open(props.item.link); }}>
+    <ListItemRoot py={[3, 4]}>
+      <Flex align="baseline" wrap>
+        <Icon color="text" size="18" icon={icons.file} />
+        <LargeText color="text" mx={3}>{props.item.headline}</LargeText>
+        <Text color="text70" mt={1}>{props.item.subheadline}</Text>
+      </Flex>
+    </ListItemRoot>
+  </a>
 );
 
 const Root = props => (
