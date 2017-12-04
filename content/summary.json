@@ -1,12 +1,12 @@
 {
   "fileMap": {
-    "content/privacy.json": {
-      "title": "Privacy",
-      "preview": "Your privacy on this website\n\nWe recognise the importance of protecting the privacy of information collected",
+    "content/mikes-letter.json": {
+      "title": "Mike's letter",
+      "preview": "Way back in 1962, in a one-room office in Campsie, VJ Ray started its journey in the Sydney real estate",
       "dir": "content",
-      "base": "privacy.json",
+      "base": "mikes-letter.json",
       "ext": ".json",
-      "sourceBase": "privacy.md",
+      "sourceBase": "mikes-letter.md",
       "sourceExt": ".md"
     },
     "content/terms.json": {
@@ -18,13 +18,13 @@
       "sourceBase": "terms.md",
       "sourceExt": ".md"
     },
-    "content/mikes-letter.json": {
-      "title": "Mike's letter",
-      "preview": "Way back in 1962, in a one-room office in Campsie, VJ Ray started its journey in the Sydney real estate",
+    "content/privacy.json": {
+      "title": "Privacy",
+      "preview": "Your privacy on this website\n\nWe recognise the importance of protecting the privacy of information collected",
       "dir": "content",
-      "base": "mikes-letter.json",
+      "base": "privacy.json",
       "ext": ".json",
-      "sourceBase": "mikes-letter.md",
+      "sourceBase": "privacy.md",
       "sourceExt": ".md"
     }
   },
