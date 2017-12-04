@@ -1,14 +1,5 @@
 {
   "fileMap": {
-    "content/mikes-letter.json": {
-      "title": "Mike's letter",
-      "preview": "Way back in 1962, in a one-room office in Campsie, VJ Ray started its journey in the Sydney real estate",
-      "dir": "content",
-      "base": "mikes-letter.json",
-      "ext": ".json",
-      "sourceBase": "mikes-letter.md",
-      "sourceExt": ".md"
-    },
     "content/terms.json": {
       "title": "Terms of use",
       "preview": "Terms of use\n\nPlease read this legal information carefully This web site and its contents ('Web Site') are",
@@ -16,6 +7,15 @@
       "base": "terms.json",
       "ext": ".json",
       "sourceBase": "terms.md",
+      "sourceExt": ".md"
+    },
+    "content/mikes-letter.json": {
+      "title": "Mike's letter",
+      "preview": "Way back in 1962, in a one-room office in Campsie, VJ Ray started its journey in the Sydney real estate",
+      "dir": "content",
+      "base": "mikes-letter.json",
+      "ext": ".json",
+      "sourceBase": "mikes-letter.md",
       "sourceExt": ".md"
     },
     "content/privacy.json": {
