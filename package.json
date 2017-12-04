@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "build": "npm run build:content && next build && next export",
+    "build":
+      "npm run build:content && next build && next export && cp static/formspree-verify.txt out/ && cp now.json out/",
     "build:content":
       "processmd content/src/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json",
     "build:content:watch":
