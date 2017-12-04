@@ -2,6 +2,10 @@
 
 const site = "group";
 
+// formspree id
+
+const groupId = "xgaewyjx";
+
 // Nav items with the label 'Home' will not be shown
 // in the desktop nav
 
@@ -43,7 +47,8 @@ const locationList = [
     email: "campsie@vjray.com.au",
     poBox: "PO Box 369 Campsie, NSW 2194",
     emergencyPhoneNumber: "1300 073 405",
-    googleMapsUrl: "https://www.google.com.au/maps/place/V+J+Ray/@-33.9113278,151.1011612,17z",
+    googleMapsUrl:
+      "https://www.google.com.au/maps/place/V+J+Ray/@-33.9113278,151.1011612,17z",
     imageName: "campsie.jpg",
   },
   {
@@ -58,7 +63,8 @@ const locationList = [
     email: "caringbah@vjray.com.au",
     poBox: "PO Box 369 Campsie, NSW 2194",
     emergencyPhoneNumber: "1300 073 405",
-    googleMapsUrl: "https://www.google.com.au/maps/place/V.J.+Ray/@-34.0432583,151.1198929,17z",
+    googleMapsUrl:
+      "https://www.google.com.au/maps/place/V.J.+Ray/@-34.0432583,151.1198929,17z",
     imageName: "caringbah.jpg",
   },
 ];
@@ -100,7 +106,8 @@ const featuresList = [
     icon: "strata",
     border: true,
     headline: "Strata Management",
-    lede: "Skip the hassle of Strata Management and get back your peace of mind.",
+    lede:
+      "Skip the hassle of Strata Management and get back your peace of mind.",
     link: "/strata-management",
   },
   {
@@ -114,7 +121,8 @@ const featuresList = [
     icon: "valuations",
     border: true,
     headline: "Real Estate Valuations",
-    lede: "Trust the price and act with confidence. Qualified building valuations done right.",
+    lede:
+      "Trust the price and act with confidence. Qualified building valuations done right.",
     link: "/property-valuations",
   },
 ];
@@ -384,7 +392,8 @@ const factSheets = [
   },
   {
     headline: "Leading Property Managers of Australia",
-    subheadline: "Why choose an LPMA member to manage your investment property?",
+    subheadline:
+      "Why choose an LPMA member to manage your investment property?",
     link: "/static/fact-sheets/LPMA Brochure.pdf",
   },
 ];
