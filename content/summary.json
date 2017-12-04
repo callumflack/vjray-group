@@ -1,5 +1,14 @@
 {
   "fileMap": {
+    "content/privacy.json": {
+      "title": "Privacy",
+      "preview": "Your privacy on this website\n\nWe recognise the importance of protecting the privacy of information collected",
+      "dir": "content",
+      "base": "privacy.json",
+      "ext": ".json",
+      "sourceBase": "privacy.md",
+      "sourceExt": ".md"
+    },
     "content/terms.json": {
       "title": "Terms of use",
       "preview": "Terms of use\n\nPlease read this legal information carefully This web site and its contents ('Web Site') are",
@@ -16,15 +25,6 @@
       "base": "mikes-letter.json",
       "ext": ".json",
       "sourceBase": "mikes-letter.md",
-      "sourceExt": ".md"
-    },
-    "content/privacy.json": {
-      "title": "Privacy",
-      "preview": "Your privacy on this website\n\nWe recognise the importance of protecting the privacy of information collected",
-      "dir": "content",
-      "base": "privacy.json",
-      "ext": ".json",
-      "sourceBase": "privacy.md",
       "sourceExt": ".md"
     }
   },
