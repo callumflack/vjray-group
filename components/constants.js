@@ -242,6 +242,9 @@ const landlordList = [
     text:
       "We recognise that our landlords might not be available when we are open, so you can visit our online landlords portal  to get the latest information about your property.",
     link: false,
+    buttonUrl:
+      "https://www.lookatmyproperty.com.au/934897/Account/Logon?type=1000",
+    buttonLabel: "Login",
   },
 ];
 
@@ -269,6 +272,9 @@ const tenantList = [
     text:
       "24 hours a day, 7 days a week you can access your details on line through our tenant portal. to check where your rent is paid to or update your contact details.",
     link: false,
+    buttonUrl:
+      "https://www.lookatmyproperty.com.au/934897/Account/Logon?type=1001",
+    buttonLabel: "Login",
   },
 ];
 
