@@ -11,10 +11,19 @@ import Container from "../components/Shared/Container2";
 import ListItem from "../components/Shared/ListItem";
 import { FormHeader } from "../components/Shared/Form";
 import FormLandlord from "../components/Shared/FormLandlord";
-import { LargeText, AuthorText, PrimaryButtonText } from "../components/Shared/Texts";
+import {
+  LargeText,
+  AuthorText,
+  PrimaryButtonText,
+} from "../components/Shared/Texts";
 import LineBreak from "../components/Shared/LineBreak";
 import { Button } from "../components/Shared/Buttons";
-import { landlordIntro, landlordList, tenantIntro, tenantList } from "../components/constants";
+import {
+  landlordIntro,
+  landlordList,
+  tenantIntro,
+  tenantList,
+} from "../components/constants";
 
 const Root = props => (
   <Layout>
@@ -40,8 +49,8 @@ const Root = props => (
         subheading="For landlords"
         text={
           <span>
-            “I&apos;ve found the Property Management unit to be absolutely fantastic! Thanks
-            VJ Ray”
+            “I&apos;ve found the Property Management unit to be absolutely
+            fantastic! Thanks VJ Ray”
             <LineBreak>
               <AuthorText>— Silvano, Campsie</AuthorText>
             </LineBreak>
@@ -96,16 +105,20 @@ const Root = props => (
       text={
         <span>
           Here&apos;s all our PDF downloads to help make
-          <LineBreak break={["inline", "inline", "block"]}>your Real Estate Management easy.</LineBreak>
+          <LineBreak break={["inline", "inline", "block"]}>
+            your Real Estate Management easy.
+          </LineBreak>
         </span>
       }
     >
-      <Link href="/forms-and-fact-sheets">
-        <PrimaryButtonText center>
-          <Button icon bg="brand">
-            See the list
-          </Button>
-        </PrimaryButtonText>
+      <Link href="/forms-and-fact-sheets" prefetch passHref>
+        <a>
+          <PrimaryButtonText center>
+            <Button icon bg="brand">
+              See the list
+            </Button>
+          </PrimaryButtonText>
+        </a>
       </Link>
     </Block>
 
