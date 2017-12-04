@@ -4,7 +4,7 @@ const site = "group";
 
 // formspree id
 
-const groupId = "xgaewyjx";
+const groupId = "xzeoeqym";
 
 // Nav items with the label 'Home' will not be shown
 // in the desktop nav
@@ -406,6 +406,7 @@ const factSheets = [
 
 export {
   site,
+  groupId,
   navItems,
   contactLocationsForPathnames,
   locationList,
