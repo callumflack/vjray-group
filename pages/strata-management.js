@@ -19,7 +19,7 @@ const Root = props => (
 
     <HeroBlock
       bg="beige"
-      img="http://res.cloudinary.com/pw-img-cdn/image/upload/v1507788260/hero-home-171012_epyqlz.jpg"
+      img="https://res.cloudinary.com/pw-img-cdn/image/upload/v1507788260/hero-home-171012_epyqlz.jpg"
     >
       <HGroup
         title={
@@ -36,12 +36,7 @@ const Root = props => (
         <PrimaryButtonText>
           <Link href="https://vjraystrata.com.au">
             <a>
-              <ButtonOutline
-                icon
-                color="brand"
-                brandBg
-                px={3}
-              >
+              <ButtonOutline icon color="brand" brandBg px={3}>
                 Strata site
               </ButtonOutline>
             </a>
@@ -64,8 +59,8 @@ const Root = props => (
           ))}
         </Box>
         <LargeText color="text70">
-          If you&apos;d like a Strata Manager that focuses on you as
-          well as your property, visit our Strata website:
+          If you&apos;d like a Strata Manager that focuses on you as well as
+          your property, visit our Strata website:
         </LargeText>
         <Link href="https://vjraystrata.com.au/">
           <PrimaryButtonText center mt={5}>
