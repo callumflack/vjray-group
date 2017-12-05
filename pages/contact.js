@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Layout from "../components/Shared/Layout";
 import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/FooterGroup";
+import Footer from "../components/Shared/Footer";
 import Block from "../components/Shared/Block";
 import HeroBlock from "../components/Shared/HeroBlock";
 import HGroup from "../components/Shared/HGroup";
@@ -40,7 +40,8 @@ const Root = props => (
     >
       <Contacts pathname={props.pathname} />
       <SmallText center color="text70" mt={[3, 4]}>
-        Looking for the Auburn office? They aren&apos;t affiliated with us.&nbsp;
+        Looking for the Auburn office? They aren&apos;t affiliated with
+        us.&nbsp;
         <LineBreak break={["inline", "block"]} mx="auto">
           You can find them <Link href="http://vjrayauburn.com.au/">here.</Link>
         </LineBreak>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Box } from "rebass";
 import Layout from "../components/Shared/Layout";
 import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/FooterGroup";
+import Footer from "../components/Shared/Footer";
 import HeroBlock from "../components/Shared/HeroBlock";
 import BlockWrapper from "../components/Shared/BlockWrapper";
 import HGroup from "../components/Shared/HGroup";

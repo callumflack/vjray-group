@@ -5,7 +5,7 @@ import { Flex, Box } from "rebass";
 
 import Layout from "../components/Shared/Layout";
 import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/FooterGroup";
+import Footer from "../components/Shared/Footer";
 import Block from "../components/Shared/Block";
 import BlockWrapper from "../components/Shared/BlockWrapper";
 import HGroup from "../components/Shared/HGroup";
@@ -19,7 +19,7 @@ import LineBreak from "../components/Shared/LineBreak";
 
 import theme from "../components/theme-new";
 
-const TextBlockWrapper = styled(Flex) `
+const TextBlockWrapper = styled(Flex)`
   margin-top: 0;
   margin-bottom: ${theme.space[4]}px;
 
@@ -59,10 +59,7 @@ const Root = props => (
       text="It's said that by 2020, over 50% of Sydney's population will be living or working in a Strata property. That's why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
     />
 
-    <BlockWrapper
-      bg="text7"
-      maxWidth="48em"
-    >
+    <BlockWrapper bg="text7" maxWidth="48em">
       <HGroup
         crownWidth="40em"
         title="Our duty is your satisfaction."
@@ -70,15 +67,19 @@ const Root = props => (
         textColor="brand"
         text={
           <span>
-            “At the heart of great business is great customer service. That’s what we pride ourselves
-            on at VJ Ray”&nbsp;
+            “At the heart of great business is great customer service. That’s
+            what we pride ourselves on at VJ Ray”&nbsp;
             <LineBreak>
               <AuthorText>— Mike Pollard, Managing Director</AuthorText>
             </LineBreak>
           </span>
         }
       />
-      <Flex direction={["column", "column", "row"]} mx={[-2, -2, -2, -3]} mt={5}>
+      <Flex
+        direction={["column", "column", "row"]}
+        mx={[-2, -2, -2, -3]}
+        mt={5}
+      >
         <Flex column width={[1, 1, 1 / 3]} px={[4, 2, null, 3]}>
           <Box mt="6px">
             <img src="static/img/mike-pollard.jpg" alt="Mike Pollard" />
@@ -89,8 +90,14 @@ const Root = props => (
             <LineBreak>35 years with VJ Ray.</LineBreak>
           </Text>
         </Flex>
-        <TextBlockWrapper order={["-1", "-1", "initial"]} px={[2, 2, 2, 3]} width={[1, 1, 2 / 3]}>
-          <TextBlock dangerouslySetInnerHTML={{ __html: props.mikesLetter.bodyHtml }} />
+        <TextBlockWrapper
+          order={["-1", "-1", "initial"]}
+          px={[2, 2, 2, 3]}
+          width={[1, 1, 2 / 3]}
+        >
+          <TextBlock
+            dangerouslySetInnerHTML={{ __html: props.mikesLetter.bodyHtml }}
+          />
         </TextBlockWrapper>
       </Flex>
     </BlockWrapper>

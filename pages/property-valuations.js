@@ -6,7 +6,7 @@ import theme from "../components/theme-new";
 
 import Layout from "../components/Shared/Layout";
 import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/FooterGroup";
+import Footer from "../components/Shared/Footer";
 import Block from "../components/Shared/Block";
 import BlockWrapper from "../components/Shared/BlockWrapper";
 import HeroBlock from "../components/Shared/HeroBlock";
@@ -45,12 +45,17 @@ const Root = props => (
         text="With over 50 years of providing valuations in Sydney plus access to the most up to date property data, we can help you with your valuation. The question is, when do you need one?"
       />
       <Box my={5}>
-        {valuationsList.map((item, i) => <ListItem smallSpace item={item} key={i} />)}
+        {valuationsList.map((item, i) => (
+          <ListItem smallSpace item={item} key={i} />
+        ))}
       </Box>
       <LargeText color="text70">
-        If you need to trust your price, tell us a little about it and we&apos;ll make sure you get your worth:
+        If you need to trust your price, tell us a little about it and
+        we&apos;ll make sure you get your worth:
       </LargeText>
-      <FormHeader bg="brand" color="white" mt={[3, 4, 5]}>Order a valuation</FormHeader>
+      <FormHeader bg="brand" color="white" mt={[3, 4, 5]}>
+        Order a valuation
+      </FormHeader>
       <FormContact border defaultForm={props.defaultForm} />
     </BlockWrapper>
 

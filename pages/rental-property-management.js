@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Layout from "../components/Shared/Layout";
 import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/FooterGroup";
+import Footer from "../components/Shared/Footer";
 import Block from "../components/Shared/Block";
 import HeroBlock from "../components/Shared/HeroBlock";
 import HGroup from "../components/Shared/HGroup";

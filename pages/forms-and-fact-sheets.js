@@ -11,28 +11,38 @@ import { HeroBox, HeroContainer, HeroFlex } from "../components/Shared/Hero";
 import Icon from "../components/Shared/Icon";
 import icons from "../components/Shared/iconConstants";
 import Contacts from "../components/Shared/Contacts";
-import Footer from "../components/Shared/FooterGroup";
+import Footer from "../components/Shared/Footer";
 import { LargeText, Text } from "../components/Shared/Texts";
 import { forms, factSheets } from "../components/constants";
 import theme from "../components/theme-new";
 
-
-const ListItemRoot = styled(Box) `
+const ListItemRoot = styled(Box)`
   border-bottom: 1px solid ${theme.colors.text20};
 `;
 
-const StyledHeroBox = styled(HeroBox) `
+const StyledHeroBox = styled(HeroBox)`
   height: calc(${theme.blockHeights.navBar} + 27.5vh);
 `;
 
 // wrap='nowrap'
 const ListItem = props => (
-  <a href={props.item.link} target="_blank" onClick={event => { event.preventDefault(); window.open(props.item.link); }}>
+  <a
+    href={props.item.link}
+    target="_blank"
+    onClick={(event) => {
+      event.preventDefault();
+      window.open(props.item.link);
+    }}
+  >
     <ListItemRoot py={[3, 4]}>
       <Flex align="baseline" wrap>
         <Icon color="text" size="18" icon={icons.file} />
-        <LargeText color="text" mx={3}>{props.item.headline}</LargeText>
-        <Text color="text70" mt={1}>{props.item.subheadline}</Text>
+        <LargeText color="text" mx={3}>
+          {props.item.headline}
+        </LargeText>
+        <Text color="text70" mt={1}>
+          {props.item.subheadline}
+        </Text>
       </Flex>
     </ListItemRoot>
   </a>
@@ -56,7 +66,13 @@ const Root = props => (
       </HeroContainer>
     </StyledHeroBox>
 
-    <Block maxWidth="38em" subhead="Forms" textLeft noTopPadding noBottomPadding>
+    <Block
+      maxWidth="38em"
+      subhead="Forms"
+      textLeft
+      noTopPadding
+      noBottomPadding
+    >
       <div>{forms.map((item, i) => <ListItem item={item} key={i} />)}</div>
     </Block>
 
