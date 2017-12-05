@@ -45,7 +45,7 @@ const Root = props => (
 
     <Block maxWidth="62em">
       <TestimonialSlide
-        src="static/img/landlord.jpg"
+        src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1512438121/landlord_nzfpsl.jpg"
         subheading="For landlords"
         text={
           <span>
@@ -73,7 +73,7 @@ const Root = props => (
 
     <Block maxWidth="62em" bg="brandAlt7">
       <TestimonialSlide
-        src="static/img/tenants.jpg"
+        src="https://res.cloudinary.com/pw-img-cdn/image/upload/v1512438134/tenants_kttfzu.jpg"
         textRight
         subheading="For tenants"
         text={
