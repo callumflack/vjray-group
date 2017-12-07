@@ -54,18 +54,18 @@ const Root = props => (
         text="We do everything you’d expect: arrange meetings, collect levies, manage repairs and help with disputes. And we believe it shouldn’t stop there. Here’s how we go further for your peace of mind:"
       >
         <Box my={5}>
-          {strataList.map((item, i) => (
-            <ListItem smallSpace item={item} key={i} />
-          ))}
+          {strataList.map((item, i) => <ListItem smallSpace item={item} key={i} />)}
         </Box>
         <LargeText color="text70">
-          If you&apos;d like a Strata Manager that focuses on you as well as
-          your property, visit our Strata website:
+          If you&apos;d like a Strata Manager that focuses on you as well as your
+          property, visit our Strata website:
         </LargeText>
-        <Link href="https://vjraystrata.com.au/">
-          <PrimaryButtonText center mt={5}>
-            <Button icon bg="brand" children="Our Strata site" />
-          </PrimaryButtonText>
+        <Link href="https://vjraystrata.com.au/" passHref>
+          <a>
+            <PrimaryButtonText center mt={5}>
+              <Button icon bg="brand" children="Our Strata site" />
+            </PrimaryButtonText>
+          </a>
         </Link>
       </HGroup>
     </BlockWrapper>
