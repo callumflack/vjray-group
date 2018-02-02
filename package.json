@@ -6,12 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "next",
-    "build":
-      "npm run build:content && next build && next export && cp static/formspree-verify.txt out/ && cp now.json out/",
-    "build:content":
-      "processmd content/src/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json",
-    "build:content:watch":
-      "processmd content/src/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json --watch",
+    "build": "npm run build:content && next build && next export && cp static/formspree-verify.txt out/ && cp now.json out/",
+    "build:content": "processmd content/src/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json",
+    "build:content:watch": "processmd content/src/**/*.md --outputDir content --preview 110 --summaryOutput content/summary.json --watch",
     "start": "next start",
     "export": "next export"
   },
@@ -25,12 +22,12 @@
     "grid-styled": "^2.0.0-11",
     "isomorphic-fetch": "2.2.1",
     "marked": "0.3.6",
-    "next": "3.2.2",
+    "next": "4.2.3",
     "polished": "1.1.3",
     "processmd": "3.1.6",
     "prop-types": "15.5.10",
-    "react": "15.6.1",
-    "react-dom": "15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "react-ga": "2.2.0",
     "rebass": "^1.0.4",
     "styled-components": "^2.2.1",
