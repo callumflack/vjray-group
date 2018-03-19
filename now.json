@@ -2,7 +2,6 @@
   "name": "vjray-group",
   "alias": ["vjray.com.au", "www.vjray.com.au"],
   "env": {
-    "NODE_ENV": "production",
-    "SERVER_URI": "@vjr_server_uri"
+    "NODE_ENV": "production"
   }
 }
