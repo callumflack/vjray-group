@@ -13,6 +13,7 @@ export default class MyDocument extends Document {
         <Head>
           <script>dataLayer = [];</script>
           <script src="/static/js/google-tag-manager.js" />
+          <script src="/static/js/ie-alert.js" />
           <title>My page</title>
           <style dangerouslySetInnerHTML={{ __html: styleTags }} />
         </Head>
