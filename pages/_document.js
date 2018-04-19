@@ -11,6 +11,7 @@ export default class MyDocument extends Document {
     return (
       <html lang="en">
         <Head>
+          {/* Initialize dataLayer array for google tag manager */}
           <script>dataLayer = [];</script>
           <script src="/static/js/google-tag-manager.js" />
           <script src="/static/js/ie-alert.js" />
@@ -21,7 +22,7 @@ export default class MyDocument extends Document {
           <noscript
             dangerouslySetInnerHTML={{
               __html:
-                "<iframe src=\"https://www.googletagmanager.com/ns.html?id=GTM-TNFDHLZ\" height=\"0\" width=\"0\" style=\"display:none;visibility:hidden;\"></iframe>",
+                '<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNFDHLZ" height="0" width="0" style="display:none;visibility:hidden;"></iframe>'
             }}
           />
           <div className="root">{main}</div>
