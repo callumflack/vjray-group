@@ -6,5 +6,6 @@
       "use": "@now/static-build",
       "config": { "distDir": "out" }
     }
-  ]
+  ],
+  "alias": ["vjray.com.au", "www.vjray.com.au"]
 }
