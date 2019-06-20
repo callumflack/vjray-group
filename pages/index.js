@@ -9,15 +9,15 @@ import Footer from "../components/Shared/Footer";
 import Block from "../components/Shared/Block";
 import BlockWrapper from "../components/Shared/BlockWrapper";
 import HGroup from "../components/Shared/HGroup";
-
 import HeroGroupHome from "../components/Shared/HeroGroupHome";
 import HeroGroupHomeStrata from "../components/Shared/HeroGroupHomeStrata";
 import FeatureList from "../components/Shared/FeatureList";
 import ContactForms from "../components/Shared/ContactForms";
 import { Text, AuthorText, TextBlock } from "../components/Shared/Texts";
 import LineBreak from "../components/Shared/LineBreak";
-
 import theme from "../components/theme-new";
+
+import Letter from "../components/content/letter.mdx";
 
 const TextBlockWrapper = styled(Flex)`
   margin-top: 0;
@@ -95,9 +95,9 @@ const Root = props => (
           px={[2, 2, 2, 3]}
           width={[1, 1, 2 / 3]}
         >
-          <TextBlock
-            dangerouslySetInnerHTML={{ __html: props.mikesLetter.bodyHtml }}
-          />
+          <TextBlock>
+            <Letter />
+          </TextBlock>
         </TextBlockWrapper>
       </Flex>
     </BlockWrapper>
@@ -118,14 +118,12 @@ const Root = props => (
 
 class Index extends React.Component {
   static async getInitialProps({ pathname, query }) {
-    const mikesLetter = require("../content/mikes-letter.json");
-
     return {
-      mikesLetter,
       pathname,
       defaultForm: query.form,
     };
   }
+
   render() {
     return <Root {...this.props} />;
   }
@@ -133,8 +131,8 @@ class Index extends React.Component {
 
 // defaultForm: PropTypes.string,
 Index.propTypes = {
-  pathname: PropTypes.string,
   maxWidth: PropTypes.string,
+  pathname: PropTypes.string,
 };
 
 Index.defaultProps = {

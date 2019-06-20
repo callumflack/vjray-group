@@ -5,14 +5,17 @@ import { TextBlock } from "../components/Shared/Text";
 import Header from "../components/Shared/Header";
 import Footer from "../components/Shared/Footer";
 import BlockWrapper from "../components/Shared/BlockWrapper";
+import Terms from "../components/content/terms.mdx";
 
-const Root = props => (
+const Root = () => (
   <Layout>
     <Header clear />
 
     <Box style={{ marginTop: "45px" }}>
-      <BlockWrapper maxWidth="42em">
-        <TextBlock dangerouslySetInnerHTML={{ __html: props.terms.bodyHtml }} />
+      <BlockWrapper maxWidth="42em" textLeft>
+        <TextBlock>
+          <Terms />
+        </TextBlock>
       </BlockWrapper>
     </Box>
 
@@ -21,15 +24,8 @@ const Root = props => (
 );
 
 class TermsPage extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   static async getInitialProps({ pathname }) {
-    const terms = require("../content/terms.json");
-
     return {
-      terms,
       pathname,
     };
   }

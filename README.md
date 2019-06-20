@@ -1,6 +1,6 @@
 # vjray-group
 
-Offical group website of vjray.
+Group website of VJ Ray. Uses Next.js.
 
 ## Set up
 
@@ -16,17 +16,6 @@ If you have already cloned the repo but are missing the submodules run:
 
 ```sh
 git submodule update --init
-```
-
-## Compiling markdown files
-
-Markdown files must be re-compiled for changes to take effect.
-
-```sh
-# One off compile
-npm run build:content
-# Watch for changes and auto compile
-npm run build:content:watch
 ```
 
 ## Exporting to static build
