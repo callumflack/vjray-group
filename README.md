@@ -20,13 +20,20 @@ git submodule update --init
 
 ## Exporting to static build
 
-Only pages listed in the next.config.js exportPathMap will be exported.
+Next doesn't require a config, but one has been made to use MDX.
 
-Run in terminal:
+Run in terminal and the exported site will be saved in `out/`:
 
 ```sh
-npm run build
 npm run export
 ```
 
-The exported site will be saved in out/
+## Now v2
+
+To deploy, run `now` in the project root.
+
+This gives a random URL. To attach it to a dev URL, run `now --target staging`.
+
+If you wish to alias to the live site, run `now now --target production`.
+
+(We could set-up the Github hook, but let's keep this project on lockdown.)
