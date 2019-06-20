@@ -1,8 +1,6 @@
 # vjray-group
 
-Offical group website of vjray.
-
-
+Group website of VJ Ray. Uses Next.js.
 
 ## Set up
 
@@ -20,26 +18,22 @@ If you have already cloned the repo but are missing the submodules run:
 git submodule update --init
 ```
 
-## Compiling markdown files
-
-Markdown files must be re-compiled for changes to take effect.
-
-```sh
-# One off compile
-npm run build:content
-# Watch for changes and auto compile
-npm run build:content:watch
-```
-
 ## Exporting to static build
 
-Only pages listed in the next.config.js exportPathMap will be exported.
+Next doesn't require a config, but one has been made to use MDX.
 
-Run in terminal:
+Run in terminal and the exported site will be saved in `out/`:
 
 ```sh
-npm run build
 npm run export
 ```
 
-The exported site will be saved in out/
+## Now v2
+
+To deploy, run `now` in the project root.
+
+This gives a random URL. To attach it to a dev URL, run `now --target staging`.
+
+If you wish to alias to the live site, run `now now --target production`.
+
+(We could set-up the Github hook, but let's keep this project on lockdown.)
