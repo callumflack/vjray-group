@@ -2,8 +2,6 @@
 
 Offical group website of vjray.
 
-
-
 ## Set up
 
 This repository contains react.js components from [vjray-shared-components](https://github.com/BarryPH/vjray-shared-components) as a git submodule.
