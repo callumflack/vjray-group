@@ -22,7 +22,6 @@ import Letter from "../components/content/letter.mdx";
 const TextBlockWrapper = styled(Flex)`
   margin-top: 0;
   margin-bottom: ${theme.space[4]}px;
-
   @media (min-width: ${theme.breakpoints[0]}) {
     margin: 0;
   }
@@ -59,19 +58,16 @@ const Root = props => (
       text="It's said that by 2020, over 50% of Sydney's population will be living or working in a Strata property. That's why we believe Sydney needs a Strata Manager that focuses on the people as well as the property."
     />
 
-    <BlockWrapper bg="text7" maxWidth="48em" >
+    <BlockWrapper bg="text7" maxWidth="48em">
       <HGroup
         crownWidth="40em"
         title="Our duty is your satisfaction."
         titleColor="text"
         textColor="brand"
       />
-      <Flex
-        mx={[-2, -2, -2, -3]}
-        mt={5}
-      >
+      <Flex mx={[-2, -2, -2, -3]} mt={5}>
         <TextBlockWrapper
-          order={["-1", "-1", "initial"]}
+          mx="auto"
           px={[2, 2, 2, 3]}
           width={[1, 1, 2 / 3]}
         >
