@@ -41,7 +41,6 @@ const locationList = [
     subTwo: "Campsie, NSW 2194",
     openOne: "Monday-Thursday 9-5.30pm",
     openTwo: "Friday 9-5pm",
-    openThree: "Saturday 9-4pm",
     phoneNumber: "02 9784 7900",
     faxNumber: "02 9787 2952",
     email: "campsie@vjray.com.au",
@@ -281,7 +280,16 @@ const strataList = [
     icon: "emergency",
     headline: "After-hours emergencies",
     text:
-      "We know that emergencies don’t just happen during office hours. And rather than just leave you with the phone number for a message service we have our most senior staff on call to help you with emergency repairs, whenever they occur.",
+      `For after-hours emergency repairs only please contact the following;
+
+      Plumbing – Local Choice Plumbing – 0430 084 442
+
+      Electrical – Dr Sparks Electrical – 0410 561 825
+
+      Locksmith – A. Abbott Locksmiths – 1300 655 787
+
+      Additional charges may apply
+      `,
     link: false
   },
   {
@@ -289,13 +297,6 @@ const strataList = [
     headline: "Contractor management",
     text:
       "We all know how complex the licensing, WHS & insurance laws surrounding contractors are these days, so at VJ Ray we enlist the help of an independent company to continually monitor each and every contractor used by all of our strata schemes so that there is never any doubt that they comply.",
-    link: false
-  },
-  {
-    icon: "service",
-    headline: "We're open Saturdays",
-    text:
-      "We know that not everyone has time during the week, so unlike most Stata management companies we also open on Saturdays, so you can pop in, call us or even have your meeting on a Saturday!",
     link: false
   }
 ];
