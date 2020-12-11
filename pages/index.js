@@ -22,7 +22,6 @@ import Letter from "../components/content/letter.mdx";
 const TextBlockWrapper = styled(Flex)`
   margin-top: 0;
   margin-bottom: ${theme.space[4]}px;
-
   @media (min-width: ${theme.breakpoints[0]}) {
     margin: 0;
   }
@@ -65,33 +64,10 @@ const Root = props => (
         title="Our duty is your satisfaction."
         titleColor="text"
         textColor="brand"
-        text={
-          <span>
-            “At the heart of great business is great customer service. That’s
-            what we pride ourselves on at VJ Ray”&nbsp;
-            <LineBreak>
-              <AuthorText>— Mike Pollard, Managing Director</AuthorText>
-            </LineBreak>
-          </span>
-        }
       />
-      <Flex
-        direction={["column", "column", "row"]}
-        mx={[-2, -2, -2, -3]}
-        mt={5}
-      >
-        <Flex column width={[1, 1, 1 / 3]} px={[4, 2, null, 3]}>
-          <Box mt="6px">
-            <img src="static/img/mike-pollard.jpg" alt="Mike Pollard" />
-          </Box>
-          <Text left color="text70" mt={3}>
-            Mike Pollard,
-            <LineBreak>Managing Director.</LineBreak>
-            <LineBreak>35 years with VJ Ray.</LineBreak>
-          </Text>
-        </Flex>
+      <Flex mx={[-2, -2, -2, -3]} mt={5}>
         <TextBlockWrapper
-          order={["-1", "-1", "initial"]}
+          mx="auto"
           px={[2, 2, 2, 3]}
           width={[1, 1, 2 / 3]}
         >
