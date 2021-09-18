@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 import { Flex, Box } from 'rebass'
-import theme from '../theme-new'
+import theme from './theme-new'
 import { LargeText } from './Text'
 import LineBreak from "./LineBreak";
 import { Display, Headline, MobileSubheadline } from './Headline'

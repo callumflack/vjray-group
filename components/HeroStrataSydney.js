@@ -5,7 +5,7 @@ import styled, { css } from 'styled-components';
 import { Flex, Box } from 'rebass';
 import { FlexEmbed } from './FlexEmbed';
 import hoc from './hoc'
-import theme from '../theme';
+import theme from './theme';
 import Container from './Container2';
 import { Text } from './Texts';
 import LineBreak from './LineBreak';

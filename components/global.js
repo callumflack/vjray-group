@@ -1,6 +1,6 @@
-import { injectGlobal } from 'styled-components';
-import { normalize } from 'polished';
-import theme from '../theme-new.js';
+import { injectGlobal } from "styled-components";
+import { normalize } from "polished";
+import theme from "./theme-new.js";
 
 
 injectGlobal`

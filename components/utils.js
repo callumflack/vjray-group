@@ -7,7 +7,7 @@ import {
 // https://github.com/jxnblk/styled-system#style
 // https://github.com/jxnblk/rebass/pull/275
 
-// import theme from '../theme-new'
+// import theme from './theme-new'
 // Example style object w/ imported theme:
 // const RuledStyles = {
 //   width: '${theme.space[4]}px'
