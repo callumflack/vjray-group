@@ -71,3 +71,8 @@ client/.next
 
 # Export
 out
+
+# misc
+.DS_Store
+.env*
+!.env.example
