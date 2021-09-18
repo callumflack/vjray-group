@@ -2,7 +2,7 @@ const styled = require("styled-components").default;
 const css = require("styled-components").css;
 const { fontSize } = require("styled-system");
 const { width, space, color } = require("styled-system");
-const theme = require("../theme-new").default;
+const theme = require("./theme-new").default;
 
 // stolen from: https://github.com/jxnblk/styled-system/blob/master/docs/styled-components/hoc.js
 
