@@ -4,19 +4,19 @@ import styled, { css } from "styled-components";
 import { Flex, Box } from "rebass";
 import theme from "../components/theme-new";
 
-import Layout from "../components/Shared/Layout";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/Footer";
-import Block from "../components/Shared/Block";
-import BlockWrapper from "../components/Shared/BlockWrapper";
-import HeroBlock from "../components/Shared/HeroBlock";
-import HGroup from "../components/Shared/HGroup";
-import { FormHeader } from "../components/Shared/Form";
-import FormContact from "../components/Shared/FormContact";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Block from "../components/Block";
+import BlockWrapper from "../components/BlockWrapper";
+import HeroBlock from "../components/HeroBlock";
+import HGroup from "../components/HGroup";
+import { FormHeader } from "../components/Form";
+import FormContact from "../components/FormContact";
 
 import { valuationsList } from "../components/constants";
-import ListItem from "../components/Shared/ListItem";
-import { LargeText, AuthorText } from "../components/Shared/Texts";
+import ListItem from "../components/ListItem";
+import { LargeText, AuthorText } from "../components/Texts";
 
 const Root = props => (
   <Layout>

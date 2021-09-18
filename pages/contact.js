@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
 
-import Layout from "../components/Shared/Layout";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/Footer";
-import Block from "../components/Shared/Block";
-import HeroBlock from "../components/Shared/HeroBlock";
-import HGroup from "../components/Shared/HGroup";
-import Contacts from "../components/Shared/Contacts";
-import ContactForms from "../components/Shared/ContactForms";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Block from "../components/Block";
+import HeroBlock from "../components/HeroBlock";
+import HGroup from "../components/HGroup";
+import Contacts from "../components/Contacts";
+import ContactForms from "../components/ContactForms";
 
-import { SmallText, PrimaryButtonText } from "../components/Shared/Texts";
-import LineBreak from "../components/Shared/LineBreak";
-import { Button } from "../components/Shared/Buttons";
+import { SmallText, PrimaryButtonText } from "../components/Texts";
+import LineBreak from "../components/LineBreak";
+import { Button } from "../components/Buttons";
 
 const Root = props => (
   <Layout>

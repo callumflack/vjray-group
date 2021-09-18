@@ -3,16 +3,16 @@ import Link from "next/link";
 import styled from "styled-components";
 import { Box, Flex } from "rebass";
 
-import Layout from "../components/Shared/Layout";
-import Header from "../components/Shared/Header";
-import HGroup from "../components/Shared/HGroup";
-import Block from "../components/Shared/Block";
-import { HeroBox, HeroContainer, HeroFlex } from "../components/Shared/Hero";
-import Icon from "../components/Shared/Icon";
-import icons from "../components/Shared/iconConstants";
-import Contacts from "../components/Shared/Contacts";
-import Footer from "../components/Shared/Footer";
-import { LargeText, Text } from "../components/Shared/Texts";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import HGroup from "../components/HGroup";
+import Block from "../components/Block";
+import { HeroBox, HeroContainer, HeroFlex } from "../components/Hero";
+import Icon from "../components/Icon";
+import icons from "../components/iconConstants";
+import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
+import { LargeText, Text } from "../components/Texts";
 import { forms, factSheets } from "../components/constants";
 import theme from "../components/theme-new";
 

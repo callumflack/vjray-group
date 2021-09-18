@@ -1,23 +1,23 @@
 import React from "react";
 import Link from "next/link";
-import Layout from "../components/Shared/Layout";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/Footer";
-import Block from "../components/Shared/Block";
-import HeroBlock from "../components/Shared/HeroBlock";
-import HGroup from "../components/Shared/HGroup";
-import TestimonialSlide from "../components/Shared/TestimonialSlide";
-import Container from "../components/Shared/Container2";
-import ListItem from "../components/Shared/ListItem";
-import { FormHeader } from "../components/Shared/Form";
-import FormLandlord from "../components/Shared/FormLandlord";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Block from "../components/Block";
+import HeroBlock from "../components/HeroBlock";
+import HGroup from "../components/HGroup";
+import TestimonialSlide from "../components/TestimonialSlide";
+import Container from "../components/Container2";
+import ListItem from "../components/ListItem";
+import { FormHeader } from "../components/Form";
+import FormLandlord from "../components/FormLandlord";
 import {
   LargeText,
   AuthorText,
   PrimaryButtonText,
-} from "../components/Shared/Texts";
-import LineBreak from "../components/Shared/LineBreak";
-import { Button } from "../components/Shared/Buttons";
+} from "../components/Texts";
+import LineBreak from "../components/LineBreak";
+import { Button } from "../components/Buttons";
 import {
   landlordIntro,
   landlordList,

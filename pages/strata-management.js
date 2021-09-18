@@ -1,17 +1,17 @@
 import React from "react";
 import Link from "next/link";
 import { Box } from "rebass";
-import Layout from "../components/Shared/Layout";
-import Header from "../components/Shared/Header";
-import Footer from "../components/Shared/Footer";
-import HeroBlock from "../components/Shared/HeroBlock";
-import BlockWrapper from "../components/Shared/BlockWrapper";
-import HGroup from "../components/Shared/HGroup";
+import Layout from "../components/Layout";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import HeroBlock from "../components/HeroBlock";
+import BlockWrapper from "../components/BlockWrapper";
+import HGroup from "../components/HGroup";
 import { strataList } from "../components/constants";
-import ListItem from "../components/Shared/ListItem";
-import { LargeText, PrimaryButtonText } from "../components/Shared/Texts";
-import { Button, ButtonOutline } from "../components/Shared/Buttons";
-import LineBreak from "../components/Shared/LineBreak";
+import ListItem from "../components/ListItem";
+import { LargeText, PrimaryButtonText } from "../components/Texts";
+import { Button, ButtonOutline } from "../components/Buttons";
+import LineBreak from "../components/LineBreak";
 
 const Root = props => (
   <Layout>
