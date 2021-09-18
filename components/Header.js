@@ -15,8 +15,8 @@ import DesktopNav from "./HeaderDesktopNav";
 import { displayBreakPoint } from "./utils";
 import { ButtonOutline } from "./Buttons";
 
-import { site, navItems, contactDetails } from "../constants";
-import theme from "../theme-new";
+import { site, navItems, contactDetails } from "./constants";
+import theme from "./theme-new";
 import icons from "./iconConstants";
 import { headerFade } from "./animationConstants";
 

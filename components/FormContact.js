@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import FormContainer from "./FormContainer";
 import { Input, Textarea, FormGroup, FormGroupHeadline } from "./Form";
-import { site, formspreeId } from "../constants";
+import { site, formspreeId } from "./constants";
 
 class FormContact extends React.Component {
   async submit(model) {

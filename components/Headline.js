@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import hoc from "./hoc";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 // ========================================================================
 // THIS IS A WIP METHOD COMBINING BOTH STYLED-COMPONENTS AND STYLED-SYSTEM.

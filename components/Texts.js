@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import Rebass from "rebass";
 import { weight, family, lineHeight, letterSpacing, actionIcon } from "./utils";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 // prettier-ignore
 const Root = styled(Rebass.Text) `
@@ -11,12 +11,12 @@ const Root = styled(Rebass.Text) `
   ${lineHeight}
   ${letterSpacing}
 
-  em { 
-    color: ${theme.colors.text}; 
-    font-family: ${theme.families.textRegular}; 
+  em {
+    color: ${theme.colors.text};
+    font-family: ${theme.families.textRegular};
     font-style: normal;
   }
-  
+
   ${props => props.actionIcon && css`${actionIcon}`}
 
   ${props => props.noUnderline && css`

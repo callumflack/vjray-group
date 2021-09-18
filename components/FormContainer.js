@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { Box } from "rebass";
-import theme from "../theme";
+import theme from "./theme";
 import LaddaButton from "./LaddaButton";
 import { Text } from "./Texts";
 import { Form, SuccessMessage } from "./Form";

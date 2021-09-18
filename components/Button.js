@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Button as foo } from "rebass";
-import theme from "../theme";
+import theme from "./theme";
 
 // Using the SuitCSS button
 // https://github.com/suitcss/components-button/blob/master/lib/button.css

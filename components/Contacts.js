@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import { Box, Flex } from "rebass";
 import styled from "styled-components";
-import theme from "../theme-new";
-import { contactLocationsForPathnames } from "../constants";
+import theme from "./theme-new";
+import { contactLocationsForPathnames } from "./constants";
 import { Text, SmallText } from "./Text";
 import { IconPhone, IconEmail, IconAddress, IconOpen } from "./Icons";
 

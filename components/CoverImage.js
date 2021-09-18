@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import styled, { css } from "styled-components";
 import { Box } from "rebass";
-import theme from "../theme";
+import theme from "./theme";
 
 // prettier-ignore
 const Root = styled(Box)`

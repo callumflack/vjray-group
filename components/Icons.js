@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import hoc from "./hoc";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 // https://codepen.io/sdras/pen/a3596da23d8f9463079ac57c8e3ee9f8?editors=1010
 // https://github.com/zeit/next.js/tree/master/examples/svg-components

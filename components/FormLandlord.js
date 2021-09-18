@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import FormContainer from "./FormContainer";
 import { Input, Textarea, FormGroup, FormGroupHeadline } from "./Form";
-import { formspreeId } from "../constants";
+import { formspreeId } from "./constants";
 
 class FormLandlord extends React.Component {
   async submit(model) {

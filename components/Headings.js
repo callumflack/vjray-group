@@ -2,16 +2,16 @@ import React from "react";
 import styled, { css } from "styled-components";
 import Rebass from "rebass";
 import { weight, family, lineHeight, letterSpacing } from "./utils";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 //
 // Heading
 //
 
 const Root = styled(Rebass.Heading) `
-  ${weight} 
-  ${family} 
-  ${lineHeight} 
+  ${weight}
+  ${family}
+  ${lineHeight}
   ${letterSpacing}
 `;
 
@@ -104,8 +104,8 @@ const BoxedSubheading = styled(MetaHeading) `
 
   ${props => props.bg && css`
       background-color: ${theme.colors[props.bg] || theme.colors.brand};
-  `} 
-  
+  `}
+
   ${props => props.inactive && css`
     background-color: ${theme.colors.grey};
     color: ${theme.colors.text70};

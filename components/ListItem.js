@@ -8,7 +8,7 @@ import { LargeText, Text, PrimaryButtonText } from "./Texts";
 import { ButtonOutline } from "./Buttons";
 import Icon from "./Icon";
 import icons from "./iconConstants";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 const ItemRoot = styled(Flex)`
   &:last-child {

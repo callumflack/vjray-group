@@ -2,7 +2,7 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { Box, Flex } from "rebass";
 import Container from "./Container2";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 /*
  * HeroFrame is an alternative to HeroBox.
@@ -37,7 +37,7 @@ const HeroBox = styled(Box) `
       rgb(247, 242, 236) 70%
     );
   `}
-  
+
   ${props => props.blueGradientBg && css`
     background-image: linear-gradient(
       to bottom,
@@ -45,7 +45,7 @@ const HeroBox = styled(Box) `
       rgba(18, 150, 222, 0.075) 70%
     );
   `}
-  
+
   ${props => props.bluegreyGradientBg && css`
     background-image: linear-gradient(
       to bottom,
@@ -53,7 +53,7 @@ const HeroBox = styled(Box) `
       rgb(247, 242, 236) 100%
     );
   `}
-  
+
   ${props => props.showAfterScreen && css`
     @media (max-width: 1024px) {
       &:after {

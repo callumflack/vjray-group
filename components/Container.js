@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Box } from "rebass";
-import theme from "../theme";
+import theme from "./theme";
 
 // https://www.styled-components.com/docs/basics#extending-styles?
 // const ContainerSm = Container.extend` <= NAH

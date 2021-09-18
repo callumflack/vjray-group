@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Flex } from "rebass";
-import theme from "../theme-new";
+import theme from "./theme-new";
 import { headerFade } from "./animationConstants";
 
 // prettier-ignore

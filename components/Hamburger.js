@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 const Hamburger = styled.div`
   --bar-height: 3px;

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import styled, { css } from "styled-components";
 import { Flex, Overlay } from "rebass";
 import FlexEmbed from "./FlexEmbed";
-import theme from "../theme-new";
+import theme from "./theme-new";
 import Container from "./Container2";
 
 const transition = {

@@ -5,7 +5,7 @@ import {
   ButtonCircle as _ButtonCircle,
 } from "rebass";
 import { letterSpacing, actionIcon } from "./utils";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 // Buttons inherit font sizes and weights from
 // wrapped text components.
@@ -28,27 +28,27 @@ const BaseStyles = `
 
 // prettier-ignore
 const brandBg = `
-  :hover, 
-  :active { 
+  :hover,
+  :active {
     background-color: ${theme.colors.brand} !important;
   }
 
   :active {
-    box-shadow: 
-      inset 0 0 0 2px ${theme.colors.brand}, 
+    box-shadow:
+      inset 0 0 0 2px ${theme.colors.brand},
       inset 0 0 8px rgba(0,0,0,0.25) !important;
   }
 `;
 
 const textBg = `
-  :hover, 
-  :active { 
+  :hover,
+  :active {
     background-color: ${theme.colors.text} !important;
   }
 
   :active {
-    box-shadow: 
-      inset 0 0 0 2px ${theme.colors.text}, 
+    box-shadow:
+      inset 0 0 0 2px ${theme.colors.text},
       inset 0 0 8px rgba(0,0,0,0.25) !important;
   }
 `;
@@ -56,24 +56,24 @@ const textBg = `
 // application
 // prettier-ignore
 const Button = styled(_Button)`
-  ${BaseStyles} 
-  ${letterSpacing} 
+  ${BaseStyles}
+  ${letterSpacing}
   ${props => props.icon && css`${actionIcon};`};
 `;
 
 // prettier-ignore
 const ButtonOutline = styled(_ButtonOutline)`
-  ${BaseStyles} 
-  ${letterSpacing} 
-  ${props => props.icon && css`${actionIcon};`} 
-  ${props => props.brandBg && css`${brandBg};`} 
+  ${BaseStyles}
+  ${letterSpacing}
+  ${props => props.icon && css`${actionIcon};`}
+  ${props => props.brandBg && css`${brandBg};`}
   ${props => props.textBg && css`${textBg};`};
 `;
 
 // prettier-ignore
 const ButtonCircle = styled(_ButtonCircle)`
-  ${BaseStyles} 
-  ${letterSpacing} 
+  ${BaseStyles}
+  ${letterSpacing}
   ${props => props.icon && css`${actionIcon};`};
 `;
 

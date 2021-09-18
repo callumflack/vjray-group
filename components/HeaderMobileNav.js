@@ -4,8 +4,8 @@ import Link from "next/link";
 import styled, { css } from "styled-components";
 import { Box, Flex } from "rebass";
 
-import { site } from "../constants";
-import theme from "../theme-new";
+import { site } from "./constants";
+import theme from "./theme-new";
 import { headerFade } from "./animationConstants";
 import { Display } from "./Headings";
 import { ButtonOutline } from "./Buttons";
@@ -24,7 +24,7 @@ const StyledFlex = styled(Flex)`
   ${props => props.isVisible && css`
     opacity: 1;
     transform: translateY(0);
-    transition: 
+    transition:
       opacity ${headerFade.duration}s ease-in-out,
       transform ${headerFade.duration}s ease-in-out;
   `};

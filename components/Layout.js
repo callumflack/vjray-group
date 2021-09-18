@@ -2,9 +2,9 @@ import React from "react";
 import Head from "next/head";
 import PropTypes from "prop-types";
 import { Provider } from "rebass";
-import theme from "../theme-new";
+import theme from "./theme-new";
 import globalStyles from "./global";
-import { site } from "../constants";
+import { site } from "./constants";
 
 // https://github.com/zeit/next.js/blob/master/examples/layout-component/components/layout.js
 // http://jxnblk.com/rebass/theming

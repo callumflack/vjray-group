@@ -5,8 +5,8 @@ import { Box, Flex } from "rebass";
 import Container from "./Container2";
 import FooterItem from "./FooterItem";
 import { Divider } from "./Texts";
-import { site } from "../constants";
-import theme from "../theme-new";
+import { site } from "./constants";
+import theme from "./theme-new";
 
 // prettier-ignore
 const Root = styled(Box) `

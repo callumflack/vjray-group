@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Link from "next/link";
 import styled, { css } from "styled-components";
 import { Absolute, Flex } from "rebass";
-import theme from "../theme-new";
+import theme from "./theme-new";
 import { Text } from "./Texts";
 import { displayBreakPoint } from "./utils";
 

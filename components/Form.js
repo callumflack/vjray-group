@@ -1,7 +1,7 @@
 import React from "react";
 import Formsy, { HOC } from "formsy-react";
 import styled, { css } from "styled-components";
-import theme from "../theme-new";
+import theme from "./theme-new";
 import { Text } from "./Texts";
 import { BoxedSubheadline, HeadlineDetail } from "./Headline";
 

@@ -7,7 +7,7 @@ import { Heading } from "./Headings";
 import { SmallText } from "./Texts";
 import icons from "./iconConstants";
 import Icon from "./Icon";
-import { featuresList } from "../constants";
+import { featuresList } from "./constants";
 
 // prettier-ignore
 const Cell = styled(Box) `

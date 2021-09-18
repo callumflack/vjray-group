@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import hoc from "./hoc";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 const Root = hoc("p").extend`
   a {

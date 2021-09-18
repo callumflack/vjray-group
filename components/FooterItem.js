@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Link from "next/link";
 import styled, { css } from "styled-components";
-import theme from "../theme-new";
+import theme from "./theme-new";
 
 // prettier-ignore
 const ItemAnchor = styled("span")`
